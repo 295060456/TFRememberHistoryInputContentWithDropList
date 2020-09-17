@@ -52,12 +52,14 @@ static char *ZYTextField_HistoryDataList_isSelected = "ZYTextField_HistoryDataLi
 static char *ZYTextField_HistoryDataList_tableviewCellHeight = "ZYTextField_HistoryDataList_tableviewCellHeight";
 static char *ZYTextField_HistoryDataList_isShowHistoryDataList = "ZYTextField_HistoryDataList_isShowHistoryDataList";
 static char *ZYTextField_HistoryDataList_ZYTextFieldTapGR = "ZYTextField_HistoryDataList_ZYTextFieldTapGR";
+static char *ZYTextField_HistoryDataList_dataArr = "ZYTextField_HistoryDataList_dataArr";
 
 @dynamic tableview;
 @dynamic isSelected;
 @dynamic tableviewCellHeight;
 @dynamic isShowHistoryDataList;
 @dynamic ZYTextFieldTapGR;
+@dynamic dataArr;
 
 -(void)closeList{
     [self endEditing:YES];
@@ -89,7 +91,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
-    return 10;//
+    return self.dataArr.count;//
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -102,6 +104,18 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
+}
+#pragma mark —— @property(nonatomic,strong)NSArray *dataArr;
+-(NSArray *)dataArr{
+    NSArray *DataArr = objc_getAssociatedObject(self, ZYTextField_HistoryDataList_dataArr);
+    return DataArr;
+}
+
+-(void)setDataArr:(NSArray *)dataArr{
+    objc_setAssociatedObject(self,
+                             ZYTextField_HistoryDataList_dataArr,
+                             dataArr,
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 #pragma mark —— @property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
 -(UITapGestureRecognizer *)ZYTextFieldTapGR{

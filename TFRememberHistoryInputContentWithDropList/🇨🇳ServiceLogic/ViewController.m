@@ -16,6 +16,7 @@ UITextFieldDelegate
 >
 
 @property(nonatomic,strong)ZYTextField *textField;
+@property(nonatomic,strong)NSMutableArray *dataMutArr;
 
 @end
 
@@ -37,7 +38,12 @@ UITextFieldDelegate
 #pragma mark —— UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
 - (BOOL)textFieldShouldBeginEditing:(ZYTextField *)textField{
-    return textField.isEditting = YES;
+    //取数据
+    NSArray *dataArr = GetUserDefaultObjForKey(@"dataArr");
+    if (dataArr.count) {
+        //有历史值存在再弹
+        textField.dataArr = dataArr;
+    }return textField.isEditting = YES;
 }
 //告诉委托人在指定的文本字段中开始编辑
 //- (void)textFieldDidBeginEditing:(UITextField *)textField{}
@@ -49,7 +55,12 @@ UITextFieldDelegate
 //告诉委托人对指定的文本字段停止编辑
 - (void)textFieldDidEndEditing:(ZYTextField *)textField{
     [self.textField isEmptyText];
-
+    if (![NSString isNullString:textField.text]) {
+        //存数据
+        [self.dataMutArr addObject:textField.text];
+        SetUserDefaultKeyWithObject(@"dataArr", self.dataMutArr);
+        UserDefaultSynchronize;
+    }
 }
 //告诉委托人对指定的文本字段停止编辑
 //- (void)textFieldDidEndEditing:(UITextField *)textField
@@ -68,20 +79,6 @@ replacementString:(NSString *)string{
     textField.isEditting = NO;
     return YES;
 }
-
--(void)dd{
-    SetUserDefaultKeyWithValue(@"data", @"");
-    UserDefaultSynchronize;
-    
-    if (GetUserDefaultValueForKey(@"data")) {
-        //有历史值存在再弹
-    }
-}
-
--(void)ss{
-    
-}
-
 #pragma mark —— lazyLoad
 -(ZYTextField *)textField{
     if (!_textField) {
@@ -97,6 +94,12 @@ replacementString:(NSString *)string{
         _textField.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _textField.frame = CGRectMake(100, 100, 200, 50);
     }return _textField;
+}
+
+-(NSMutableArray *)dataMutArr{
+    if (!_dataMutArr) {
+        _dataMutArr = NSMutableArray.array;
+    }return _dataMutArr;
 }
 
 @end

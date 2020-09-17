@@ -25,6 +25,7 @@ UIGestureRecognizerDelegate
 @property(nonatomic,assign)BOOL isSelected;
 @property(nonatomic,assign)CGFloat tableviewCellHeight;
 @property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
+@property(nonatomic,strong)NSArray *dataArr;
 
 -(void)closeList;//关闭下拉列表
 
