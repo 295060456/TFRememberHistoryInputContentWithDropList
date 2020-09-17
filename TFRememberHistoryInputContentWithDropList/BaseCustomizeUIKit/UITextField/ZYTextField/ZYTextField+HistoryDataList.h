@@ -15,12 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZYTextField (HistoryDataList)
 <
 UITableViewDelegate,
-UITableViewDataSource
+UITableViewDataSource,
+UIGestureRecognizerDelegate
 >
 
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,assign)BOOL isShowHistoryDataList;//是否显示下拉历史数据列表
 @property(nonatomic,assign)BOOL isSelected;
 @property(nonatomic,assign)CGFloat tableviewCellHeight;
+@property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
+
+-(void)ZYTextFieldTap:(UITapGestureRecognizer *)tapGR;
 
 @end
 

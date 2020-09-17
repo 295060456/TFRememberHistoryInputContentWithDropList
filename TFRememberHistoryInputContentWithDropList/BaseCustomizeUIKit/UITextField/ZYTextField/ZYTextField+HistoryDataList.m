@@ -7,6 +7,7 @@
 //
 
 #import "ZYTextField+HistoryDataList.h"
+#import "TableViewAnimationKitHeaders.h"
 
 @interface HistoryDataListTBVCell : UITableViewCell
 
@@ -49,11 +50,27 @@
 static char *ZYTextField_HistoryDataList_tableview = "ZYTextField_HistoryDataList_tableview";
 static char *ZYTextField_HistoryDataList_isSelected = "ZYTextField_HistoryDataList_isSelected";
 static char *ZYTextField_HistoryDataList_tableviewCellHeight = "ZYTextField_HistoryDataList_tableviewCellHeight";
+static char *ZYTextField_HistoryDataList_isShowHistoryDataList = "ZYTextField_HistoryDataList_isShowHistoryDataList";
+static char *ZYTextField_HistoryDataList_ZYTextFieldTapGR = "ZYTextField_HistoryDataList_ZYTextFieldTapGR";
 
 @dynamic tableview;
 @dynamic isSelected;
 @dynamic tableviewCellHeight;
+@dynamic isShowHistoryDataList;
+@dynamic ZYTextFieldTapGR;
 
+-(void)ZYTextFieldTap:(UITapGestureRecognizer *)tapGR{
+    self.isSelected = !self.isSelected;
+    self.isShowHistoryDataList = self.isSelected;
+    self.tableview.alpha = self.isShowHistoryDataList;
+    [TableViewAnimationKit showWithAnimationType:2
+                                       tableView:self.tableview];
+}
+#pragma mark —— UIGestureRecognizerDelegate
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
+shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return true;//不遵守此协议，输入框无法输入
+}
 #pragma mark —————————— UITableViewDelegate,UITableViewDataSource ——————————
 - (CGFloat)tableView:(UITableView *)tableView
 heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -81,6 +98,30 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
+#pragma mark —— @property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
+-(UITapGestureRecognizer *)ZYTextFieldTapGR{
+    UITapGestureRecognizer *textFieldTapGR = objc_getAssociatedObject(self, ZYTextField_HistoryDataList_ZYTextFieldTapGR);
+    if (!textFieldTapGR) {
+        textFieldTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                 action:@selector(ZYTextFieldTap:)];
+        textFieldTapGR.delegate = self;
+        textFieldTapGR.numberOfTapsRequired = 1;//tap次数
+        textFieldTapGR.numberOfTouchesRequired = 1;//手指数
+        [self addGestureRecognizer:textFieldTapGR];
+        objc_setAssociatedObject(self,
+                                 ZYTextField_HistoryDataList_ZYTextFieldTapGR,
+                                 textFieldTapGR,
+                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }return textFieldTapGR;
+}
+
+-(void)setZYTextFieldTapGR:(UITapGestureRecognizer *)ZYTextFieldTapGR{
+    objc_setAssociatedObject(self,
+                             ZYTextField_HistoryDataList_ZYTextFieldTapGR,
+                             ZYTextFieldTapGR,
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 #pragma mark —— @property(nonatomic,strong)UITableView *tableview;
 -(UITableView *)tableview{
     UITableView *Tableview = objc_getAssociatedObject(self, ZYTextField_HistoryDataList_tableview);
@@ -138,6 +179,17 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
                              [NSNumber numberWithFloat:tableviewCellHeight],
                              OBJC_ASSOCIATION_ASSIGN);
 }
+#pragma mark —— @property(nonatomic,assign)BOOL isShowHistoryDataList;//是否显示下拉历史数据列表
+-(BOOL)isShowHistoryDataList{
+    return [objc_getAssociatedObject(self, ZYTextField_HistoryDataList_isShowHistoryDataList) boolValue];
+}
 
+-(void)setIsShowHistoryDataList:(BOOL)isShowHistoryDataList{
+    self.tableview.alpha = !isShowHistoryDataList;
+    objc_setAssociatedObject(self,
+                             ZYTextField_HistoryDataList_isShowHistoryDataList,
+                             [NSNumber numberWithBool:isShowHistoryDataList],
+                             OBJC_ASSOCIATION_ASSIGN);
+}
 
 @end

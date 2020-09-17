@@ -1,12 +1,10 @@
 
 #import "ZYTextField.h"
 #import "ZYTextField+HistoryDataList.h"
-#import "TableViewAnimationKitHeaders.h"
 
-@interface ZYTextField ()<UIGestureRecognizerDelegate>
+@interface ZYTextField ()
 
 @property(nonatomic,assign)BOOL isOk;
-@property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
 
 @end
 
@@ -27,11 +25,6 @@
     }
 }
 
--(void)setIsShowHistoryDataList:(BOOL)isShowHistoryDataList{
-    _isShowHistoryDataList = isShowHistoryDataList;
-    self.tableview.alpha = !_isShowHistoryDataList;
-}
-
 - (void)setUpUI{
     //字体大小
     self.font = self.ZYtextFont;
@@ -48,11 +41,6 @@
     // 不成为第一响应者
     [self resignFirstResponder];
     self.isOk = YES;
-}
-#pragma mark —— UIGestureRecognizerDelegate
--(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
-shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-    return true;//不遵守此协议，输入框无法输入
 }
 /**
  * 当前文本框聚焦时就会调用
@@ -213,27 +201,6 @@ shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherG
     if (!_ZYTextFieldBorderColor) {
         _ZYTextFieldBorderColor = kBlackColor;
     }return _ZYTextFieldBorderColor;
-}
-
--(UITapGestureRecognizer *)ZYTextFieldTapGR{
-    if (!_ZYTextFieldTapGR) {
-        _ZYTextFieldTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                    action:@selector(ZYTextFieldTap:)];
-        _ZYTextFieldTapGR.delegate = self;
-        
-        _ZYTextFieldTapGR.numberOfTapsRequired = 1;//tap次数
-        _ZYTextFieldTapGR.numberOfTouchesRequired = 1;//手指数
-        
-        [self addGestureRecognizer:_ZYTextFieldTapGR];
-    }return _ZYTextFieldTapGR;
-}
-
--(void)ZYTextFieldTap:(UITapGestureRecognizer *)tapGR{
-    self.isSelected = !self.isSelected;
-    self.isShowHistoryDataList = self.isSelected;
-    self.tableview.alpha = self.isShowHistoryDataList;
-    [TableViewAnimationKit showWithAnimationType:2
-                                       tableView:self.tableview];
 }
 
 @end
