@@ -110,6 +110,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 }
 #pragma mark —— @property(nonatomic,assign)BOOL isSelected;
 -(void)setIsSelected:(BOOL)isSelected{
+    self.isShowHistoryDataList = !isSelected;
     objc_setAssociatedObject(self,
                              ZYTextField_HistoryDataList_isSelected,
                              [NSNumber numberWithBool:isSelected],

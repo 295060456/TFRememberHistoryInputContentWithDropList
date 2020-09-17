@@ -25,6 +25,11 @@ UITextFieldDelegate
     [super viewDidLoad];
     self.textField.alpha = 1;
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches
+          withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+    self.textField.isSelected = NO;
+}
 //删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
 #pragma mark —— CJTextFieldDeleteDelegate
 - (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
