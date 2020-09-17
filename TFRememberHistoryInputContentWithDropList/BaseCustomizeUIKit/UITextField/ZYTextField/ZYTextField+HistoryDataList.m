@@ -59,6 +59,11 @@ static char *ZYTextField_HistoryDataList_ZYTextFieldTapGR = "ZYTextField_History
 @dynamic isShowHistoryDataList;
 @dynamic ZYTextFieldTapGR;
 
+-(void)closeList{
+    [self endEditing:YES];
+    self.isSelected = NO;
+}
+
 -(void)ZYTextFieldTap:(UITapGestureRecognizer *)tapGR{
     self.isSelected = !self.isSelected;
     self.isShowHistoryDataList = self.isSelected;

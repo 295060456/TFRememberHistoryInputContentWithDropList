@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //BaseTableViewer @interface UIView (Chain)
 
+/// 点击出现下拉列表，以显示已记录的历史数据
 @interface ZYTextField (HistoryDataList)
 <
 UITableViewDelegate,
@@ -25,7 +26,7 @@ UIGestureRecognizerDelegate
 @property(nonatomic,assign)CGFloat tableviewCellHeight;
 @property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
 
--(void)ZYTextFieldTap:(UITapGestureRecognizer *)tapGR;
+-(void)closeList;//关闭下拉列表
 
 @end
 
