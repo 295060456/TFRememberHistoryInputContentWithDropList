@@ -1,9 +1,11 @@
 
 #import "ZYTextField.h"
+#import "ZYTextField+HistoryDataList.h"
 
-@interface ZYTextField ()
+@interface ZYTextField ()<UIGestureRecognizerDelegate>
 
 @property(nonatomic,assign)BOOL isOk;
+@property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
 
 @end
 
@@ -19,8 +21,14 @@
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
     if (!self.isOk) {
+        self.ZYTextFieldTapGR.enabled = self.isShowHistoryDataList;
         [self setUpUI];
     }
+}
+
+-(void)setIsShowHistoryDataList:(BOOL)isShowHistoryDataList{
+    _isShowHistoryDataList = isShowHistoryDataList;
+    self.tableview.alpha = !_isShowHistoryDataList;
 }
 
 - (void)setUpUI{
@@ -199,6 +207,25 @@
     if (!_ZYTextFieldBorderColor) {
         _ZYTextFieldBorderColor = kBlackColor;
     }return _ZYTextFieldBorderColor;
+}
+
+-(UITapGestureRecognizer *)ZYTextFieldTapGR{
+    if (!_ZYTextFieldTapGR) {
+        _ZYTextFieldTapGR = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                    action:@selector(ZYTextFieldTap:)];
+        _ZYTextFieldTapGR.delegate = self;
+        
+        _ZYTextFieldTapGR.numberOfTapsRequired = 1;//tap次数
+        _ZYTextFieldTapGR.numberOfTouchesRequired = 1;//手指数
+        
+        [self addGestureRecognizer:_ZYTextFieldTapGR];
+    }return _ZYTextFieldTapGR;
+}
+
+-(void)ZYTextFieldTap:(UITapGestureRecognizer *)tapGR{
+    self.isSelected = !self.isSelected;
+    self.isShowHistoryDataList = self.isSelected;
+    self.tableview.alpha = self.isShowHistoryDataList;
 }
 
 @end

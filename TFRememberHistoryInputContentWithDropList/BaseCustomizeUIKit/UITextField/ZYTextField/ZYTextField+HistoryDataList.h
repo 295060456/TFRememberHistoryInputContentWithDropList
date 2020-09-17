@@ -13,8 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 //BaseTableViewer @interface UIView (Chain)
 
 @interface ZYTextField (HistoryDataList)
+<
+UITableViewDelegate,
+UITableViewDataSource
+>
 
 @property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,assign)BOOL isSelected;
+@property(nonatomic,assign)CGFloat tableviewCellHeight;
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZYTextField+HistoryDataList.h"
 
 @interface ViewController ()
 <
@@ -24,7 +25,6 @@ UITextFieldDelegate
     [super viewDidLoad];
     self.textField.alpha = 1;
 }
-
 //删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
 #pragma mark —— CJTextFieldDeleteDelegate
 - (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
@@ -82,13 +82,16 @@ replacementString:(NSString *)string{
 -(ZYTextField *)textField{
     if (!_textField) {
         _textField = ZYTextField.new;
+        _textField.placeholder = @"你们好哇";
         _textField.delegate = self;
+        _textField.cj_delegate = self;
         _textField.backgroundColor = kBlackColor;
         _textField.returnKeyType = UIReturnKeyDone;
         _textField.keyboardAppearance = UIKeyboardAppearanceAlert;
         _textField.alpha = 0.7;
         _textField.cj_delegate = self;
         [self.view addSubview:_textField];
+        _textField.isShowHistoryDataList = YES;//这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _textField.frame = CGRectMake(100, 100, 200, 50);
         [UIView cornerCutToCircleWithView:_textField AndCornerRadius:5];
     }return _textField;
