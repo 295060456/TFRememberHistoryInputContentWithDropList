@@ -89,11 +89,9 @@ replacementString:(NSString *)string{
         _textField.returnKeyType = UIReturnKeyDone;
         _textField.keyboardAppearance = UIKeyboardAppearanceAlert;
         _textField.alpha = 0.7;
-        _textField.cj_delegate = self;
         [self.view addSubview:_textField];
-        _textField.isShowHistoryDataList = YES;//这句一定要写在addSubview之后，否则找不到父控件会崩溃
+        _textField.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _textField.frame = CGRectMake(100, 100, 200, 50);
-//        [UIView cornerCutToCircleWithView:_textField AndCornerRadius:5];
     }return _textField;
 }
 

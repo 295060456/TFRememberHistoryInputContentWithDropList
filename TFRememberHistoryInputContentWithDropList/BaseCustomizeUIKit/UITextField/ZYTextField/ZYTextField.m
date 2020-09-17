@@ -49,6 +49,11 @@
     [self resignFirstResponder];
     self.isOk = YES;
 }
+#pragma mark —— UIGestureRecognizerDelegate
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
+shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    return true;//不遵守此协议，输入框无法输入
+}
 /**
  * 当前文本框聚焦时就会调用
  */
