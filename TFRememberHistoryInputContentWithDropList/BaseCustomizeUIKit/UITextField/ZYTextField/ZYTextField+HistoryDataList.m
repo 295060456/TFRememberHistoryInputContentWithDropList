@@ -86,7 +86,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableView *Tableview = objc_getAssociatedObject(self, ZYTextField_HistoryDataList_tableview);
     if (!Tableview) {
         Tableview = UITableView.new;
-        Tableview.backgroundColor = kRedColor;
+        Tableview.backgroundColor = kClearColor;
         Tableview.delegate = self;
         Tableview.dataSource = self;
         [self.superview addSubview:Tableview];

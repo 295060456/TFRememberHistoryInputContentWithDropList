@@ -93,7 +93,7 @@ replacementString:(NSString *)string{
         [self.view addSubview:_textField];
         _textField.isShowHistoryDataList = YES;//这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _textField.frame = CGRectMake(100, 100, 200, 50);
-        [UIView cornerCutToCircleWithView:_textField AndCornerRadius:5];
+//        [UIView cornerCutToCircleWithView:_textField AndCornerRadius:5];
     }return _textField;
 }
 

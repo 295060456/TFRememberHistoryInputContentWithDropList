@@ -1,6 +1,7 @@
 
 #import "ZYTextField.h"
 #import "ZYTextField+HistoryDataList.h"
+#import "TableViewAnimationKitHeaders.h"
 
 @interface ZYTextField ()<UIGestureRecognizerDelegate>
 
@@ -226,6 +227,8 @@
     self.isSelected = !self.isSelected;
     self.isShowHistoryDataList = self.isSelected;
     self.tableview.alpha = self.isShowHistoryDataList;
+    [TableViewAnimationKit showWithAnimationType:2
+                                       tableView:self.tableview];
 }
 
 @end
