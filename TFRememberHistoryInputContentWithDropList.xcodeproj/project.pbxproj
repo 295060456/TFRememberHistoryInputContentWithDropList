@@ -71,6 +71,7 @@
 		C57D5C4F251360C90073F90B /* 分享控件的用法 in Resources */ = {isa = PBXBuildFile; fileRef = C57D5C49251360C90073F90B /* 分享控件的用法 */; };
 		C57D5C50251360C90073F90B /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C4B251360C90073F90B /* BWItemModel.m */; };
 		C57D5C54251363380073F90B /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C53251363380073F90B /* UIButton+ImageTitleSpacing.m */; };
+		C57D5C5B2513779F0073F90B /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C5A2513779F0073F90B /* ZYTextField+HistoryDataList.m */; };
 		EF358594565B04E3623F5F11 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EFF6D80222F9B4F5757839 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +227,8 @@
 		C57D5C4C251360C90073F90B /* BWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWShareView.h; sourceTree = "<group>"; };
 		C57D5C52251363380073F90B /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
 		C57D5C53251363380073F90B /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
+		C57D5C592513779F0073F90B /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
+		C57D5C5A2513779F0073F90B /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
 		CE8A3C8B4A05FF52B0342EEE /* Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropListTests/Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBF93F5131F2D3D18888125C /* Pods_TFRememberHistoryInputContentWithDropList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFRememberHistoryInputContentWithDropList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA36AA796013DF3506712DE /* Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests/Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -456,6 +459,8 @@
 				C57D5B8F25135AAE0073F90B /* closeCircle@3x.png */,
 				C57D5B8E25135AAE0073F90B /* ZYTextField.h */,
 				C57D5B8B25135AAE0073F90B /* ZYTextField.m */,
+				C57D5C592513779F0073F90B /* ZYTextField+HistoryDataList.h */,
+				C57D5C5A2513779F0073F90B /* ZYTextField+HistoryDataList.m */,
 			);
 			path = ZYTextField;
 			sourceTree = "<group>";
@@ -930,6 +935,7 @@
 				C57D5BD225135B370073F90B /* UIView+Measure.m in Sources */,
 				C57D5B3E2513587B0073F90B /* main.m in Sources */,
 				C57D5BDD25135B630073F90B /* NSObject+SYSAlertController.m in Sources */,
+				C57D5C5B2513779F0073F90B /* ZYTextField+HistoryDataList.m in Sources */,
 				C57D5C4025135FF40073F90B /* BRBaseView.m in Sources */,
 				C57D5BD625135B370073F90B /* UIView+Animation.m in Sources */,
 				C57D5C3A25135FF40073F90B /* BRStringPickerView.m in Sources */,
