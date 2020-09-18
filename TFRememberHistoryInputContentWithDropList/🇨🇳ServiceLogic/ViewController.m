@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "ZYTextField+HistoryDataList.h"
 
+#import "DoorView.h"
+
 @interface ViewController ()
 <
 UITextFieldDelegate
@@ -16,6 +18,7 @@ UITextFieldDelegate
 >
 
 @property(nonatomic,strong)ZYTextField *textField;
+@property(nonatomic,strong)DoorView *doorView;
 
 @end
 
@@ -24,10 +27,13 @@ UITextFieldDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.textField.alpha = 1;
+    self.doorView.alpha = 1;
 }
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
     [self.textField closeList];
+    [self.doorView endEditing:YES];
 }
 //删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
 #pragma mark —— CJTextFieldDeleteDelegate
@@ -95,6 +101,21 @@ replacementString:(NSString *)string{
         _textField.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _textField.frame = CGRectMake(100, 100, 200, 50);
     }return _textField;
+}
+
+-(DoorView *)doorView{
+    if (!_doorView) {
+        _doorView = DoorView.new;
+        _doorView.backgroundColor = KLightGrayColor;
+        [self.view addSubview:_doorView];
+        [_doorView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH - 50, 250));
+            make.centerX.equalTo(self.view);
+            make.centerY.equalTo(self.view).offset(-100);
+        }];
+        [self.view layoutIfNeeded];
+        [UIView cornerCutToCircleWithView:_doorView AndCornerRadius:5];
+    }return _doorView;
 }
 
 @end

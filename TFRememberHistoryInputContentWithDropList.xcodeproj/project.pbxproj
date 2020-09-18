@@ -76,6 +76,7 @@
 		C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F82513C07700216DEF /* TableViewAnimationKit.m */; };
 		C5F7330625145FCD00216DEF /* 登录注册关闭@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5F7330425145FCD00216DEF /* 登录注册关闭@3x.png */; };
 		C5F7330725145FCD00216DEF /* 登录注册关闭@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5F7330525145FCD00216DEF /* 登录注册关闭@2x.png */; };
+		C5F7332225147B9C00216DEF /* DoorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7332125147B9C00216DEF /* DoorView.m */; };
 		EF358594565B04E3623F5F11 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EFF6D80222F9B4F5757839 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -241,6 +242,8 @@
 		C5F732F82513C07700216DEF /* TableViewAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationKit.m; sourceTree = "<group>"; };
 		C5F7330425145FCD00216DEF /* 登录注册关闭@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录注册关闭@3x.png"; sourceTree = "<group>"; };
 		C5F7330525145FCD00216DEF /* 登录注册关闭@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录注册关闭@2x.png"; sourceTree = "<group>"; };
+		C5F7332025147B9C00216DEF /* DoorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoorView.h; sourceTree = "<group>"; };
+		C5F7332125147B9C00216DEF /* DoorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoorView.m; sourceTree = "<group>"; };
 		CE8A3C8B4A05FF52B0342EEE /* Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropListTests/Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBF93F5131F2D3D18888125C /* Pods_TFRememberHistoryInputContentWithDropList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFRememberHistoryInputContentWithDropList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA36AA796013DF3506712DE /* Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests/Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -390,6 +393,7 @@
 		C57D5B652513597B0073F90B /* AppDelegate & SceneDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				C5F7331F25147B5C00216DEF /* 输入用户名和密码 */,
 				C57D5B282513587A0073F90B /* AppDelegate.h */,
 				C57D5B292513587A0073F90B /* AppDelegate.m */,
 				C57D5B2B2513587A0073F90B /* SceneDelegate.h */,
@@ -706,6 +710,15 @@
 			path = "专治UITableView相应链断裂";
 			sourceTree = "<group>";
 		};
+		C5F7331F25147B5C00216DEF /* 输入用户名和密码 */ = {
+			isa = PBXGroup;
+			children = (
+				C5F7332025147B9C00216DEF /* DoorView.h */,
+				C5F7332125147B9C00216DEF /* DoorView.m */,
+			);
+			path = "输入用户名和密码";
+			sourceTree = "<group>";
+		};
 		FC4D63F1F4528C9D28E319C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -981,6 +994,7 @@
 				C57D5BEB25135B6B0073F90B /* NSObject+Measure.m in Sources */,
 				C57D5C54251363380073F90B /* UIButton+ImageTitleSpacing.m in Sources */,
 				C5F732F92513C07700216DEF /* UITableView+XSAnimationKit.m in Sources */,
+				C5F7332225147B9C00216DEF /* DoorView.m in Sources */,
 				C57D5C4325135FF40073F90B /* BRAddressPickerView.m in Sources */,
 				C57D5BBF25135B280073F90B /* UIViewController+Shake.m in Sources */,
 				C57D5BEC25135B6B0073F90B /* NSObject+Shake.m in Sources */,
