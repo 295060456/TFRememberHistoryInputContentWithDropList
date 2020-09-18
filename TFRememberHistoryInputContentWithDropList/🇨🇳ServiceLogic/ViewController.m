@@ -56,8 +56,10 @@ UITextFieldDelegate
 - (void)textFieldDidEndEditing:(ZYTextField *)textField{
     [self.textField isEmptyText];
     if (![NSString isNullString:textField.text]) {
-        //存数据
-        [self.dataMutArr addObject:textField.text];
+        //存数据:相同的值不会进行存储，会进行过滤掉
+        if (![self.dataMutArr containsObject:textField.text]) {
+            [self.dataMutArr addObject:textField.text];
+        }
         SetUserDefaultKeyWithObject(@"dataArr", self.dataMutArr);
         UserDefaultSynchronize;
     }

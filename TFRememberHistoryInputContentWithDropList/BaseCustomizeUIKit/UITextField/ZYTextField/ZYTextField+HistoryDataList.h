@@ -20,7 +20,7 @@ UITableViewDataSource,
 UIGestureRecognizerDelegate
 >
 
-@property(nonatomic,strong)UITableView *tableview;
+@property(nonatomic,strong,nullable)UITableView *tableview;
 @property(nonatomic,assign)BOOL isShowHistoryDataList;//是否显示下拉历史数据列表
 @property(nonatomic,assign)BOOL isSelected;
 @property(nonatomic,assign)CGFloat tableviewCellHeight;

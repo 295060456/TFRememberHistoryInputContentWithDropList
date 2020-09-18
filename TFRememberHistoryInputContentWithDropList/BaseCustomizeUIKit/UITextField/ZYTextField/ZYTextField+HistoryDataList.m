@@ -29,6 +29,9 @@
 
 -(void)richElementsInCellWithModel:(id _Nullable)model{
     self.contentLabel.alpha = 1;
+    if ([model isKindOfClass:NSString.class]) {
+        self.contentLabel.text = (NSString *)model;
+    }
 }
 
 #pragma mark —— lazyLoad
@@ -69,7 +72,10 @@ static char *ZYTextField_HistoryDataList_dataArr = "ZYTextField_HistoryDataList_
 -(void)ZYTextFieldTap:(UITapGestureRecognizer *)tapGR{
     self.isSelected = !self.isSelected;
     self.isShowHistoryDataList = self.isSelected;
+    [self.tableview removeFromSuperview];
+    self.tableview = nil;
     self.tableview.alpha = self.isShowHistoryDataList;
+    [self.tableview reloadData];
     [TableViewAnimationKit showWithAnimationType:2
                                        tableView:self.tableview];
 }
@@ -98,7 +104,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HistoryDataListTBVCell *cell = [HistoryDataListTBVCell cellWith:tableView];
     cell.contentView.backgroundColor = RandomColor;
-    [cell richElementsInCellWithModel:nil];
+    [cell richElementsInCellWithModel:self.dataArr[indexPath.row]];
     return cell;
 }
 
@@ -153,7 +159,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         [Tableview mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.mas_bottom);
             make.left.right.equalTo(self);
-            make.height.mas_equalTo(4 * 50);
+            make.height.mas_equalTo(self.dataArr.count * self.tableviewCellHeight);
         }];
         objc_setAssociatedObject(self,
                                  ZYTextField_HistoryDataList_tableview,
