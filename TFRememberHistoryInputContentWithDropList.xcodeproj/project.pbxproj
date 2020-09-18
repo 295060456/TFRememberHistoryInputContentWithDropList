@@ -74,6 +74,8 @@
 		C5F732EF2513C05F00216DEF /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732ED2513C05F00216DEF /* BaseTableViewer.m */; };
 		C5F732F92513C07700216DEF /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F52513C07700216DEF /* UITableView+XSAnimationKit.m */; };
 		C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F82513C07700216DEF /* TableViewAnimationKit.m */; };
+		C5F7330625145FCD00216DEF /* 登录注册关闭@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5F7330425145FCD00216DEF /* 登录注册关闭@3x.png */; };
+		C5F7330725145FCD00216DEF /* 登录注册关闭@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5F7330525145FCD00216DEF /* 登录注册关闭@2x.png */; };
 		EF358594565B04E3623F5F11 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EFF6D80222F9B4F5757839 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -237,6 +239,8 @@
 		C5F732F62513C07700216DEF /* TableViewAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKit.h; sourceTree = "<group>"; };
 		C5F732F72513C07700216DEF /* UITableView+XSAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+XSAnimationKit.h"; sourceTree = "<group>"; };
 		C5F732F82513C07700216DEF /* TableViewAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationKit.m; sourceTree = "<group>"; };
+		C5F7330425145FCD00216DEF /* 登录注册关闭@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录注册关闭@3x.png"; sourceTree = "<group>"; };
+		C5F7330525145FCD00216DEF /* 登录注册关闭@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录注册关闭@2x.png"; sourceTree = "<group>"; };
 		CE8A3C8B4A05FF52B0342EEE /* Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropListTests/Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBF93F5131F2D3D18888125C /* Pods_TFRememberHistoryInputContentWithDropList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFRememberHistoryInputContentWithDropList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA36AA796013DF3506712DE /* Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests/Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -462,6 +466,8 @@
 		C57D5B8925135AA70073F90B /* ZYTextField */ = {
 			isa = PBXGroup;
 			children = (
+				C5F7330525145FCD00216DEF /* 登录注册关闭@2x.png */,
+				C5F7330425145FCD00216DEF /* 登录注册关闭@3x.png */,
 				C57D5B8D25135AAE0073F90B /* closeCircle@2x.png */,
 				C57D5B8F25135AAE0073F90B /* closeCircle@3x.png */,
 				C57D5B8E25135AAE0073F90B /* ZYTextField.h */,
@@ -821,10 +827,12 @@
 				C57D5B9325135AAE0073F90B /* closeCircle@3x.png in Resources */,
 				C57D5C3E25135FF40073F90B /* BRPickerView.bundle in Resources */,
 				C5F732EE2513C05F00216DEF /* 专治UITableView相应链断裂 in Resources */,
+				C5F7330625145FCD00216DEF /* 登录注册关闭@3x.png in Resources */,
 				C57D5B3B2513587B0073F90B /* LaunchScreen.storyboard in Resources */,
 				C57D5B382513587B0073F90B /* Assets.xcassets in Resources */,
 				C57D5B332513587A0073F90B /* Main.storyboard in Resources */,
 				C57D5C4F251360C90073F90B /* 分享控件的用法 in Resources */,
+				C5F7330725145FCD00216DEF /* 登录注册关闭@2x.png in Resources */,
 				C57D5B9225135AAE0073F90B /* closeCircle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

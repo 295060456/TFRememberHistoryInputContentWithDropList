@@ -12,6 +12,11 @@
 @interface HistoryDataListTBVCell : UITableViewCell
 
 @property(nonatomic,strong)UILabel *contentLabel;
+@property(nonatomic,strong)UIButton *delBtn;
+@property(nonatomic,assign)CGFloat cellHeight;
+@property(nonatomic,assign)CGFloat cellWidth;
+@property(nonatomic,assign)NSInteger index;
+@property(nonatomic,copy)MKDataBlock historyDataListTBVCellBlock;
 
 @end
 
@@ -28,20 +33,48 @@
 }
 
 -(void)richElementsInCellWithModel:(id _Nullable)model{
+    self.delBtn.alpha = 1;
     self.contentLabel.alpha = 1;
     if ([model isKindOfClass:NSString.class]) {
         self.contentLabel.text = (NSString *)model;
     }
 }
 
+-(void)actionBlockHistoryDataListTBVCell:(MKDataBlock)historyDataListTBVCellBlock{
+    _historyDataListTBVCellBlock = historyDataListTBVCellBlock;
+}
 #pragma mark —— lazyLoad
+-(UIButton *)delBtn{
+    if (!_delBtn) {
+        _delBtn = UIButton.new;
+        [_delBtn setImage:kIMG(@"登录注册关闭")
+                 forState:UIControlStateNormal];
+        [_delBtn setImage:kIMG(@"登录注册关闭")
+                 forState:UIControlStateSelected];
+        @weakify(self)
+        [[_delBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            @strongify(self)
+            //点击删除
+            if (self.historyDataListTBVCellBlock) {
+                self.historyDataListTBVCellBlock(@(self.index));
+            }
+        }];
+        [self.contentView addSubview:_delBtn];
+        [_delBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.size.mas_equalTo(CGSizeMake(self.cellWidth * 0.3, self.cellHeight));
+            make.centerY.right.equalTo(self.contentView);
+        }];
+    }return _delBtn;
+}
+
 -(UILabel *)contentLabel{
     if (!_contentLabel) {
         _contentLabel = UILabel.new;
         _contentLabel.backgroundColor = kClearColor;
         [self addSubview:_contentLabel];
         [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.edges.equalTo(self);
+            make.top.bottom.left.equalTo(self);
+            make.right.equalTo(self.delBtn.mas_left);
         }];
     }return _contentLabel;
 }
@@ -55,14 +88,14 @@ static char *ZYTextField_HistoryDataList_isSelected = "ZYTextField_HistoryDataLi
 static char *ZYTextField_HistoryDataList_tableviewCellHeight = "ZYTextField_HistoryDataList_tableviewCellHeight";
 static char *ZYTextField_HistoryDataList_isShowHistoryDataList = "ZYTextField_HistoryDataList_isShowHistoryDataList";
 static char *ZYTextField_HistoryDataList_ZYTextFieldTapGR = "ZYTextField_HistoryDataList_ZYTextFieldTapGR";
-static char *ZYTextField_HistoryDataList_dataArr = "ZYTextField_HistoryDataList_dataArr";
+static char *ZYTextField_HistoryDataList_dataMutArr = "ZYTextField_HistoryDataList_dataMutArr";
 
 @dynamic tableview;
 @dynamic isSelected;
 @dynamic tableviewCellHeight;
 @dynamic isShowHistoryDataList;
 @dynamic ZYTextFieldTapGR;
-@dynamic dataArr;
+@dynamic dataMutArr;
 
 -(void)closeList{
     [self endEditing:YES];
@@ -97,30 +130,44 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
-    return self.dataArr.count;//
+    return self.dataMutArr.count;//
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HistoryDataListTBVCell *cell = [HistoryDataListTBVCell cellWith:tableView];
+    cell.cellHeight = self.tableviewCellHeight;
+    cell.cellWidth = self.mj_w;
+    cell.index = indexPath.row;
     cell.contentView.backgroundColor = RandomColor;
-    [cell richElementsInCellWithModel:self.dataArr[indexPath.row]];
-    return cell;
+    [cell richElementsInCellWithModel:self.dataMutArr[indexPath.row]];
+    @weakify(self)
+    [cell actionBlockHistoryDataListTBVCell:^(NSNumber *data) {
+        @strongify(self)
+        //点击按钮删除数据：1、刷新内存的数据并且刷新界面；2、删除本地化的数据
+        [self.dataMutArr removeObjectAtIndex:data.intValue];
+        SetUserDefaultKeyWithObject(@"dataArr", self.dataMutArr);
+        UserDefaultSynchronize;
+        
+        [self.tableview removeFromSuperview];
+        self.tableview = nil;
+        [self.tableview reloadData];
+    }];return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
-#pragma mark —— @property(nonatomic,strong)NSArray *dataArr;
--(NSArray *)dataArr{
-    NSArray *DataArr = objc_getAssociatedObject(self, ZYTextField_HistoryDataList_dataArr);
-    return DataArr;
+#pragma mark —— @property(nonatomic,strong)NSMutableArray *dataMutArr;
+-(NSMutableArray *)dataMutArr{
+    NSMutableArray *DataMutArr = objc_getAssociatedObject(self, ZYTextField_HistoryDataList_dataMutArr);
+    return DataMutArr;
 }
 
--(void)setDataArr:(NSArray *)dataArr{
+-(void)setDataMutArr:(NSMutableArray *)dataMutArr{
     objc_setAssociatedObject(self,
-                             ZYTextField_HistoryDataList_dataArr,
-                             dataArr,
+                             ZYTextField_HistoryDataList_dataMutArr,
+                             dataMutArr,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 #pragma mark —— @property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
@@ -159,7 +206,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         [Tableview mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.mas_bottom);
             make.left.right.equalTo(self);
-            make.height.mas_equalTo(self.dataArr.count * self.tableviewCellHeight);
+            make.height.mas_equalTo(self.dataMutArr.count * self.tableviewCellHeight);
         }];
         objc_setAssociatedObject(self,
                                  ZYTextField_HistoryDataList_tableview,

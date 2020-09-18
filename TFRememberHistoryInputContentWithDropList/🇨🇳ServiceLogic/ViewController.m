@@ -42,7 +42,7 @@ UITextFieldDelegate
     NSArray *dataArr = GetUserDefaultObjForKey(@"dataArr");
     if (dataArr.count) {
         //有历史值存在再弹
-        textField.dataArr = dataArr;
+        textField.dataMutArr = [NSMutableArray arrayWithArray:dataArr];
     }return textField.isEditting = YES;
 }
 //告诉委托人在指定的文本字段中开始编辑
