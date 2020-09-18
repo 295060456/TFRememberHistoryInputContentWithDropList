@@ -39,7 +39,7 @@
         self.contentLabel.text = (NSString *)model;
     }
 }
-
+///删除按钮 点击事件回调
 -(void)actionBlockHistoryDataListTBVCell:(MKDataBlock)historyDataListTBVCellBlock{
     _historyDataListTBVCellBlock = historyDataListTBVCellBlock;
 }
@@ -126,6 +126,8 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@" 你点击了我");
+    self.text = self.dataMutArr[indexPath.row];
+    [self closeList];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView
@@ -146,7 +148,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
         @strongify(self)
         //点击按钮删除数据：1、刷新内存的数据并且刷新界面；2、删除本地化的数据
         [self.dataMutArr removeObjectAtIndex:data.intValue];
-        SetUserDefaultKeyWithObject(@"dataArr", self.dataMutArr);
+        SetUserDefaultKeyWithObject(@"dataMutArr", self.dataMutArr);
         UserDefaultSynchronize;
         
         [self.tableview removeFromSuperview];
@@ -161,7 +163,13 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 #pragma mark —— @property(nonatomic,strong)NSMutableArray *dataMutArr;
 -(NSMutableArray *)dataMutArr{
     NSMutableArray *DataMutArr = objc_getAssociatedObject(self, ZYTextField_HistoryDataList_dataMutArr);
-    return DataMutArr;
+    if (!DataMutArr) {
+        DataMutArr = NSMutableArray.array;
+        objc_setAssociatedObject(self,
+                                 ZYTextField_HistoryDataList_dataMutArr,
+                                 DataMutArr,
+                                 OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }return DataMutArr;
 }
 
 -(void)setDataMutArr:(NSMutableArray *)dataMutArr{

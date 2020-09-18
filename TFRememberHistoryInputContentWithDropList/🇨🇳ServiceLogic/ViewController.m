@@ -16,7 +16,6 @@ UITextFieldDelegate
 >
 
 @property(nonatomic,strong)ZYTextField *textField;
-@property(nonatomic,strong)NSMutableArray *dataMutArr;
 
 @end
 
@@ -39,7 +38,7 @@ UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
 - (BOOL)textFieldShouldBeginEditing:(ZYTextField *)textField{
     //取数据
-    NSArray *dataArr = GetUserDefaultObjForKey(@"dataArr");
+    NSArray *dataArr = GetUserDefaultObjForKey(@"dataMutArr");
     if (dataArr.count) {
         //有历史值存在再弹
         textField.dataMutArr = [NSMutableArray arrayWithArray:dataArr];
@@ -57,10 +56,10 @@ UITextFieldDelegate
     [self.textField isEmptyText];
     if (![NSString isNullString:textField.text]) {
         //存数据:相同的值不会进行存储，会进行过滤掉
-        if (![self.dataMutArr containsObject:textField.text]) {
-            [self.dataMutArr addObject:textField.text];
+        if (![textField.dataMutArr containsObject:textField.text]) {
+            [textField.dataMutArr addObject:textField.text];
         }
-        SetUserDefaultKeyWithObject(@"dataArr", self.dataMutArr);
+        SetUserDefaultKeyWithObject(@"dataMutArr", textField.dataMutArr);
         UserDefaultSynchronize;
     }
 }
@@ -96,12 +95,6 @@ replacementString:(NSString *)string{
         _textField.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _textField.frame = CGRectMake(100, 100, 200, 50);
     }return _textField;
-}
-
--(NSMutableArray *)dataMutArr{
-    if (!_dataMutArr) {
-        _dataMutArr = NSMutableArray.array;
-    }return _dataMutArr;
 }
 
 @end

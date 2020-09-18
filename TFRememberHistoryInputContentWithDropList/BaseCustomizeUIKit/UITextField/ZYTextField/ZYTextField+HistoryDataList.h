@@ -25,9 +25,8 @@ UIGestureRecognizerDelegate
 @property(nonatomic,assign)BOOL isSelected;
 @property(nonatomic,assign)CGFloat tableviewCellHeight;
 @property(nonatomic,strong)UITapGestureRecognizer *ZYTextFieldTapGR;
-@property(nonatomic,strong)NSMutableArray *__block dataMutArr;
+@property(nonatomic,strong)NSMutableArray *__block dataMutArr;//数据源管理，依据这个属性进行数据存储和读写
 
--(void)actionBlockHistoryDataListTBVCell:(MKDataBlock)historyDataListTBVCellBlock;
 -(void)closeList;//关闭下拉列表
 
 @end
