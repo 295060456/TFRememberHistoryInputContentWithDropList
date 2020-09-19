@@ -15,16 +15,10 @@
 <
 UITextFieldDelegate
 ,CJTextFieldDeleteDelegate
-,CAAnimationDelegate
 >
 
 @property(nonatomic,strong)ZYTextField *userTF;
 @property(nonatomic,strong)ZYTextField *passwordTF;
-
-@property (strong, nonatomic) UILabel *placeholderCacheLabel;
-@property (strong, nonatomic) UIView *lineView;
-@property (strong, nonatomic) UIView *grayLineView;
-@property (strong, nonatomic) NSAttributedString *cachedPlaceholder;
 
 @end
 
@@ -38,26 +32,8 @@ UITextFieldDelegate
     if (self = [super init]) {
         self.userTF.alpha = 1;
         self.passwordTF.alpha = 1;
-
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(kd_textFieldDidBeginEditing:) name:UITextFieldTextDidBeginEditingNotification object:self];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(kd_textFieldDidEndEditing:) name:UITextFieldTextDidEndEditingNotification object:self];
-        
     }return self;
 }
-
--(void)drawRect:(CGRect)rect{
-    [super drawRect:rect];
-    
-    self.grayLineView = [[UIView alloc] initWithFrame:CGRectMake(self.userTF.mj_x, self.userTF.mj_h + self.userTF.mj_y - 1, self.userTF.mj_w, 1)];
-    _grayLineView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
-    [self addSubview:_grayLineView];
-    
-    self.lineView = [[UIView alloc] initWithFrame:CGRectMake(self.userTF.mj_x, self.userTF.mj_h - 1, 0, 1)];
-    _lineView.backgroundColor = [UIColor greenColor];
-    _lineView.layer.anchorPoint = CGPointMake(0, 0.5);
-    [self addSubview:_lineView];
-}
-
 //删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
 #pragma mark —— CJTextFieldDeleteDelegate
 - (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
@@ -151,128 +127,6 @@ replacementString:(NSString *)string{
     }return _userTF;
 }
 
-
-#pragma mark - UITextFieldTextDidBeginEditingNotification
-- (void)kd_textFieldDidBeginEditing:(NSNotification *)notification {
-    CAKeyframeAnimation *kfAnimation11 = [CAKeyframeAnimation animationWithKeyPath:@"bounds.size.width"];
-    kfAnimation11.fillMode = kCAFillModeForwards;
-    kfAnimation11.removedOnCompletion = NO;
-    kfAnimation11.values = @[@0,@(self.bounds.size.width)];
-    kfAnimation11.duration = 0.25f;
-    kfAnimation11.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    [_lineView.layer addAnimation:kfAnimation11 forKey:@"kKDLienViewWidth"];
-    
-    if (![self.userTF.text isEqualToString:@""]) {
-        return;
-    }
-    if (!_placeholderCacheLabel) {
-        [self addSubview:self.placeholderCacheLabel];
-        _placeholderCacheLabel.attributedText = self.userTF.attributedPlaceholder;
-        self.cachedPlaceholder = self.userTF.attributedPlaceholder;
-    }
-    self.userTF.placeholder = nil;
-    _placeholderCacheLabel.hidden = NO;
-
-
-    CAKeyframeAnimation *kfAnimation1 = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-    kfAnimation1.fillMode = kCAFillModeForwards;
-    kfAnimation1.removedOnCompletion = NO;
-    CATransform3D scale1 = CATransform3DMakeScale(1.0, 1.0, 1);
-    CATransform3D scale2 = CATransform3DMakeScale(1.1, 1.1, 1);
-    CATransform3D scale3 = CATransform3DMakeScale(0.9, 0.9, 1);
-    kfAnimation1.values = @[[NSValue valueWithCATransform3D:scale1],
-                            [NSValue valueWithCATransform3D:scale2],
-                            [NSValue valueWithCATransform3D:scale3]];
-    
-    CAKeyframeAnimation *kfAnimation2 = [CAKeyframeAnimation animationWithKeyPath:@"bounds.origin"];
-    kfAnimation2.fillMode = kCAFillModeForwards;
-    kfAnimation2.removedOnCompletion = NO;
-    kfAnimation2.values = @[[NSValue valueWithCGPoint:CGPointMake(0, 0)],[NSValue valueWithCGPoint:CGPointMake(0, 22)]];
-    
-    CAAnimationGroup *grouoAnimation = [CAAnimationGroup animation];
-    grouoAnimation.animations = @[kfAnimation1,kfAnimation2];
-    grouoAnimation.fillMode = kCAFillModeForwards;
-    grouoAnimation.removedOnCompletion = NO;
-    grouoAnimation.duration = 0.25;
-    grouoAnimation.delegate = self;
-    [_placeholderCacheLabel.layer addAnimation:grouoAnimation forKey:@"kKDOutAnimation"];
-    
-}
-
-#pragma mark - UITextFieldTextDidEndEditingNotification
-- (void)kd_textFieldDidEndEditing:(NSNotification *)notification {
-    CAKeyframeAnimation *kfAnimation11 = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
-    kfAnimation11.fillMode = kCAFillModeForwards;
-    kfAnimation11.removedOnCompletion = NO;
-    kfAnimation11.values = @[@1,@0];
-    kfAnimation11.duration = 0.25f;
-    kfAnimation11.delegate = self;
-    [_lineView.layer addAnimation:kfAnimation11 forKey:@"kKDLienViewOpactity"];
-    
-    CAKeyframeAnimation *kfAnimation12 = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
-    kfAnimation12.fillMode = kCAFillModeForwards;
-    kfAnimation12.removedOnCompletion = NO;
-    kfAnimation12.values = @[@0,@1];
-    kfAnimation12.duration = 0.25f;
-    kfAnimation12.delegate = self;
-    [_grayLineView.layer addAnimation:kfAnimation12 forKey:@"kKDGrayLienViewOpactity"];
-
-    if (![self.userTF.text isEqualToString:@""]) {
-        return;
-    }
-    
-    CAKeyframeAnimation *kfAnimation1 = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
-    kfAnimation1.fillMode = kCAFillModeForwards;
-    kfAnimation1.removedOnCompletion = NO;
-    CATransform3D scale1 = CATransform3DMakeScale(0.9, 0.9, 1);
-    CATransform3D scale2 = CATransform3DMakeScale(1.1, 1.1, 1);
-    CATransform3D scale3 = CATransform3DMakeScale(1.0, 1.0, 1);
-    kfAnimation1.values = @[[NSValue valueWithCATransform3D:scale1],
-                            [NSValue valueWithCATransform3D:scale2],
-                            [NSValue valueWithCATransform3D:scale3]];
-    
-    CAKeyframeAnimation *kfAnimation2 = [CAKeyframeAnimation animationWithKeyPath:@"bounds.origin"];
-    kfAnimation2.fillMode = kCAFillModeForwards;
-    kfAnimation2.removedOnCompletion = NO;
-    kfAnimation2.values = @[[NSValue valueWithCGPoint:CGPointMake(0, 22)],[NSValue valueWithCGPoint:CGPointMake(0, 0)]];
-    
-    CAAnimationGroup *grouoAnimation = [CAAnimationGroup animation];
-    grouoAnimation.animations = @[kfAnimation1,kfAnimation2];
-    grouoAnimation.fillMode = kCAFillModeForwards;
-    grouoAnimation.removedOnCompletion = NO;
-    grouoAnimation.duration = 0.25;
-    grouoAnimation.delegate = self;
-    [_placeholderCacheLabel.layer addAnimation:grouoAnimation forKey:@"kZYYInAnimation"];
-    
-}
-
-#pragma mark - CAAnimationDelegate
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    if (flag) {
-        if (anim == [_placeholderCacheLabel.layer animationForKey:@"kZYYInAnimation"] ) {
-            _placeholderCacheLabel.hidden = YES;
-            self.userTF.attributedPlaceholder = self.cachedPlaceholder;
-        } else if (anim == [_lineView.layer animationForKey:@"kZYYLienViewOpactity"]) {
-            CGRect frame = _lineView.frame;
-            frame.size.width = 0;
-            _lineView.frame = frame;
-            _lineView.alpha = 1;
-            _grayLineView.alpha = 0;
-            [_lineView.layer removeAllAnimations];
-        }
-    }
-}
-
-
-#pragma mark - Setter & Getter
-- (UILabel *)placeholderCacheLabel {
-    if (!_placeholderCacheLabel) {
-        _placeholderCacheLabel = [[UILabel alloc] init];
-        _placeholderCacheLabel.layer.anchorPoint = CGPointZero;
-        _placeholderCacheLabel.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
-    }
-    return _placeholderCacheLabel;
-}
 
 
 
