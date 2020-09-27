@@ -6,10 +6,10 @@
 
 @property(nonatomic,assign)BOOL isOk;
 
-@property (strong, nonatomic) UILabel *placeholderCacheLabel;
-@property (strong, nonatomic) UIView *lineView;
-@property (strong, nonatomic) UIView *grayLineView;
-@property (strong, nonatomic) NSAttributedString *cachedPlaceholder;
+@property(strong,nonatomic)UILabel *placeholderCacheLabel;
+@property(strong,nonatomic)UIView *lineView;
+@property(strong,nonatomic)UIView *grayLineView;
+@property(strong,nonatomic)NSAttributedString *cachedPlaceholder;
 
 @end
 
@@ -18,11 +18,49 @@
 -(instancetype)init{
     if (self = [super init]) {
         self.clearButtonMode = UITextFieldViewModeWhileEditing;
+        self.defaultTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:15
+                                                                             weight:UIFontWeightRegular],
+                                       NSForegroundColorAttributeName:COLOR_RGB(33,
+                                                                                33,
+                                                                                33,
+                                                                                1)};
+        self.borderStyle = UITextBorderStyleNone;
+        self.backgroundColor = kWhiteColor;
         [self modifyClearButtonWithImage:kIMG(@"closeCircle@2x")];
-        
-
-        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(kd_textFieldDidBeginEditing:)
+                                                     name:UITextFieldTextDidBeginEditingNotification
+                                                   object:self];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(kd_textFieldDidEndEditing:)
+                                                     name:UITextFieldTextDidEndEditingNotification
+                                                   object:self];
     }return self;
+}
+
+-(UIView *)grayLineView{
+    if (!_grayLineView) {
+        _grayLineView = UIView.new;
+        _grayLineView.frame = CGRectMake(0,
+                                         self.frame.size.height - 1,
+                                         self.frame.size.width,
+                                         1);
+        _grayLineView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
+        [self addSubview:_grayLineView];
+    }return _grayLineView;
+}
+
+-(UIView *)lineView{
+    if (!_lineView) {
+        _lineView = UIView.new;
+        _lineView.frame = CGRectMake(0,
+                                     self.frame.size.height - 1,
+                                     0,
+                                     1);
+        _lineView.backgroundColor = [UIColor greenColor];
+        _lineView.layer.anchorPoint = CGPointMake(0, 0.5);
+        [self addSubview:_lineView];
+    }return _lineView;
 }
 
 -(void)drawRect:(CGRect)rect{
@@ -30,24 +68,9 @@
     if (!self.isOk) {
         self.ZYTextFieldTapGR.enabled = self.isShowHistoryDataList;
         [self setUpUI];
+        self.grayLineView.alpha = 1;
+        self.lineView.alpha = 1;
     }
-    
-    self.defaultTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:15],NSForegroundColorAttributeName:[UIColor colorWithRed:33.0/255.0 green:33.0/255.0 blue:33.0/255.0 alpha:1.0]};
-    self.borderStyle = UITextBorderStyleNone;
-    self.backgroundColor = [UIColor whiteColor];
-    
-    self.grayLineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 1, self.frame.size.width, 1)];
-    _grayLineView.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.5];
-    [self addSubview:_grayLineView];
-    
-    self.lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 1, 0, 1)];
-    _lineView.backgroundColor = [UIColor greenColor];
-    _lineView.layer.anchorPoint = CGPointMake(0, 0.5);
-    [self addSubview:_lineView];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(kd_textFieldDidBeginEditing:) name:UITextFieldTextDidBeginEditingNotification object:self];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(kd_textFieldDidEndEditing:) name:UITextFieldTextDidEndEditingNotification object:self];
-    
 }
 
 - (void)setUpUI{
@@ -227,8 +250,6 @@
         _ZYTextFieldBorderColor = kBlackColor;
     }return _ZYTextFieldBorderColor;
 }
-
-
 #pragma mark - UITextFieldTextDidBeginEditingNotification
 - (void)kd_textFieldDidBeginEditing:(NSNotification *)notification {
     CAKeyframeAnimation *kfAnimation11 = [CAKeyframeAnimation animationWithKeyPath:@"bounds.size.width"];
@@ -249,7 +270,6 @@
     }
     self.placeholder = nil;
     _placeholderCacheLabel.hidden = NO;
-
 
     CAKeyframeAnimation *kfAnimation1 = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     kfAnimation1.fillMode = kCAFillModeForwards;
@@ -275,7 +295,6 @@
     [_placeholderCacheLabel.layer addAnimation:grouoAnimation forKey:@"kKDOutAnimation"];
     
 }
-
 #pragma mark - UITextFieldTextDidEndEditingNotification
 - (void)kd_textFieldDidEndEditing:(NSNotification *)notification {
     CAKeyframeAnimation *kfAnimation11 = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
@@ -320,11 +339,10 @@
     grouoAnimation.duration = 0.25;
     grouoAnimation.delegate = self;
     [_placeholderCacheLabel.layer addAnimation:grouoAnimation forKey:@"kZYYInAnimation"];
-    
 }
-
 #pragma mark - CAAnimationDelegate
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+- (void)animationDidStop:(CAAnimation *)anim
+                finished:(BOOL)flag{
     if (flag) {
         if (anim == [_placeholderCacheLabel.layer animationForKey:@"kZYYInAnimation"] ) {
             _placeholderCacheLabel.hidden = YES;
@@ -339,18 +357,17 @@
         }
     }
 }
-
-
 #pragma mark - Setter & Getter
 - (UILabel *)placeholderCacheLabel {
     if (!_placeholderCacheLabel) {
-        _placeholderCacheLabel = [[UILabel alloc] init];
-        _placeholderCacheLabel.backgroundColor = kRedColor;
+        _placeholderCacheLabel = UILabel.new;
+//        _placeholderCacheLabel.backgroundColor = kRedColor;
         _placeholderCacheLabel.layer.anchorPoint = CGPointZero;
-        _placeholderCacheLabel.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
-    }
-    return _placeholderCacheLabel;
+        _placeholderCacheLabel.frame = CGRectMake(0,
+                                                  0,
+                                                  self.bounds.size.width,
+                                                  self.bounds.size.height);
+    }return _placeholderCacheLabel;
 }
-
 
 @end
