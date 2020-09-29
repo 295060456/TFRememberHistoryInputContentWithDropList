@@ -14,6 +14,8 @@
 
 #import "AABlock.h"
 
+//UIImage
+#import "LoadingImage.h"
 //NSString
 #import "NSString+Extras.h"
 //NSObject

@@ -231,6 +231,7 @@
 		C57D5C53251363380073F90B /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
 		C57D5C592513779F0073F90B /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
 		C57D5C5A2513779F0073F90B /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
+		C58B5EFC2523389100D9F9A7 /* LoadingImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingImage.h; sourceTree = "<group>"; };
 		C5F732EB2513C05F00216DEF /* BaseTableViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewer.h; sourceTree = "<group>"; };
 		C5F732EC2513C05F00216DEF /* 专治UITableView相应链断裂 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "专治UITableView相应链断裂"; sourceTree = "<group>"; };
 		C5F732ED2513C05F00216DEF /* BaseTableViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewer.m; sourceTree = "<group>"; };
@@ -414,6 +415,7 @@
 		C57D5B7325135A4D0073F90B /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C58B5EF52523379B00D9F9A7 /* UIImage */,
 				C57D5BF125135B7A0073F90B /* NSString */,
 				C57D5BD725135B530073F90B /* NSObject */,
 				C57D5BC425135B2F0073F90B /* UIView */,
@@ -685,6 +687,14 @@
 				C57D5C53251363380073F90B /* UIButton+ImageTitleSpacing.m */,
 			);
 			path = "高度自定义的按钮";
+			sourceTree = "<group>";
+		};
+		C58B5EF52523379B00D9F9A7 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				C58B5EFC2523389100D9F9A7 /* LoadingImage.h */,
+			);
+			path = UIImage;
 			sourceTree = "<group>";
 		};
 		C5F732E32513BFE100216DEF /* TableViewAnimationKit */ = {
