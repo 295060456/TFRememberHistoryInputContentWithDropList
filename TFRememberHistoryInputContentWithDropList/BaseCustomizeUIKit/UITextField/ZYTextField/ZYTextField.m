@@ -26,7 +26,7 @@
                                                                                 1)};
         self.borderStyle = UITextBorderStyleNone;
         self.backgroundColor = kWhiteColor;
-        [self modifyClearButtonWithImage:KIMG(@"closeCircle@2x")];
+        [self modifyClearButtonWithImage:KIMG(@"closeCircle")];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(kd_textFieldDidBeginEditing:)
                                                      name:UITextFieldTextDidBeginEditingNotification

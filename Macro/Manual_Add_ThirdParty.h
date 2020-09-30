@@ -37,6 +37,7 @@
 //UIViewController
 #import "BaseVC.h"
 #import "BaseVC+AFNReachability.h"
+#import "BaseVC+MJRefresh.h"
 #import "BaseVC+BackBtn.h"
 #import "BaseVC+BRPickerView.h"
 #import "BaseVC+BWShareView.h"
