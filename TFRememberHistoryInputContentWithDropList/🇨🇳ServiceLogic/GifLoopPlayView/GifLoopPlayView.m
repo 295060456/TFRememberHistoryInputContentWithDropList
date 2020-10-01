@@ -26,17 +26,10 @@
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
     if (!self.isOK) {
-        [self setup];
+        self.imageView.alpha = 1;
+        self.stopped = NO;// YES: 没有播放，NO：正在播放
         self.isOK = YES;
     }
-}
-
--(void)setup{
-    _duration = 1.5;// 执行一次完整动画所需的时长
-    [self.gifMutArr addObject:KBuddleIMG(@"音律跳动", nil, @"1")];;
-    _pauseImage = self.gifMutArr[0];
-    self.imageView.alpha = 1;
-    self.stopped = NO;// YES: 没有播放，NO：正在播放
 }
 
 -(void)setStopped:(BOOL)stopped{
@@ -48,7 +41,7 @@
         [self.imageView startAnimating];
     }else{
         [self.imageView stopAnimating];
-        self.imageView.image = _pauseImage;
+        self.imageView.image = self.pauseImage;
     }
 }
 #pragma mark —— lazyLoad
@@ -68,5 +61,16 @@
     }return _gifMutArr;
 }
 
+-(CGFloat)duration{
+    if (_duration == 0) {
+        _duration = 1.5;// 执行一次完整动画所需的时长
+    }return _duration;
+}
+
+-(UIImage *)pauseImage{
+    if (!_pauseImage) {
+        _pauseImage = self.gifMutArr[0];
+    }return _pauseImage;
+}
 
 @end
