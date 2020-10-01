@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1E33276FD6C4B4B09E2F0263 /* Pods_TFRememberHistoryInputContentWithDropList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF93F5131F2D3D18888125C /* Pods_TFRememberHistoryInputContentWithDropList.framework */; };
 		B6294D70BE296B6CB0CFA195 /* Pods_TFRememberHistoryInputContentWithDropList_TFRememberHistoryInputContentWithDropListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A2A541B3D247E7D1195345 /* Pods_TFRememberHistoryInputContentWithDropList_TFRememberHistoryInputContentWithDropListUITests.framework */; };
+		C50ECA402524C265000AE52F /* GifLoopPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C50ECA3F2524C265000AE52F /* GifLoopPlayView.m */; };
+		C50ECA4A25257E06000AE52F /* 音律跳动.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C50ECA4925257E06000AE52F /* 音律跳动.bundle */; };
 		C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B292513587A0073F90B /* AppDelegate.m */; };
 		C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2C2513587A0073F90B /* SceneDelegate.m */; };
 		C57D5B302513587A0073F90B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2F2513587A0073F90B /* ViewController.m */; };
@@ -108,6 +110,9 @@
 		535CCB8E1A5FB0903B250429 /* Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.debug.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests/Pods-TFRememberHistoryInputContentWithDropList-TFRememberHistoryInputContentWithDropListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6AACF58EF1ED56568AE09213 /* Pods-TFRememberHistoryInputContentWithDropListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropListTests.release.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropListTests/Pods-TFRememberHistoryInputContentWithDropListTests.release.xcconfig"; sourceTree = "<group>"; };
 		BD221A08C5CAFFEFD797B7C9 /* Pods-TFRememberHistoryInputContentWithDropList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropList.release.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropList/Pods-TFRememberHistoryInputContentWithDropList.release.xcconfig"; sourceTree = "<group>"; };
+		C50ECA3E2524C265000AE52F /* GifLoopPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifLoopPlayView.h; sourceTree = "<group>"; };
+		C50ECA3F2524C265000AE52F /* GifLoopPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifLoopPlayView.m; sourceTree = "<group>"; };
+		C50ECA4925257E06000AE52F /* 音律跳动.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "音律跳动.bundle"; sourceTree = "<group>"; };
 		C57D5B252513587A0073F90B /* TFRememberHistoryInputContentWithDropList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFRememberHistoryInputContentWithDropList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57D5B282513587A0073F90B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C57D5B292513587A0073F90B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -298,6 +303,16 @@
 				6AACF58EF1ED56568AE09213 /* Pods-TFRememberHistoryInputContentWithDropListTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C50ECA442524C583000AE52F /* GifLoopPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				C50ECA4925257E06000AE52F /* 音律跳动.bundle */,
+				C50ECA3E2524C265000AE52F /* GifLoopPlayView.h */,
+				C50ECA3F2524C265000AE52F /* GifLoopPlayView.m */,
+			);
+			path = GifLoopPlayView;
 			sourceTree = "<group>";
 		};
 		C57D5B1C2513587A0073F90B = {
@@ -603,6 +618,7 @@
 		C57D5BF525135BB50073F90B /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				C50ECA442524C583000AE52F /* GifLoopPlayView */,
 				C57D5B2E2513587A0073F90B /* ViewController.h */,
 				C57D5B2F2513587A0073F90B /* ViewController.m */,
 			);
@@ -873,6 +889,7 @@
 				C57D5C4F251360C90073F90B /* 分享控件的用法 in Resources */,
 				C5F7330725145FCD00216DEF /* 登录注册关闭@2x.png in Resources */,
 				C57D5B9225135AAE0073F90B /* closeCircle@2x.png in Resources */,
+				C50ECA4A25257E06000AE52F /* 音律跳动.bundle in Resources */,
 				C5A6D85625244AD80096910D /* WhiteRightArrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1052,6 +1069,7 @@
 				C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */,
 				C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */,
 				C57D5C3F25135FF40073F90B /* BRPickerStyle.m in Sources */,
+				C50ECA402524C265000AE52F /* GifLoopPlayView.m in Sources */,
 				C57D5B8825135A9F0073F90B /* UITextField+Extend.m in Sources */,
 				C57D5C3B25135FF40073F90B /* BRDatePickerView+BR.m in Sources */,
 				C57D5B9B25135ADC0073F90B /* HQTextField.m in Sources */,

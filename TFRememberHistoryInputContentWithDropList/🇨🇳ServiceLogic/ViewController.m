@@ -11,6 +11,8 @@
 
 #import "DoorView.h"
 
+#import "GifLoopPlayView.h"
+
 @interface ViewController ()
 <
 UITextFieldDelegate
@@ -20,14 +22,21 @@ UITextFieldDelegate
 @property(nonatomic,strong)ZYTextField *textField;
 @property(nonatomic,strong)DoorView *doorView;
 
+@property(nonatomic,strong)GifLoopPlayView *gifLoopPlayView;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.textField.alpha = 1;
-    self.doorView.alpha = 1;
+//    self.textField.alpha = 1;
+//    self.doorView.alpha = 1;
+    
+//    self.gifLoopPlayView.alpha = 1;
+    
+    // 开始播动画
+    self.gifLoopPlayView.stopped = NO;//YES - 停止；NO - 播放
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
@@ -116,6 +125,19 @@ replacementString:(NSString *)string{
         [self.view layoutIfNeeded];
         [UIView cornerCutToCircleWithView:_doorView AndCornerRadius:5];
     }return _doorView;
+}
+
+-(GifLoopPlayView *)gifLoopPlayView{
+    if (!_gifLoopPlayView) {
+        _gifLoopPlayView = GifLoopPlayView.new;
+        _gifLoopPlayView.frame = CGRectMake(100, 200, 104, 11);
+        [self.view addSubview:_gifLoopPlayView];
+        for (int t = 1; t <= 10; t++) {
+            [_gifLoopPlayView.gifMutArr addObject:KBuddleIMG(@"音律跳动", nil, [NSString stringWithFormat:@"%d",t])];
+        }
+        // 设置动画时长
+        _gifLoopPlayView.duration = 0.85;
+    }return _gifLoopPlayView;
 }
 
 @end
