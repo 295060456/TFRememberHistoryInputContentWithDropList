@@ -32,9 +32,7 @@ UITextFieldDelegate
     [super viewDidLoad];
 //    self.textField.alpha = 1;
 //    self.doorView.alpha = 1;
-    
-//    self.gifLoopPlayView.alpha = 1;
-    
+
     // 开始播动画
     self.gifLoopPlayView.stopped = NO;//YES - 停止；NO - 播放
 }

@@ -21,3 +21,25 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+/**
+ * 使用方法：
+ 
+ // 开始播动画
+ self.gifLoopPlayView.stopped = NO;//YES - 停止；NO - 播放
+ 
+ 
+ -(GifLoopPlayView *)gifLoopPlayView{
+     if (!_gifLoopPlayView) {
+         _gifLoopPlayView = GifLoopPlayView.new;
+         _gifLoopPlayView.frame = CGRectMake(100, 200, 104, 11);
+         [self.view addSubview:_gifLoopPlayView];
+         for (int t = 1; t <= 10; t++) {
+             [_gifLoopPlayView.gifMutArr addObject:KBuddleIMG(@"音律跳动", nil, [NSString stringWithFormat:@"%d",t])];
+         }
+         // 设置动画时长
+         _gifLoopPlayView.duration = 0.85;
+     }return _gifLoopPlayView;
+ }
+ * 
+ */

@@ -31,13 +31,10 @@
         self.isOK = YES;
     }
 }
-
+//  YES - 停止；NO - 播放
 -(void)setStopped:(BOOL)stopped{
     _stopped = stopped;
-    if(!stopped) { //  YES - 停止；NO - 播放
-        self.imageView.animationImages = (NSArray *)self.gifMutArr; //动画图片数组
-        self.imageView.animationDuration = _duration;
-        self.imageView.animationRepeatCount = 0;  //动画重复次数，无限循环
+    if(!stopped) {
         [self.imageView startAnimating];
     }else{
         [self.imageView stopAnimating];
@@ -50,6 +47,11 @@
         _imageView = UIImageView.new;
         _imageView.frame = self.bounds;
         _imageView.image = self.pauseImage;
+        
+        _imageView.animationImages = (NSArray *)self.gifMutArr; //动画图片数组
+        _imageView.animationDuration = self.duration;
+        _imageView.animationRepeatCount = 0;  //动画重复次数，无限循环
+        
         [self addSubview:_imageView];
     }return _imageView;
 }
