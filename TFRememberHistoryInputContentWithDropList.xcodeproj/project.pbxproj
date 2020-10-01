@@ -618,7 +618,6 @@
 		C57D5BF525135BB50073F90B /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
-				C50ECA442524C583000AE52F /* GifLoopPlayView */,
 				C57D5B2E2513587A0073F90B /* ViewController.h */,
 				C57D5B2F2513587A0073F90B /* ViewController.m */,
 			);
@@ -690,6 +689,7 @@
 		C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C50ECA442524C583000AE52F /* GifLoopPlayView */,
 				C57D5C512513632E0073F90B /* 高度自定义的按钮 */,
 				C57D5C45251360BE0073F90B /* 分享控件 */,
 			);
