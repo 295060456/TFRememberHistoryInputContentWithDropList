@@ -27,8 +27,6 @@
 		C57D5B7D25135A6B0073F90B /* TBVCell_style_02.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B7925135A6B0073F90B /* TBVCell_style_02.m */; };
 		C57D5B8825135A9F0073F90B /* UITextField+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B8625135A9F0073F90B /* UITextField+Extend.m */; };
 		C57D5B9025135AAE0073F90B /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B8B25135AAE0073F90B /* ZYTextField.m */; };
-		C57D5B9225135AAE0073F90B /* closeCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57D5B8D25135AAE0073F90B /* closeCircle@2x.png */; };
-		C57D5B9325135AAE0073F90B /* closeCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C57D5B8F25135AAE0073F90B /* closeCircle@3x.png */; };
 		C57D5B9725135ABF0073F90B /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B9625135ABF0073F90B /* CJTextField.m */; };
 		C57D5B9B25135ADC0073F90B /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B9A25135ADC0073F90B /* HQTextField.m */; };
 		C57D5BB825135B280073F90B /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5BA225135B280073F90B /* BaseVC.m */; };
@@ -72,6 +70,7 @@
 		C57D5C50251360C90073F90B /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C4B251360C90073F90B /* BWItemModel.m */; };
 		C57D5C54251363380073F90B /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C53251363380073F90B /* UIButton+ImageTitleSpacing.m */; };
 		C57D5C5B2513779F0073F90B /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C5A2513779F0073F90B /* ZYTextField+HistoryDataList.m */; };
+		C59B9E2B2526F1810039B485 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9E2A2526F1810039B485 /* ZYTextField.bundle */; };
 		C5A6D85625244AD80096910D /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85425244AD80096910D /* WhiteRightArrow@2x.png */; };
 		C5A6D85725244AD80096910D /* WhiteRightArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85525244AD80096910D /* WhiteRightArrow@3x.png */; };
 		C5A6D85C25244B700096910D /* Others.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85B25244B700096910D /* Others.bundle */; };
@@ -80,8 +79,6 @@
 		C5F732EF2513C05F00216DEF /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732ED2513C05F00216DEF /* BaseTableViewer.m */; };
 		C5F732F92513C07700216DEF /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F52513C07700216DEF /* UITableView+XSAnimationKit.m */; };
 		C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F82513C07700216DEF /* TableViewAnimationKit.m */; };
-		C5F7330625145FCD00216DEF /* 登录注册关闭@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5F7330425145FCD00216DEF /* 登录注册关闭@3x.png */; };
-		C5F7330725145FCD00216DEF /* 登录注册关闭@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5F7330525145FCD00216DEF /* 登录注册关闭@2x.png */; };
 		C5F7332225147B9C00216DEF /* DoorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7332125147B9C00216DEF /* DoorView.m */; };
 		EF358594565B04E3623F5F11 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EFF6D80222F9B4F5757839 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework */; };
 /* End PBXBuildFile section */
@@ -151,9 +148,7 @@
 		C57D5B8625135A9F0073F90B /* UITextField+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extend.m"; sourceTree = "<group>"; };
 		C57D5B8725135A9F0073F90B /* UITextField+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extend.h"; sourceTree = "<group>"; };
 		C57D5B8B25135AAE0073F90B /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
-		C57D5B8D25135AAE0073F90B /* closeCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeCircle@2x.png"; sourceTree = "<group>"; };
 		C57D5B8E25135AAE0073F90B /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
-		C57D5B8F25135AAE0073F90B /* closeCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeCircle@3x.png"; sourceTree = "<group>"; };
 		C57D5B9525135ABF0073F90B /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
 		C57D5B9625135ABF0073F90B /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
 		C57D5B9925135ADC0073F90B /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
@@ -241,6 +236,7 @@
 		C57D5C592513779F0073F90B /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
 		C57D5C5A2513779F0073F90B /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
 		C58B5EFC2523389100D9F9A7 /* LoadingImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingImage.h; sourceTree = "<group>"; };
+		C59B9E2A2526F1810039B485 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
 		C5A6D85425244AD80096910D /* WhiteRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@2x.png"; sourceTree = "<group>"; };
 		C5A6D85525244AD80096910D /* WhiteRightArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@3x.png"; sourceTree = "<group>"; };
 		C5A6D85B25244B700096910D /* Others.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Others.bundle; sourceTree = "<group>"; };
@@ -255,8 +251,6 @@
 		C5F732F62513C07700216DEF /* TableViewAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKit.h; sourceTree = "<group>"; };
 		C5F732F72513C07700216DEF /* UITableView+XSAnimationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+XSAnimationKit.h"; sourceTree = "<group>"; };
 		C5F732F82513C07700216DEF /* TableViewAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewAnimationKit.m; sourceTree = "<group>"; };
-		C5F7330425145FCD00216DEF /* 登录注册关闭@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录注册关闭@3x.png"; sourceTree = "<group>"; };
-		C5F7330525145FCD00216DEF /* 登录注册关闭@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录注册关闭@2x.png"; sourceTree = "<group>"; };
 		C5F7332025147B9C00216DEF /* DoorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoorView.h; sourceTree = "<group>"; };
 		C5F7332125147B9C00216DEF /* DoorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoorView.m; sourceTree = "<group>"; };
 		CE8A3C8B4A05FF52B0342EEE /* Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig"; path = "Target Support Files/Pods-TFRememberHistoryInputContentWithDropListTests/Pods-TFRememberHistoryInputContentWithDropListTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -499,10 +493,7 @@
 		C57D5B8925135AA70073F90B /* ZYTextField */ = {
 			isa = PBXGroup;
 			children = (
-				C5F7330525145FCD00216DEF /* 登录注册关闭@2x.png */,
-				C5F7330425145FCD00216DEF /* 登录注册关闭@3x.png */,
-				C57D5B8D25135AAE0073F90B /* closeCircle@2x.png */,
-				C57D5B8F25135AAE0073F90B /* closeCircle@3x.png */,
+				C59B9E2A2526F1810039B485 /* ZYTextField.bundle */,
 				C57D5B8E25135AAE0073F90B /* ZYTextField.h */,
 				C57D5B8B25135AAE0073F90B /* ZYTextField.m */,
 				C57D5C592513779F0073F90B /* ZYTextField+HistoryDataList.h */,
@@ -877,18 +868,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C57D5B9325135AAE0073F90B /* closeCircle@3x.png in Resources */,
 				C57D5C3E25135FF40073F90B /* BRPickerView.bundle in Resources */,
 				C5F732EE2513C05F00216DEF /* 专治UITableView相应链断裂 in Resources */,
-				C5F7330625145FCD00216DEF /* 登录注册关闭@3x.png in Resources */,
+				C59B9E2B2526F1810039B485 /* ZYTextField.bundle in Resources */,
 				C57D5B3B2513587B0073F90B /* LaunchScreen.storyboard in Resources */,
 				C57D5B382513587B0073F90B /* Assets.xcassets in Resources */,
 				C5A6D85725244AD80096910D /* WhiteRightArrow@3x.png in Resources */,
 				C57D5B332513587A0073F90B /* Main.storyboard in Resources */,
 				C5A6D85C25244B700096910D /* Others.bundle in Resources */,
 				C57D5C4F251360C90073F90B /* 分享控件的用法 in Resources */,
-				C5F7330725145FCD00216DEF /* 登录注册关闭@2x.png in Resources */,
-				C57D5B9225135AAE0073F90B /* closeCircle@2x.png in Resources */,
 				C50ECA4A25257E06000AE52F /* 音律跳动.bundle in Resources */,
 				C5A6D85625244AD80096910D /* WhiteRightArrow@2x.png in Resources */,
 			);
