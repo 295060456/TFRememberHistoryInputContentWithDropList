@@ -131,7 +131,7 @@ replacementString:(NSString *)string{
         _gifLoopPlayView.frame = CGRectMake(100, 200, 104, 11);
         [self.view addSubview:_gifLoopPlayView];
         for (int t = 1; t <= 10; t++) {
-            [_gifLoopPlayView.gifMutArr addObject:KBuddleIMG(@"音律跳动", nil, [NSString stringWithFormat:@"%d",t])];
+            [_gifLoopPlayView.gifMutArr addObject:KBuddleIMG(@"音律跳动", nil, nil, [NSString stringWithFormat:@"%d",t])];
         }
         // 设置动画时长
         _gifLoopPlayView.duration = 0.85;
