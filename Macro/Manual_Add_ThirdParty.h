@@ -27,6 +27,7 @@
 #import "NSObject+Time.h"
 #import "NSObject+SYSAlertController.h"
 #import "NSObject+SPAlertController.h"
+#import "NSObject+OpenURL.h"
 //UIView
 #import "UIView+Chain.h"
 #import "UIView+Extras.h"
@@ -44,7 +45,6 @@
 #import "BaseVC+BWShareView.h"
 #import "BaseVC+JPImageresizerView.h"
 #import "BaseVC+JXCategoryListContentViewDelegate.h"
-#import "BaseVC+OpenURL.h"
 #import "UIViewController+Shake.h"
 //UITextField
 #import "HQTextField.h"
