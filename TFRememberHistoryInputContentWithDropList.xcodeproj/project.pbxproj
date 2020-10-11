@@ -72,6 +72,7 @@
 		C57D5C50251360C90073F90B /* BWItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C4B251360C90073F90B /* BWItemModel.m */; };
 		C57D5C54251363380073F90B /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C53251363380073F90B /* UIButton+ImageTitleSpacing.m */; };
 		C57D5C5B2513779F0073F90B /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C5A2513779F0073F90B /* ZYTextField+HistoryDataList.m */; };
+		C58C61EA2532FC850092BF89 /* UIView+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58C61E92532FC850092BF89 /* UIView+Rotate.m */; };
 		C59B9E2B2526F1810039B485 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9E2A2526F1810039B485 /* ZYTextField.bundle */; };
 		C5A6D85625244AD80096910D /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85425244AD80096910D /* WhiteRightArrow@2x.png */; };
 		C5A6D85725244AD80096910D /* WhiteRightArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85525244AD80096910D /* WhiteRightArrow@3x.png */; };
@@ -242,6 +243,8 @@
 		C57D5C592513779F0073F90B /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
 		C57D5C5A2513779F0073F90B /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
 		C58B5EFC2523389100D9F9A7 /* LoadingImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingImage.h; sourceTree = "<group>"; };
+		C58C61E82532FC850092BF89 /* UIView+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Rotate.h"; sourceTree = "<group>"; };
+		C58C61E92532FC850092BF89 /* UIView+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Rotate.m"; sourceTree = "<group>"; };
 		C59B9E2A2526F1810039B485 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
 		C5A6D85425244AD80096910D /* WhiteRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@2x.png"; sourceTree = "<group>"; };
 		C5A6D85525244AD80096910D /* WhiteRightArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@3x.png"; sourceTree = "<group>"; };
@@ -330,11 +333,11 @@
 			isa = PBXGroup;
 			children = (
 				C57D5B62251359010073F90B /* Macro */,
+				C57D5B272513587A0073F90B /* TFRememberHistoryInputContentWithDropList */,
 				C57D5B63251359250073F90B /* Other */,
 				FC4D63F1F4528C9D28E319C5 /* Frameworks */,
 				C57D5B61251358F00073F90B /* Pods不进去的 */,
 				1EC586860FB0729A8E052444 /* Pods */,
-				C57D5B272513587A0073F90B /* TFRememberHistoryInputContentWithDropList */,
 			);
 			sourceTree = "<group>";
 		};
@@ -568,18 +571,20 @@
 		C57D5BC425135B2F0073F90B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C57D5BC925135B360073F90B /* UIView+Animation.h */,
+				C57D5BD025135B370073F90B /* UIView+Animation.m */,
 				C57D5BCC25135B360073F90B /* UIView+Chain.h */,
 				C57D5BCB25135B360073F90B /* UIView+Chain.m */,
 				C57D5BCD25135B360073F90B /* UIView+Extras.h */,
 				C57D5BCA25135B360073F90B /* UIView+Extras.m */,
-				C57D5BC825135B360073F90B /* UIView+Measure.h */,
-				C57D5BC625135B360073F90B /* UIView+Measure.m */,
-				C57D5BCE25135B360073F90B /* UIView+SuspendView.h */,
-				C57D5BCF25135B360073F90B /* UIView+SuspendView.m */,
-				C57D5BC925135B360073F90B /* UIView+Animation.h */,
-				C57D5BD025135B370073F90B /* UIView+Animation.m */,
 				C57D5BC725135B360073F90B /* UIView+Gradient.h */,
 				C57D5BC525135B360073F90B /* UIView+Gradient.m */,
+				C57D5BC825135B360073F90B /* UIView+Measure.h */,
+				C57D5BC625135B360073F90B /* UIView+Measure.m */,
+				C58C61E82532FC850092BF89 /* UIView+Rotate.h */,
+				C58C61E92532FC850092BF89 /* UIView+Rotate.m */,
+				C57D5BCE25135B360073F90B /* UIView+SuspendView.h */,
+				C57D5BCF25135B360073F90B /* UIView+SuspendView.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1057,6 +1062,7 @@
 				C546C445252C247C003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C57D5BB825135B280073F90B /* BaseVC.m in Sources */,
 				C5F732EF2513C05F00216DEF /* BaseTableViewer.m in Sources */,
+				C58C61EA2532FC850092BF89 /* UIView+Rotate.m in Sources */,
 				C546C444252C247C003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
 				C57D5C3C25135FF40073F90B /* NSDate+BRPickerView.m in Sources */,
 				C57D5C3D25135FF40073F90B /* BRDatePickerView.m in Sources */,
