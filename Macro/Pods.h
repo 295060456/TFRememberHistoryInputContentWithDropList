@@ -18,6 +18,6 @@
 #import "BRPickerView.h"
 #import "JPImageresizerView-umbrella.h"
 #import "JXCategoryView.h"
-#import "MBProgressHUD+WJExtension.h"
+#import "WHToast.h"
 
 #endif /* Pods_h */
