@@ -19,5 +19,7 @@
 #import "JPImageresizerView-umbrella.h"
 #import "JXCategoryView.h"
 #import "WHToast.h"
+#import "TZImagePickerController.h"
+#import "SDWebImage.h"
 
 #endif /* Pods_h */

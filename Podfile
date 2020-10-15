@@ -17,6 +17,8 @@ target 'TFRememberHistoryInputContentWithDropList' do
   pod 'JXCategoryView'  # https://github.com/pujiaxin33/JXCategoryView A powerful and easy to use category view (segmentedcontrol, segmentview, pagingview, pagerview, pagecontrol) (腾讯新闻、今日头条、QQ音乐、网易云音乐、京东、爱奇艺、腾讯视频、淘宝、天猫、简书、微博等所有主流APP分类切换滚动视图)
   pod 'SDWebImage'  # https://github.com/SDWebImage/SDWebImage Asynchronous image downloader with cache support as a UIImageView category
   pod 'WHToast' # https://github.com/remember17/WHToast 一个轻量级的提示控件，没有任何依赖
+  pod 'TZImagePickerController' # https://github.com/banchichen/TZImagePickerController 一个支持多选，选原图和视频的图片选择器，同时有预览，裁剪功能，支持iOS6 +。一个UIImagePickerController的克隆，支持挑选多张照片，原始照片，视频，还允许预览照片和视频，支持iOS6 +
+  pod 'SDWebImage'  # https://github.com/SDWebImage/SDWebImage Asynchronous image downloader with cache support as a UIImageView category
   
   target 'TFRememberHistoryInputContentWithDropListTests' do
     inherit! :search_paths
