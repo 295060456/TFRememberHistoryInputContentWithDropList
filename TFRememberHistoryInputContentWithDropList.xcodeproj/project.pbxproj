@@ -13,6 +13,7 @@
 		C50ECA4A25257E06000AE52F /* 音律跳动.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C50ECA4925257E06000AE52F /* 音律跳动.bundle */; };
 		C546C444252C247C003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C440252C247B003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
 		C546C445252C247C003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C443252C247B003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
+		C55AF5A4253C4C7700C558C4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AF5A3253C4C7700C558C4 /* CollectionViewCell.m */; };
 		C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B292513587A0073F90B /* AppDelegate.m */; };
 		C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2C2513587A0073F90B /* SceneDelegate.m */; };
 		C57D5B302513587A0073F90B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2F2513587A0073F90B /* ViewController.m */; };
@@ -122,6 +123,8 @@
 		C546C441252C247B003694FF /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		C546C442252C247B003694FF /* UIScrollView+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		C546C443252C247B003694FF /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		C55AF5A2253C4C7700C558C4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		C55AF5A3253C4C7700C558C4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		C57D5B252513587A0073F90B /* TFRememberHistoryInputContentWithDropList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFRememberHistoryInputContentWithDropList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57D5B282513587A0073F90B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C57D5B292513587A0073F90B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -344,6 +347,15 @@
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
+		C55AF5A1253C4C7600C558C4 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C55AF5A2253C4C7700C558C4 /* CollectionViewCell.h */,
+				C55AF5A3253C4C7700C558C4 /* CollectionViewCell.m */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
 		C57D5B1C2513587A0073F90B = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +482,7 @@
 		C57D5B7325135A4D0073F90B /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C55AF5A1253C4C7600C558C4 /* UICollectionViewCell */,
 				C5914D0125385214007777A6 /* UINavigationController */,
 				C5914D0425385214007777A6 /* UIViewController */,
 				C58B5EF52523379B00D9F9A7 /* UIImage */,
@@ -1076,6 +1089,7 @@
 				C57D5B9725135ABF0073F90B /* CJTextField.m in Sources */,
 				C57D5BEF25135B6B0073F90B /* NSObject+Random.m in Sources */,
 				C57D5C4225135FF40073F90B /* BRAddressModel.m in Sources */,
+				C55AF5A4253C4C7700C558C4 /* CollectionViewCell.m in Sources */,
 				C57D5BD525135B370073F90B /* UIView+SuspendView.m in Sources */,
 				C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */,
 				C57D5C50251360C90073F90B /* BWItemModel.m in Sources */,
