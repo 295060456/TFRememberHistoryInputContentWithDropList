@@ -323,6 +323,10 @@ static inline CGFloat rectOfStatusbar(){
 #define DeleUserDefaultWithKey(key) [[NSUserDefaults standardUserDefaults] removeObjectForKey:key]
 #define UserDefaultSynchronize  [[NSUserDefaults standardUserDefaults] synchronize]
 
+#pragma mark ======================================== 默认值 ========================================
+#define defaultValue 0
+#define defaultObj Nil
+
 #pragma mark ======================================== 沙盒路径 ========================================
 #define PATH_OF_APP_HOME    NSHomeDirectory()
 #define PATH_OF_TEMP        NSTemporaryDirectory()
