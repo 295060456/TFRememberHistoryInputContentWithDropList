@@ -77,6 +77,15 @@ static inline BOOL isiPhoneX_series() {
     }return iPhoneXSeries;
 }
 
+static inline CGFloat Top(){
+    static CGFloat value = 0;
+    static dispatch_once_t once_t = 0;
+    dispatch_once(&once_t, ^{
+        value = isiPhoneX_series() ? 88.0f : 64.0f;
+    });
+    return value;
+}
+
 ////判断是否登录,没有登录进行跳转
 //#define kGuardLogin if ([IsLogin isLogin]) { \
 //UIViewController *rootViewController = kKeyWindow.rootViewController; \
