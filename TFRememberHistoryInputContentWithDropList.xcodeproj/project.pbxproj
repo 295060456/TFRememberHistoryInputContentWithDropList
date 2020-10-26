@@ -14,6 +14,7 @@
 		C546C444252C247C003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C440252C247B003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
 		C546C445252C247C003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C443252C247B003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
 		C55AF5A4253C4C7700C558C4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AF5A3253C4C7700C558C4 /* CollectionViewCell.m */; };
+		C56E4207254717BC00B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E4206254717BC00B9F555 /* ⚽️PicResource */; };
 		C572797C25409B3D002373D7 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C572797725409B3D002373D7 /* BaseNavigationVC.m */; };
 		C572797D25409B3D002373D7 /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C572797A25409B3D002373D7 /* NavigationBar.m */; };
 		C572798325409B5C002373D7 /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C572798225409B5C002373D7 /* UIViewController+NavigationBar.m */; };
@@ -83,7 +84,6 @@
 		C59B9E2B2526F1810039B485 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9E2A2526F1810039B485 /* ZYTextField.bundle */; };
 		C5A6D85625244AD80096910D /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85425244AD80096910D /* WhiteRightArrow@2x.png */; };
 		C5A6D85725244AD80096910D /* WhiteRightArrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85525244AD80096910D /* WhiteRightArrow@3x.png */; };
-		C5A6D85C25244B700096910D /* Others.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85B25244B700096910D /* Others.bundle */; };
 		C5AEEB1C25384241000E1C5F /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEB1825384241000E1C5F /* UIView+Extras.m */; };
 		C5AEEB1D25384241000E1C5F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEB1A25384241000E1C5F /* UIView+Animation.m */; };
 		C5F732EE2513C05F00216DEF /* 专治UITableView相应链断裂 in Resources */ = {isa = PBXBuildFile; fileRef = C5F732EC2513C05F00216DEF /* 专治UITableView相应链断裂 */; };
@@ -128,6 +128,7 @@
 		C546C443252C247B003694FF /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		C55AF5A2253C4C7700C558C4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		C55AF5A3253C4C7700C558C4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		C56E4206254717BC00B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "⚽️PicResource"; path = "TFRememberHistoryInputContentWithDropList/⚽️PicResource"; sourceTree = "<group>"; };
 		C572797725409B3D002373D7 /* BaseNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationVC.m; sourceTree = "<group>"; };
 		C572797825409B3D002373D7 /* BaseNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationVC.h; sourceTree = "<group>"; };
 		C572797A25409B3D002373D7 /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
@@ -271,7 +272,6 @@
 		C59B9E2A2526F1810039B485 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
 		C5A6D85425244AD80096910D /* WhiteRightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@2x.png"; sourceTree = "<group>"; };
 		C5A6D85525244AD80096910D /* WhiteRightArrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WhiteRightArrow@3x.png"; sourceTree = "<group>"; };
-		C5A6D85B25244B700096910D /* Others.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Others.bundle; sourceTree = "<group>"; };
 		C5AEEB1825384241000E1C5F /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extras.m"; sourceTree = "<group>"; };
 		C5AEEB1925384241000E1C5F /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
 		C5AEEB1A25384241000E1C5F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
@@ -429,6 +429,7 @@
 		C57D5B1C2513587A0073F90B = {
 			isa = PBXGroup;
 			children = (
+				C56E4206254717BC00B9F555 /* ⚽️PicResource */,
 				C57D5B62251359010073F90B /* Macro */,
 				C57D5B272513587A0073F90B /* TFRememberHistoryInputContentWithDropList */,
 				C57D5B63251359250073F90B /* Other */,
@@ -456,7 +457,6 @@
 				C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */,
 				C57D5B7325135A4D0073F90B /* BaseCustomizeUIKit */,
 				C57D5B652513597B0073F90B /* AppDelegate & SceneDelegate */,
-				C57D5B64251359680073F90B /* ⚽️PicResource */,
 				C57D5BF525135BB50073F90B /* 🇨🇳ServiceLogic */,
 			);
 			path = TFRememberHistoryInputContentWithDropList;
@@ -518,14 +518,6 @@
 				C57D5B262513587A0073F90B /* Products */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		C57D5B64251359680073F90B /* ⚽️PicResource */ = {
-			isa = PBXGroup;
-			children = (
-				C5A6D85B25244B700096910D /* Others.bundle */,
-			);
-			path = "⚽️PicResource";
 			sourceTree = "<group>";
 		};
 		C57D5B652513597B0073F90B /* AppDelegate & SceneDelegate */ = {
@@ -1005,7 +997,7 @@
 				C57D5B382513587B0073F90B /* Assets.xcassets in Resources */,
 				C5A6D85725244AD80096910D /* WhiteRightArrow@3x.png in Resources */,
 				C57D5B332513587A0073F90B /* Main.storyboard in Resources */,
-				C5A6D85C25244B700096910D /* Others.bundle in Resources */,
+				C56E4207254717BC00B9F555 /* ⚽️PicResource in Resources */,
 				C57D5C4F251360C90073F90B /* 分享控件的用法 in Resources */,
 				C50ECA4A25257E06000AE52F /* 音律跳动.bundle in Resources */,
 				C5A6D85625244AD80096910D /* WhiteRightArrow@2x.png in Resources */,
