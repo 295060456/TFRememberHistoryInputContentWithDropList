@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		C572797C25409B3D002373D7 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C572797725409B3D002373D7 /* BaseNavigationVC.m */; };
 		C572797D25409B3D002373D7 /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C572797A25409B3D002373D7 /* NavigationBar.m */; };
 		C572798325409B5C002373D7 /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C572798225409B5C002373D7 /* UIViewController+NavigationBar.m */; };
+		C57675F82546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57675F42546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m */; };
+		C57675F92546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57675F62546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.m */; };
 		C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B292513587A0073F90B /* AppDelegate.m */; };
 		C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2C2513587A0073F90B /* SceneDelegate.m */; };
 		C57D5B302513587A0073F90B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2F2513587A0073F90B /* ViewController.m */; };
@@ -77,7 +79,6 @@
 		C5914D2925385214007777A6 /* UIViewController+BackBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1325385214007777A6 /* UIViewController+BackBtn.m */; };
 		C5914D2A25385214007777A6 /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1925385214007777A6 /* UIViewController+MJRefresh.m */; };
 		C5914D2B25385214007777A6 /* UIViewController+BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1A25385214007777A6 /* UIViewController+BaseVC.m */; };
-		C5914D2C25385214007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1E25385214007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m */; };
 		C5914D44253852CC007777A6 /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D43253852CC007777A6 /* ECAuthorizationTools.m */; };
 		C59B9E2B2526F1810039B485 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59B9E2A2526F1810039B485 /* ZYTextField.bundle */; };
 		C5A6D85625244AD80096910D /* WhiteRightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A6D85425244AD80096910D /* WhiteRightArrow@2x.png */; };
@@ -133,6 +134,10 @@
 		C572797B25409B3D002373D7 /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
 		C572798125409B5C002373D7 /* UIViewController+NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBar.h"; sourceTree = "<group>"; };
 		C572798225409B5C002373D7 /* UIViewController+NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBar.m"; sourceTree = "<group>"; };
+		C57675F42546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JXPagerViewListViewDelegate.m"; sourceTree = "<group>"; };
+		C57675F52546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JXCategoryListContentViewDelegate.h"; sourceTree = "<group>"; };
+		C57675F62546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JXCategoryListContentViewDelegate.m"; sourceTree = "<group>"; };
+		C57675F72546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JXPagerViewListViewDelegate.h"; sourceTree = "<group>"; };
 		C57D5B252513587A0073F90B /* TFRememberHistoryInputContentWithDropList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFRememberHistoryInputContentWithDropList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57D5B282513587A0073F90B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C57D5B292513587A0073F90B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -250,7 +255,6 @@
 		C5914D0E25385214007777A6 /* UIViewController+BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseVC.h"; sourceTree = "<group>"; };
 		C5914D0F25385214007777A6 /* UIViewController+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BRPickerView.m"; sourceTree = "<group>"; };
 		C5914D1025385214007777A6 /* UIViewController+GifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GifImageView.m"; sourceTree = "<group>"; };
-		C5914D1125385214007777A6 /* UIViewController+JXCategoryListContentViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JXCategoryListContentViewDelegate.h"; sourceTree = "<group>"; };
 		C5914D1225385214007777A6 /* UIViewController+TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TZLocationManager.h"; sourceTree = "<group>"; };
 		C5914D1325385214007777A6 /* UIViewController+BackBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackBtn.m"; sourceTree = "<group>"; };
 		C5914D1425385214007777A6 /* UIViewController+JPImageresizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JPImageresizerView.h"; sourceTree = "<group>"; };
@@ -262,7 +266,6 @@
 		C5914D1B25385214007777A6 /* UIViewController+TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TZImagePickerController.h"; sourceTree = "<group>"; };
 		C5914D1C25385214007777A6 /* UIViewController+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BRPickerView.h"; sourceTree = "<group>"; };
 		C5914D1D25385214007777A6 /* UIViewController+GifImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GifImageView.h"; sourceTree = "<group>"; };
-		C5914D1E25385214007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JXCategoryListContentViewDelegate.m"; sourceTree = "<group>"; };
 		C5914D42253852CC007777A6 /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
 		C5914D43253852CC007777A6 /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
 		C59B9E2A2526F1810039B485 /* ZYTextField.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYTextField.bundle; sourceTree = "<group>"; };
@@ -397,6 +400,30 @@
 				C57D5B2C2513587A0073F90B /* SceneDelegate.m */,
 			);
 			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		C57672072546BAE900C382C8 /* UIViewController+TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C5914D1B25385214007777A6 /* UIViewController+TZImagePickerController.h */,
+				C5914D0B25385214007777A6 /* UIViewController+TZImagePickerController.m */,
+				C5914D1525385214007777A6 /* UIViewController+TZImagePickerControllerDelegate.h */,
+				C5914D0A25385214007777A6 /* UIViewController+TZImagePickerControllerDelegate.m */,
+				C5914D1225385214007777A6 /* UIViewController+TZLocationManager.h */,
+				C5914D0725385214007777A6 /* UIViewController+TZLocationManager.m */,
+			);
+			path = "UIViewController+TZImagePickerController";
+			sourceTree = "<group>";
+		};
+		C576720B2546BAFB00C382C8 /* UIViewController+JXCategory */ = {
+			isa = PBXGroup;
+			children = (
+				C57675F52546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.h */,
+				C57675F62546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.m */,
+				C57675F72546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.h */,
+				C57675F42546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m */,
+			);
+			path = "UIViewController+JXCategory";
 			sourceTree = "<group>";
 		};
 		C57D5B1C2513587A0073F90B = {
@@ -789,6 +816,8 @@
 		C5914D0425385214007777A6 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C57672072546BAE900C382C8 /* UIViewController+TZImagePickerController */,
+				C576720B2546BAFB00C382C8 /* UIViewController+JXCategory */,
 				C5914D0625385214007777A6 /* UIViewController+BackBtn.h */,
 				C5914D1325385214007777A6 /* UIViewController+BackBtn.m */,
 				C5914D0E25385214007777A6 /* UIViewController+BaseVC.h */,
@@ -801,20 +830,12 @@
 				C5914D1025385214007777A6 /* UIViewController+GifImageView.m */,
 				C5914D1425385214007777A6 /* UIViewController+JPImageresizerView.h */,
 				C5914D0525385214007777A6 /* UIViewController+JPImageresizerView.m */,
-				C5914D1125385214007777A6 /* UIViewController+JXCategoryListContentViewDelegate.h */,
-				C5914D1E25385214007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m */,
 				C5914D0D25385214007777A6 /* UIViewController+MJRefresh.h */,
 				C5914D1925385214007777A6 /* UIViewController+MJRefresh.m */,
 				C572798125409B5C002373D7 /* UIViewController+NavigationBar.h */,
 				C572798225409B5C002373D7 /* UIViewController+NavigationBar.m */,
 				C5914D1625385214007777A6 /* UIViewController+Shake.h */,
 				C5914D0925385214007777A6 /* UIViewController+Shake.m */,
-				C5914D1B25385214007777A6 /* UIViewController+TZImagePickerController.h */,
-				C5914D0B25385214007777A6 /* UIViewController+TZImagePickerController.m */,
-				C5914D1525385214007777A6 /* UIViewController+TZImagePickerControllerDelegate.h */,
-				C5914D0A25385214007777A6 /* UIViewController+TZImagePickerControllerDelegate.m */,
-				C5914D1225385214007777A6 /* UIViewController+TZLocationManager.h */,
-				C5914D0725385214007777A6 /* UIViewController+TZLocationManager.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1108,7 +1129,6 @@
 				C572797C25409B3D002373D7 /* BaseNavigationVC.m in Sources */,
 				C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */,
 				C57D5C50251360C90073F90B /* BWItemModel.m in Sources */,
-				C5914D2C25385214007777A6 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
 				C57D5BD225135B370073F90B /* UIView+Measure.m in Sources */,
 				C57D5B3E2513587B0073F90B /* main.m in Sources */,
 				C57D5BDD25135B630073F90B /* NSObject+SYSAlertController.m in Sources */,
@@ -1134,6 +1154,7 @@
 				C546C445252C247C003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C5F732EF2513C05F00216DEF /* BaseTableViewer.m in Sources */,
 				C5914D2025385214007777A6 /* UIViewController+JPImageresizerView.m in Sources */,
+				C57675F92546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
 				C546C444252C247C003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
 				C57D5C3C25135FF40073F90B /* NSDate+BRPickerView.m in Sources */,
 				C57D5C3D25135FF40073F90B /* BRDatePickerView.m in Sources */,
@@ -1160,6 +1181,7 @@
 				C57D5B8825135A9F0073F90B /* UITextField+Extend.m in Sources */,
 				C57D5C3B25135FF40073F90B /* BRDatePickerView+BR.m in Sources */,
 				C5914D2825385214007777A6 /* UIViewController+GifImageView.m in Sources */,
+				C57675F82546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
 				C57D5B9B25135ADC0073F90B /* HQTextField.m in Sources */,
 				C57D5B7D25135A6B0073F90B /* TBVCell_style_02.m in Sources */,
 				C5914D2925385214007777A6 /* UIViewController+BackBtn.m in Sources */,
