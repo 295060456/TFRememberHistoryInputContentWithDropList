@@ -13,6 +13,8 @@
 		C50ECA4A25257E06000AE52F /* 音律跳动.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C50ECA4925257E06000AE52F /* 音律跳动.bundle */; };
 		C546C444252C247C003694FF /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C440252C247B003694FF /* UIScrollView+FDFullscreenPopGesture.m */; };
 		C546C445252C247C003694FF /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C546C443252C247B003694FF /* UINavigationController+FDFullscreenPopGesture.m */; };
+		C54B4016255297EF003BE195 /* UILabel+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B4012255297EF003BE195 /* UILabel+RichText.m */; };
+		C54B4017255297EF003BE195 /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B4015255297EF003BE195 /* UILabel+Extra.m */; };
 		C55AF5A4253C4C7700C558C4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C55AF5A3253C4C7700C558C4 /* CollectionViewCell.m */; };
 		C56E4207254717BC00B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E4206254717BC00B9F555 /* ⚽️PicResource */; };
 		C572797C25409B3D002373D7 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C572797725409B3D002373D7 /* BaseNavigationVC.m */; };
@@ -126,6 +128,10 @@
 		C546C441252C247B003694FF /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		C546C442252C247B003694FF /* UIScrollView+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		C546C443252C247B003694FF /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		C54B4012255297EF003BE195 /* UILabel+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RichText.m"; sourceTree = "<group>"; };
+		C54B4013255297EF003BE195 /* UILabel+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extra.h"; sourceTree = "<group>"; };
+		C54B4014255297EF003BE195 /* UILabel+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RichText.h"; sourceTree = "<group>"; };
+		C54B4015255297EF003BE195 /* UILabel+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
 		C55AF5A2253C4C7700C558C4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		C55AF5A3253C4C7700C558C4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		C56E4206254717BC00B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "⚽️PicResource"; path = "TFRememberHistoryInputContentWithDropList/⚽️PicResource"; sourceTree = "<group>"; };
@@ -357,6 +363,17 @@
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
+		C54B4011255297EF003BE195 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				C54B4012255297EF003BE195 /* UILabel+RichText.m */,
+				C54B4013255297EF003BE195 /* UILabel+Extra.h */,
+				C54B4014255297EF003BE195 /* UILabel+RichText.h */,
+				C54B4015255297EF003BE195 /* UILabel+Extra.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		C55AF5A1253C4C7600C558C4 /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +559,7 @@
 		C57D5B7325135A4D0073F90B /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C54B4011255297EF003BE195 /* UILabel */,
 				C572797925409B3D002373D7 /* UINavigationBar */,
 				C572797625409B3D002373D7 /* UINavigationController */,
 				C55AF5A1253C4C7600C558C4 /* UICollectionViewCell */,
@@ -1112,6 +1130,7 @@
 				C572798325409B5C002373D7 /* UIViewController+NavigationBar.m in Sources */,
 				C57D5B9025135AAE0073F90B /* ZYTextField.m in Sources */,
 				C5914D2B25385214007777A6 /* UIViewController+BaseVC.m in Sources */,
+				C54B4017255297EF003BE195 /* UILabel+Extra.m in Sources */,
 				C57D5B7B25135A6B0073F90B /* TBVCell_style_01.m in Sources */,
 				C57D5B9725135ABF0073F90B /* CJTextField.m in Sources */,
 				C57D5BEF25135B6B0073F90B /* NSObject+Random.m in Sources */,
@@ -1160,6 +1179,7 @@
 				C57D5B7C25135A6B0073F90B /* UITableViewCell+WhiteArrows.m in Sources */,
 				C5914D44253852CC007777A6 /* ECAuthorizationTools.m in Sources */,
 				C57D5B302513587A0073F90B /* ViewController.m in Sources */,
+				C54B4016255297EF003BE195 /* UILabel+RichText.m in Sources */,
 				C57D5BD125135B370073F90B /* UIView+Gradient.m in Sources */,
 				C57D5C4E251360C90073F90B /* BWShareView.m in Sources */,
 				C57D5B362513587A0073F90B /* TFRememberHistoryInputContentWithDropList.xcdatamodeld in Sources */,
