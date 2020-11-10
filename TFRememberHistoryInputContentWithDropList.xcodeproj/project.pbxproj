@@ -969,6 +969,7 @@
 		C57D5B1D2513587A0073F90B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TFRHICWDL;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = Jobs;
 				TargetAttributes = {
