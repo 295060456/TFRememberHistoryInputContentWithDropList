@@ -12,7 +12,7 @@
 
 @property(strong,nonatomic)UIWindow * window;
 
-+(SceneDelegate *)sharedInstance;
++(instancetype)sharedInstance;
 
 @end
 
