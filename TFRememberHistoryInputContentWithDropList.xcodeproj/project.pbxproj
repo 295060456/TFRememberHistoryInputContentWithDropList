@@ -135,7 +135,7 @@
 		C55AF5A2253C4C7700C558C4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		C55AF5A3253C4C7700C558C4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		C56209372554003400FE435F /* 高度自定义的按钮.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
-		C56E4206254717BC00B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "⚽️PicResource"; path = "TFRememberHistoryInputContentWithDropList/⚽️PicResource"; sourceTree = "<group>"; };
+		C56E4206254717BC00B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "⚽️PicResource"; sourceTree = "<group>"; };
 		C572797725409B3D002373D7 /* BaseNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationVC.m; sourceTree = "<group>"; };
 		C572797825409B3D002373D7 /* BaseNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationVC.h; sourceTree = "<group>"; };
 		C572797A25409B3D002373D7 /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
@@ -447,12 +447,10 @@
 		C57D5B1C2513587A0073F90B = {
 			isa = PBXGroup;
 			children = (
-				C56E4206254717BC00B9F555 /* ⚽️PicResource */,
-				C57D5B62251359010073F90B /* Macro */,
 				C57D5B272513587A0073F90B /* TFRememberHistoryInputContentWithDropList */,
-				C57D5B63251359250073F90B /* Other */,
+				C57D5B462513587B0073F90B /* TFRememberHistoryInputContentWithDropListTests */,
+				C57D5B512513587B0073F90B /* TFRememberHistoryInputContentWithDropListUITests */,
 				FC4D63F1F4528C9D28E319C5 /* Frameworks */,
-				C57D5B61251358F00073F90B /* Pods不进去的 */,
 				1EC586860FB0729A8E052444 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -471,11 +469,15 @@
 		C57D5B272513587A0073F90B /* TFRememberHistoryInputContentWithDropList */ = {
 			isa = PBXGroup;
 			children = (
-				C57D5B3C2513587B0073F90B /* Info.plist */,
+				C56E4206254717BC00B9F555 /* ⚽️PicResource */,
+				C57D5B62251359010073F90B /* 🌹Macro */,
 				C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */,
 				C57D5B7325135A4D0073F90B /* BaseCustomizeUIKit */,
 				C57D5B652513597B0073F90B /* AppDelegate & SceneDelegate */,
 				C57D5BF525135BB50073F90B /* 🇨🇳ServiceLogic */,
+				C57D5B63251359250073F90B /* Others */,
+				C57D5B61251358F00073F90B /* Pods不进去的 */,
+				C57D5B3C2513587B0073F90B /* Info.plist */,
 			);
 			path = TFRememberHistoryInputContentWithDropList;
 			sourceTree = "<group>";
@@ -507,7 +509,7 @@
 			path = "Pods不进去的";
 			sourceTree = "<group>";
 		};
-		C57D5B62251359010073F90B /* Macro */ = {
+		C57D5B62251359010073F90B /* 🌹Macro */ = {
 			isa = PBXGroup;
 			children = (
 				C57D5B6F251359B40073F90B /* Notification */,
@@ -520,10 +522,10 @@
 				C57D5B6D251359A60073F90B /* Pods.h */,
 				C57D5B66251359A60073F90B /* PrefixHeader.pch */,
 			);
-			path = Macro;
+			path = "🌹Macro";
 			sourceTree = "<group>";
 		};
-		C57D5B63251359250073F90B /* Other */ = {
+		C57D5B63251359250073F90B /* Others */ = {
 			isa = PBXGroup;
 			children = (
 				C57D5B312513587A0073F90B /* Main.storyboard */,
@@ -531,11 +533,9 @@
 				C57D5B392513587B0073F90B /* LaunchScreen.storyboard */,
 				C57D5B3D2513587B0073F90B /* main.m */,
 				C57D5B342513587A0073F90B /* TFRememberHistoryInputContentWithDropList.xcdatamodeld */,
-				C57D5B462513587B0073F90B /* TFRememberHistoryInputContentWithDropListTests */,
-				C57D5B512513587B0073F90B /* TFRememberHistoryInputContentWithDropListUITests */,
 				C57D5B262513587A0073F90B /* Products */,
 			);
-			path = Other;
+			path = Others;
 			sourceTree = "<group>";
 		};
 		C57D5B652513597B0073F90B /* AppDelegate & SceneDelegate */ = {
@@ -1371,7 +1371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Macro/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/🌹Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = TFRememberHistoryInputContentWithDropList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1390,7 +1390,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/Macro/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/🌹Macro/PrefixHeader.pch";
 				INFOPLIST_FILE = TFRememberHistoryInputContentWithDropList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
