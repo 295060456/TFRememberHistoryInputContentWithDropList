@@ -9,17 +9,76 @@
 #ifndef Pods_h
 #define Pods_h
 
+#if __has_include(<Masonry/Masonry.h>)
 #import <Masonry/Masonry.h>
+#else
+#import "Masonry.h"
+#endif
+
+#if __has_include(<SPAlertController/SPAlertController.h>)
+#import <SPAlertController/SPAlertController.h>
+#else
 #import "SPAlertController.h"
-#import <ReactiveObjC.h>
+#endif
+
+#if __has_include(<ReactiveObjC/ReactiveObjC.h>)
+#import <ReactiveObjC/ReactiveObjC.h>
+#else
+#import "ReactiveObjC.h"
+#endif
+
+#if __has_include(<MJExtension/MJExtension.h>)
+#import <MJExtension/MJExtension.h>
+#else
 #import "MJExtension.h"
+#endif
+
+#if __has_include(<MJRefresh/MJRefresh.h>)
+#import <MJRefresh/MJRefresh.h>
+#else
 #import "MJRefresh.h"
+#endif
+
+#if __has_include(<AFNetworking/AFNetworking.h>)
+#import <AFNetworking/AFNetworking.h>
+#else
 #import "AFNetworking.h"
+#endif
+
+#if __has_include(<BRPickerView/BRPickerView.h>)
+#import <BRPickerView/BRPickerView.h>
+#else
 #import "BRPickerView.h"
-#import "JPImageresizerView-umbrella.h"
+#endif
+
+#if __has_include(<JPImageresizerView/JPImageresizerView.h>)
+#import <JPImageresizerView/JPImageresizerView.h>
+#else
+#import "JPImageresizerView.h"
+#endif
+
+#if __has_include(<JXCategoryView/JXCategoryView.h>)
+#import <JXCategoryView/JXCategoryView.h>
+#else
 #import "JXCategoryView.h"
+#endif
+
+#if __has_include(<WHToast/WHToast.h>)
+#import <WHToast/WHToast.h>
+#else
 #import "WHToast.h"
-#import "TZImagePickerController.h"
+#endif
+
+#if __has_include(<SDWebImage/SDWebImage.h>)
+#import <SDWebImage/SDWebImage.h>
+#else
 #import "SDWebImage.h"
+#endif
+
+#if __has_include(<TZImagePickerController/TZImagePickerController.h>)
+#import <TZImagePickerController/TZImagePickerController.h>
+#else
+#import "TZImagePickerController.h"
+#endif
 
 #endif /* Pods_h */
