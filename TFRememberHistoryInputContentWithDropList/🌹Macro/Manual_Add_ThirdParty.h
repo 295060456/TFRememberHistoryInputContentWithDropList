@@ -64,8 +64,7 @@
 //UITableView
 #import "BaseTableViewer.h"
 //UITableViewCell
-#import "TBVCell_style_01.h"
-#import "TBVCell_style_02.h"
+#import "UITableViewCell+Margin.h"
 #import "UITableViewCell+WhiteArrows.h"
 
 #import "ToolMacro.h"
