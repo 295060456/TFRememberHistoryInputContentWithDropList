@@ -566,7 +566,6 @@
 			children = (
 				C572798A25409BF2002373D7 /* AppDelegate */,
 				C572798B25409BF9002373D7 /* SceneDelegate */,
-				C5F7331F25147B5C00216DEF /* 输入用户名和密码 */,
 			);
 			path = "AppDelegate & SceneDelegate";
 			sourceTree = "<group>";
@@ -735,6 +734,7 @@
 		C57D5BF525135BB50073F90B /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				C5F7331F25147B5C00216DEF /* 输入用户名和密码 */,
 				C57D5B2E2513587A0073F90B /* ViewController.h */,
 				C57D5B2F2513587A0073F90B /* ViewController.m */,
 			);
