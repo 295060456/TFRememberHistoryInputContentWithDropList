@@ -47,13 +47,12 @@ UITextFieldDelegate
     if (dataArr.count) {
         //有历史值存在再弹
         textField.dataMutArr = [NSMutableArray arrayWithArray:dataArr];
-    }return textField.isEditting = YES;
+    }return YES;
 }
 //告诉委托人在指定的文本字段中开始编辑
 //- (void)textFieldDidBeginEditing:(UITextField *)textField{}
 //询问委托人是否应在指定的文本字段中停止编辑
 - (BOOL)textFieldShouldEndEditing:(ZYTextField *)textField{
-    textField.isEditting = NO;
     return YES;
 }
 //告诉委托人对指定的文本字段停止编辑
@@ -82,7 +81,6 @@ replacementString:(NSString *)string{
 //询问委托人文本字段是否应处理按下返回按钮
 - (BOOL)textFieldShouldReturn:(ZYTextField *)textField{
     [self endEditing:YES];
-    textField.isEditting = NO;
     return YES;
 }
 

@@ -55,13 +55,12 @@ UITextFieldDelegate
     if (dataArr.count) {
         //有历史值存在再弹
         textField.dataMutArr = [NSMutableArray arrayWithArray:dataArr];
-    }return textField.isEditting = YES;
+    }return YES;
 }
 //告诉委托人在指定的文本字段中开始编辑
 //- (void)textFieldDidBeginEditing:(UITextField *)textField{}
 //询问委托人是否应在指定的文本字段中停止编辑
 - (BOOL)textFieldShouldEndEditing:(ZYTextField *)textField{
-    textField.isEditting = NO;
     return YES;
 }
 //告诉委托人对指定的文本字段停止编辑
@@ -90,7 +89,6 @@ replacementString:(NSString *)string{
 //询问委托人文本字段是否应处理按下返回按钮
 - (BOOL)textFieldShouldReturn:(ZYTextField *)textField{
     [self.view endEditing:YES];
-    textField.isEditting = NO;
     return YES;
 }
 #pragma mark —— lazyLoad
@@ -131,7 +129,7 @@ replacementString:(NSString *)string{
         _gifLoopPlayView.frame = CGRectMake(100, 200, 104, 11);
         [self.view addSubview:_gifLoopPlayView];
         for (int t = 1; t <= 10; t++) {
-            [_gifLoopPlayView.gifMutArr addObject:KBuddleIMG(@"⚽️PicResource",@"音律跳动", nil, [NSString stringWithFormat:@"%d",t])];
+            [_gifLoopPlayView.gifMutArr addObject:KBuddleIMG(nil,@"音律跳动", nil, [NSString stringWithFormat:@"%d",t])];
         }
         // 设置动画时长
         _gifLoopPlayView.duration = 0.85;
