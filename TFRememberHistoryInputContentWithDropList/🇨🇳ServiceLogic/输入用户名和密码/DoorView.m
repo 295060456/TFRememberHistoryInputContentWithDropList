@@ -14,7 +14,6 @@
 @interface DoorView ()
 <
 UITextFieldDelegate
-,CJTextFieldDeleteDelegate
 >
 
 @property(nonatomic,strong)ZYTextField *userTF;
@@ -33,11 +32,6 @@ UITextFieldDelegate
         self.userTF.alpha = 1;
         self.passwordTF.alpha = 1;
     }return self;
-}
-//删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
-#pragma mark —— CJTextFieldDeleteDelegate
-- (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
-
 }
 #pragma mark —— UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
@@ -83,14 +77,12 @@ replacementString:(NSString *)string{
     [self endEditing:YES];
     return YES;
 }
-
 #pragma mark —— lazyLoad
 -(ZYTextField *)userTF{
     if (!_userTF) {
         _userTF = ZYTextField.new;
         _userTF.placeholder = @"请填写用户名";
         _userTF.delegate = self;
-        _userTF.cj_delegate = self;
         _userTF.backgroundColor = kBlackColor;
         _userTF.returnKeyType = UIReturnKeyDone;
         _userTF.keyboardAppearance = UIKeyboardAppearanceAlert;
@@ -110,7 +102,6 @@ replacementString:(NSString *)string{
         _passwordTF = ZYTextField.new;
         _passwordTF.placeholder = @"请填写密码";
         _passwordTF.delegate = self;
-        _passwordTF.cj_delegate = self;
         _passwordTF.backgroundColor = kBlackColor;
         _passwordTF.returnKeyType = UIReturnKeyDone;
         _passwordTF.keyboardAppearance = UIKeyboardAppearanceAlert;
