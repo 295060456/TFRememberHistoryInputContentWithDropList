@@ -16,7 +16,6 @@
 @interface ViewController ()
 <
 UITextFieldDelegate
-,CJTextFieldDeleteDelegate
 >
 
 @property(nonatomic,strong)ZYTextField *textField;
@@ -41,11 +40,6 @@ UITextFieldDelegate
           withEvent:(UIEvent *)event{
     [self.textField closeList];
     [self.doorView endEditing:YES];
-}
-//删除的话：系统先走textField:shouldChangeCharactersInRange:replacementString: 再走cjTextFieldDeleteBackward:
-#pragma mark —— CJTextFieldDeleteDelegate
-- (void)cjTextFieldDeleteBackward:(CJTextField *)textField{
-
 }
 #pragma mark —— UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
@@ -97,7 +91,6 @@ replacementString:(NSString *)string{
         _textField = ZYTextField.new;
         _textField.placeholder = @"你们好哇";
         _textField.delegate = self;
-        _textField.cj_delegate = self;
         _textField.backgroundColor = kBlackColor;
         _textField.returnKeyType = UIReturnKeyDone;
         _textField.keyboardAppearance = UIKeyboardAppearanceAlert;
