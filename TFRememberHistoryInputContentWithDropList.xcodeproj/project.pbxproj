@@ -365,16 +365,16 @@
 		C534E7E2257F908F00DBC3CE /* NSObject+Others */ = {
 			isa = PBXGroup;
 			children = (
-				C54B4014255297EF003BE195 /* NSObject+RichText.h */,
-				C54B4012255297EF003BE195 /* NSObject+RichText.m */,
-				C57F0D45253337970080EEF0 /* NSObject+OpenURL.h */,
-				C57F0D46253337970080EEF0 /* NSObject+OpenURL.m */,
 				C57D5BDF25135B6A0073F90B /* NSObject+Extras.h */,
 				C57D5BEA25135B6B0073F90B /* NSObject+Extras.m */,
 				C57D5BE925135B6B0073F90B /* NSObject+Measure.h */,
 				C57D5BE025135B6A0073F90B /* NSObject+Measure.m */,
+				C57F0D45253337970080EEF0 /* NSObject+OpenURL.h */,
+				C57F0D46253337970080EEF0 /* NSObject+OpenURL.m */,
 				C57D5BE225135B6A0073F90B /* NSObject+Random.h */,
 				C57D5BE825135B6B0073F90B /* NSObject+Random.m */,
+				C54B4014255297EF003BE195 /* NSObject+RichText.h */,
+				C54B4012255297EF003BE195 /* NSObject+RichText.m */,
 				C57D5BE425135B6B0073F90B /* NSObject+Shake.h */,
 				C57D5BE325135B6A0073F90B /* NSObject+Shake.m */,
 				C57D5BE125135B6A0073F90B /* NSObject+Sound.h */,
@@ -442,6 +442,15 @@
 				C576720B2546BAFB00C382C8 /* UIViewController+JXCategory */,
 			);
 			path = "UIViewController+Category";
+			sourceTree = "<group>";
+		};
+		C55567A92580A5C2004DB33A /* TimeModel */ = {
+			isa = PBXGroup;
+			children = (
+				C556977C255BFDCE005C1361 /* TimeModel.h */,
+				C556977E255BFDCE005C1361 /* TimeModel.m */,
+			);
+			path = TimeModel;
 			sourceTree = "<group>";
 		};
 		C55AF5A1253C4C7600C558C4 /* UICollectionViewCell */ = {
@@ -696,6 +705,7 @@
 		C57D5BD725135B530073F90B /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C55567A92580A5C2004DB33A /* TimeModel */,
 				C57D5BD825135B5A0073F90B /* NSObject+Alert */,
 				C534E7E2257F908F00DBC3CE /* NSObject+Others */,
 			);
@@ -720,8 +730,6 @@
 				C556977B255BFDCE005C1361 /* NSString+Extras.m */,
 				C5569779255BFDCE005C1361 /* NSString+Time.h */,
 				C556977D255BFDCE005C1361 /* NSString+Time.m */,
-				C556977C255BFDCE005C1361 /* TimeModel.h */,
-				C556977E255BFDCE005C1361 /* TimeModel.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
