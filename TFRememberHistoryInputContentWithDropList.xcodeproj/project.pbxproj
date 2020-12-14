@@ -738,18 +738,12 @@
 		C57D5BC425135B2F0073F90B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C5AEEB1B25384241000E1C5F /* UIView+Animation.h */,
-				C5AEEB1A25384241000E1C5F /* UIView+Animation.m */,
-				C5AEEB1925384241000E1C5F /* UIView+Extras.h */,
-				C5AEEB1825384241000E1C5F /* UIView+Extras.m */,
-				C57D5BCC25135B360073F90B /* UIView+Chain.h */,
-				C57D5BCB25135B360073F90B /* UIView+Chain.m */,
-				C57D5BC725135B360073F90B /* UIView+Gradient.h */,
-				C57D5BC525135B360073F90B /* UIView+Gradient.m */,
-				C57D5BC825135B360073F90B /* UIView+Measure.h */,
-				C57D5BC625135B360073F90B /* UIView+Measure.m */,
-				C57D5BCE25135B360073F90B /* UIView+SuspendView.h */,
-				C57D5BCF25135B360073F90B /* UIView+SuspendView.m */,
+				C595BE9025864299002A4531 /* UIView+Animation */,
+				C595BE92258642A8002A4531 /* UIView+Chain */,
+				C595BE91258642A1002A4531 /* UIView+Extras */,
+				C595BE93258642AE002A4531 /* UIView+Gradient */,
+				C595BE94258642B5002A4531 /* UIView+Measure */,
+				C595BE95258642BE002A4531 /* UIView+SuspendView */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -915,6 +909,60 @@
 				C5914D43253852CC007777A6 /* ECAuthorizationTools.m */,
 			);
 			path = ECAuthorizationTools;
+			sourceTree = "<group>";
+		};
+		C595BE9025864299002A4531 /* UIView+Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C5AEEB1B25384241000E1C5F /* UIView+Animation.h */,
+				C5AEEB1A25384241000E1C5F /* UIView+Animation.m */,
+			);
+			path = "UIView+Animation";
+			sourceTree = "<group>";
+		};
+		C595BE91258642A1002A4531 /* UIView+Extras */ = {
+			isa = PBXGroup;
+			children = (
+				C5AEEB1925384241000E1C5F /* UIView+Extras.h */,
+				C5AEEB1825384241000E1C5F /* UIView+Extras.m */,
+			);
+			path = "UIView+Extras";
+			sourceTree = "<group>";
+		};
+		C595BE92258642A8002A4531 /* UIView+Chain */ = {
+			isa = PBXGroup;
+			children = (
+				C57D5BCC25135B360073F90B /* UIView+Chain.h */,
+				C57D5BCB25135B360073F90B /* UIView+Chain.m */,
+			);
+			path = "UIView+Chain";
+			sourceTree = "<group>";
+		};
+		C595BE93258642AE002A4531 /* UIView+Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				C57D5BC725135B360073F90B /* UIView+Gradient.h */,
+				C57D5BC525135B360073F90B /* UIView+Gradient.m */,
+			);
+			path = "UIView+Gradient";
+			sourceTree = "<group>";
+		};
+		C595BE94258642B5002A4531 /* UIView+Measure */ = {
+			isa = PBXGroup;
+			children = (
+				C57D5BC825135B360073F90B /* UIView+Measure.h */,
+				C57D5BC625135B360073F90B /* UIView+Measure.m */,
+			);
+			path = "UIView+Measure";
+			sourceTree = "<group>";
+		};
+		C595BE95258642BE002A4531 /* UIView+SuspendView */ = {
+			isa = PBXGroup;
+			children = (
+				C57D5BCE25135B360073F90B /* UIView+SuspendView.h */,
+				C57D5BCF25135B360073F90B /* UIView+SuspendView.m */,
+			);
+			path = "UIView+SuspendView";
 			sourceTree = "<group>";
 		};
 		C5D529442583760E0030F176 /* LOTAnimationMJRefreshHeader */ = {
