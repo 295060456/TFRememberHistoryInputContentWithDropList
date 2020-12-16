@@ -4,7 +4,7 @@
 //  Copyright © 2018 Aalto. All rights reserved.
 //
 
-#import "YBNotificationManager.h"
+#import "NotificationManager.h"
 
 NSString *const kUserAssert = @"kUserAssert";
 NSString *const kNotify_IsBackExchangeRefresh = @"kNotify_IsBackExchangeRefresh";
@@ -17,6 +17,6 @@ NSString *const KLoginOutNotifaction = @"KLoginOutNotifaction"; //退出登录�
 NSString *const MKAFNReachability = @"AFNReachability";
 NSString *const MKRecordStartNotification = @"MKRecordStartNotification";
 
-@implementation YBNotificationManager
+@implementation NotificationManager
 
 @end

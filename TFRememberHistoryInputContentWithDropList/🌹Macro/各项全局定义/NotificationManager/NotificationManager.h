@@ -19,7 +19,7 @@ FOUNDATION_EXTERN NSString *const MKRecordStartNotification;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YBNotificationManager : NSObject
+@interface NotificationManager : NSObject
 
 @end
 

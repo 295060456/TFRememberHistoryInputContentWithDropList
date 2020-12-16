@@ -9,16 +9,11 @@
 #ifndef Manual_Add_ThirdParty_h
 #define Manual_Add_ThirdParty_h
 
-#import "SceneDelegate.h"
-#import "AppDelegate.h"
-
-#import "AABlock.h"
-
-//UIImage
+/// UIImage
 #import "LoadingImage.h"
-//NSString
+/// NSString
 #import "NSString+Extras.h"
-//NSObject
+/// NSObject
 #import "NSObject+Measure.h"
 #import "NSObject+Extras.h"
 #import "NSObject+Random.h"
@@ -28,14 +23,14 @@
 #import "NSObject+SYSAlertController.h"
 #import "NSObject+SPAlertController.h"
 #import "NSObject+OpenURL.h"
-//UIView
+/// UIView
 #import "UIView+Chain.h"
 #import "UIView+Extras.h"
 #import "UIView+Measure.h"
 #import "UIView+SuspendView.h"
 #import "UIView+Animation.h"
 #import "UIView+Gradient.h"
-//UIViewController
+/// UIViewController
 #import "UIViewController+BaseVC.h"
 #import "UIViewController+BackBtn.h"
 #import "UIViewController+BRPickerView.h"
@@ -50,24 +45,23 @@
 #import "UIViewController+TZImagePickerControllerDelegate.h"
 #import "UIViewController+TZLocationManager.h"
 #import "UIViewController+NavigationBar.h"
-//UINavigationController
+/// UINavigationController
 #import "BaseNavigationVC.h"
-//UINavigationBar
+/// UINavigationBar
 #import "NavigationBar.h"
-//UICollectionViewCell
+/// UICollectionViewCell
 #import "CollectionViewCell.h"
-//UITextField
+/// UITextField
 #import "HQTextField.h"
 #import "CJTextField.h"
 #import "ZYTextField.h"
 #import "UITextField+Extend.h"
-//UITableView
+/// UITableView
 #import "BaseTableViewer.h"
-//UITableViewCell
+/// UITableViewCell
 #import "UITableViewCell+Margin.h"
 #import "UITableViewCell+WhiteArrows.h"
-
-#import "ToolMacro.h"
+/// UIButton
 #import "UIButton+ImageTitleSpacing.h"
 
 #endif /* Manual_Add_ThirdParty_h */
