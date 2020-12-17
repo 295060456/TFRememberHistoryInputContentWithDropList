@@ -45,6 +45,7 @@
 #import "UIViewController+TZImagePickerControllerDelegate.h"
 #import "UIViewController+TZLocationManager.h"
 #import "UIViewController+NavigationBar.h"
+#import "UIViewController+EmptyData.h"
 /// UINavigationController
 #import "BaseNavigationVC.h"
 /// UINavigationBar
