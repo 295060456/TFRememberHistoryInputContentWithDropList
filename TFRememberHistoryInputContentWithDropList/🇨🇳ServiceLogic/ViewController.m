@@ -97,7 +97,10 @@ replacementString:(NSString *)string{
         _textField.alpha = 0.7;
         [self.view addSubview:_textField];
         _textField.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
-        _textField.frame = CGRectMake(100, 100, 200, 50);
+        _textField.frame = CGRectMake(100,
+                                      100,
+                                      200,
+                                      50);
     }return _textField;
 }
 
@@ -112,7 +115,8 @@ replacementString:(NSString *)string{
             make.centerY.equalTo(self.view).offset(-100);
         }];
         [self.view layoutIfNeeded];
-        [UIView cornerCutToCircleWithView:_doorView AndCornerRadius:5];
+        [UIView cornerCutToCircleWithView:_doorView
+                          andCornerRadius:5];
     }return _doorView;
 }
 

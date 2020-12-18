@@ -14,7 +14,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
 
 @implementation UIView (Extras)
 
-- (void)setBorderWithView:(UIView *__nonnull)view
++ (void)setBorderWithView:(UIView *__nonnull)view
               borderColor:(UIColor *__nonnull)color
               borderWidth:(CGFloat)width
                borderType:(UIBorderSideType)borderType{
@@ -78,8 +78,8 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
  @param WidthOfBorder 边线宽度
  */
 +(void)colourToLayerOfView:(UIView *__nonnull)view
-                WithColour:(UIColor *__nonnull)colour
-            AndBorderWidth:(CGFloat)WidthOfBorder{
+                withColour:(UIColor *__nonnull)colour
+            andBorderWidth:(CGFloat)WidthOfBorder{
     view.layer.borderColor = colour.CGColor;
     view.layer.borderWidth = WidthOfBorder;
 }
