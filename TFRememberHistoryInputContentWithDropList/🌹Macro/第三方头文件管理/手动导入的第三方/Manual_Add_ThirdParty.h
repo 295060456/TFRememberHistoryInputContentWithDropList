@@ -65,4 +65,6 @@
 /// UIButton
 #import "UIButton+ImageTitleSpacing.h"
 
+#import "UserDefaultManager.h"
+
 #endif /* Manual_Add_ThirdParty_h */

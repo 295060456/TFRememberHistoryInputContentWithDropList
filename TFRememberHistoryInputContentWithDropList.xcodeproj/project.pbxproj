@@ -76,6 +76,8 @@
 		C5914D2925385214007777A6 /* UIViewController+BackBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1325385214007777A6 /* UIViewController+BackBtn.m */; };
 		C5914D2B25385214007777A6 /* UIViewController+BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1A25385214007777A6 /* UIViewController+BaseVC.m */; };
 		C5914D44253852CC007777A6 /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D43253852CC007777A6 /* ECAuthorizationTools.m */; };
+		C59A3F12258DD254005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3F10258DD253005F6260 /* UserDefaultModel.m */; };
+		C59A3F13258DD254005F6260 /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3F11258DD253005F6260 /* UserDefaultManager.m */; };
 		C5AEEB1C25384241000E1C5F /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEB1825384241000E1C5F /* UIView+Extras.m */; };
 		C5AEEB1D25384241000E1C5F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEB1A25384241000E1C5F /* UIView+Animation.m */; };
 		C5D0BB3F25878F48002CA224 /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0BB3E25878F48002CA224 /* NSObject+Sound.m */; };
@@ -274,6 +276,10 @@
 		C5914D1D25385214007777A6 /* UIViewController+GifImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GifImageView.h"; sourceTree = "<group>"; };
 		C5914D42253852CC007777A6 /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
 		C5914D43253852CC007777A6 /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
+		C59A3F0E258DD253005F6260 /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
+		C59A3F0F258DD253005F6260 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
+		C59A3F10258DD253005F6260 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
+		C59A3F11258DD253005F6260 /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
 		C5AEEB1825384241000E1C5F /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extras.m"; sourceTree = "<group>"; };
 		C5AEEB1925384241000E1C5F /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
 		C5AEEB1A25384241000E1C5F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
@@ -987,6 +993,7 @@
 		C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C59A3F0D258DD253005F6260 /* UserDefaultManager */,
 				C57D5C45251360BE0073F90B /* 分享控件 */,
 				C5914D41253852CC007777A6 /* ECAuthorizationTools */,
 				C50ECA442524C583000AE52F /* GifLoopPlayView */,
@@ -1096,6 +1103,17 @@
 				C57D5BCF25135B360073F90B /* UIView+SuspendView.m */,
 			);
 			path = "UIView+SuspendView";
+			sourceTree = "<group>";
+		};
+		C59A3F0D258DD253005F6260 /* UserDefaultManager */ = {
+			isa = PBXGroup;
+			children = (
+				C59A3F0E258DD253005F6260 /* UserDefaultManager.h */,
+				C59A3F0F258DD253005F6260 /* UserDefaultModel.h */,
+				C59A3F10258DD253005F6260 /* UserDefaultModel.m */,
+				C59A3F11258DD253005F6260 /* UserDefaultManager.m */,
+			);
+			path = UserDefaultManager;
 			sourceTree = "<group>";
 		};
 		C5D1BCA1258B0D5600784D2F /* UIViewController+EmptyData */ = {
@@ -1602,6 +1620,7 @@
 				C57D5BDE25135B630073F90B /* NSObject+SPAlertController.m in Sources */,
 				C5D77884257F5B600087FC92 /* CJTextField.m in Sources */,
 				C5914D2725385214007777A6 /* UIViewController+BRPickerView.m in Sources */,
+				C59A3F13258DD254005F6260 /* UserDefaultManager.m in Sources */,
 				C5914D44253852CC007777A6 /* ECAuthorizationTools.m in Sources */,
 				C54AB258255E6127000A314D /* UITableViewCell+WhiteArrows.m in Sources */,
 				C57D5B302513587A0073F90B /* ViewController.m in Sources */,
@@ -1612,6 +1631,7 @@
 				C5D602F12586327100029AFF /* UIViewController+NavigationBar.m in Sources */,
 				C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */,
 				C5AEEB1C25384241000E1C5F /* UIView+Extras.m in Sources */,
+				C59A3F12258DD254005F6260 /* UserDefaultModel.m in Sources */,
 				C5D602FA2586327B00029AFF /* BaseViewController.m in Sources */,
 				C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */,
 				C57D5C3F25135FF40073F90B /* BRPickerStyle.m in Sources */,

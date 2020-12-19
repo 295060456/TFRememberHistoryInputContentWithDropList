@@ -37,7 +37,7 @@ UITextFieldDelegate
 //询问委托人是否应该在指定的文本字段中开始编辑
 - (BOOL)textFieldShouldBeginEditing:(ZYTextField *)textField{
     //取数据
-    NSArray *dataArr = GetUserDefaultObjForKey(@"dataMutArr");
+    NSArray *dataArr = (NSArray *)[UserDefaultManager fetchDataWithKey:@"dataMutArr"];
     if (dataArr.count) {
         //有历史值存在再弹
         textField.dataMutArr = [NSMutableArray arrayWithArray:dataArr];
@@ -57,8 +57,11 @@ UITextFieldDelegate
         if (![textField.dataMutArr containsObject:textField.text]) {
             [textField.dataMutArr addObject:textField.text];
         }
-        SetUserDefaultKeyWithObject(@"dataMutArr", textField.dataMutArr);
-        UserDefaultSynchronize;
+        
+        UserDefaultModel *userDefaultModel = UserDefaultModel.new;
+        userDefaultModel.key = @"dataMutArr";
+        userDefaultModel.obj = textField.dataMutArr;
+        [UserDefaultManager storedData:userDefaultModel];
     }
 }
 //告诉委托人对指定的文本字段停止编辑
