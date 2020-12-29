@@ -9,6 +9,9 @@
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability-new"
+
 @interface SceneDelegate ()
 
 @end
@@ -72,5 +75,6 @@ static SceneDelegate *static_sceneDelegate = nil;
     [(AppDelegate *)UIApplication.sharedApplication.delegate saveContext];
 }
 
-
 @end
+
+#pragma clang diagnostic pop
