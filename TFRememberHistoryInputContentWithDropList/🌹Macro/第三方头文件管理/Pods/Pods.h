@@ -75,12 +75,6 @@
 #import "SDWebImage.h"
 #endif
 
-#if __has_include(<TZImagePickerController/TZImagePickerController.h>)
-#import <TZImagePickerController/TZImagePickerController.h>
-#else
-#import "TZImagePickerController.h"
-#endif
-
 #if __has_include(<GKNavigationBar/GKNavigationBar.h>)
 #import <GKNavigationBar/GKNavigationBar.h>
 #else
