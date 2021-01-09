@@ -1,5 +1,6 @@
 
 #import "ZYTextField.h"
+#import "LoadingImage.h"
 
 @interface ZYTextField ()
 
@@ -14,7 +15,7 @@
 -(instancetype)init{
     if (self = [super init]) {
         self.clearButtonMode = UITextFieldViewModeWhileEditing;
-        [self modifyClearButtonWithImage:KBuddleIMG(@"⚽️PicResource",@"ZYTextField", nil, @"closeCircle")];
+        [self modifyClearButtonWithImage:KIMG(@"closeCircle")];
     }return self;
 }
 
