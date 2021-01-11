@@ -24,6 +24,7 @@ def func
   pod 'SPAlertController'# https://github.com/SPStore/SPAlertController 深度定制AlertController
   pod 'MJRefresh' # https://github.com/CoderMJLee/MJRefresh An easy way to use pull-to-refresh
   pod 'MJExtension' # https://github.com/CoderMJLee/MJExtension A fast, convenient and nonintrusive conversion framework between JSON and model. Your model class doesn't need to extend any base class. You don't need to modify any model file.
+  pod 'FLAnimatedImageView+RGWrapper' #
   pod 'AFNetworking'  # https://github.com/AFNetworking/AFNetworking A delightful networking framework for iOS, macOS, watchOS, and tvOS.
   pod 'JPImageresizerView' # https://github.com/Rogue24/JPImageresizerView 一个专门裁剪图片、GIF、视频的轮子，简单易用，功能丰富（高自由度的参数设定、支持旋转和镜像翻转、蒙版、压缩等），能满足绝大部分裁剪的需求。
   pod 'JXPagingView/Pager' # https://github.com/pujiaxin33/JXPagingView NO_SMP

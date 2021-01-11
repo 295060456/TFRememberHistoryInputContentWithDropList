@@ -76,6 +76,28 @@
 		C5914D2B25385214007777A6 /* UIViewController+BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1A25385214007777A6 /* UIViewController+BaseVC.m */; };
 		C59A3F12258DD254005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3F10258DD253005F6260 /* UserDefaultModel.m */; };
 		C59A3F13258DD254005F6260 /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3F11258DD253005F6260 /* UserDefaultManager.m */; };
+		C5A43B0725AAF8D9000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A43B0225AAF8D9000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m */; };
+		C5A43B0925AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A43B0625AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		C5A4454525ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4453125ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m */; };
+		C5A4454625ABFC76000F0CD2 /* WHToast+DDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4453325ABFC76000F0CD2 /* WHToast+DDToast.m */; };
+		C5A4454725ABFC76000F0CD2 /* JXCategoryTitleBackgroundCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4453A25ABFC76000F0CD2 /* JXCategoryTitleBackgroundCellModel.m */; };
+		C5A4454825ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4453B25ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.m */; };
+		C5A4454925ABFC76000F0CD2 /* JXCategoryTitleBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4453C25ABFC76000F0CD2 /* JXCategoryTitleBackgroundView.m */; };
+		C5A4454A25ABFC76000F0CD2 /* JXCategoryTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4453F25ABFC76000F0CD2 /* JXCategoryTimelineView.m */; };
+		C5A4454B25ABFC76000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4454025ABFC76000F0CD2 /* JXCategoryTimelineCellModel.m */; };
+		C5A4454C25ABFC76000F0CD2 /* JXCategoryTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4454125ABFC76000F0CD2 /* JXCategoryTimelineCell.m */; };
+		C5A4456825ABFC82000F0CD2 /* XHLaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4455425ABFC81000F0CD2 /* XHLaunchAdView.m */; };
+		C5A4456925ABFC82000F0CD2 /* XHLaunchAdButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4455725ABFC81000F0CD2 /* XHLaunchAdButton.m */; };
+		C5A4456A25ABFC82000F0CD2 /* XHLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4455925ABFC81000F0CD2 /* XHLaunchImageView.m */; };
+		C5A4456B25ABFC82000F0CD2 /* XHLaunchAdConst.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4455A25ABFC81000F0CD2 /* XHLaunchAdConst.m */; };
+		C5A4456C25ABFC82000F0CD2 /* XHLaunchAd不用pod导入的情况说明.md in Resources */ = {isa = PBXBuildFile; fileRef = C5A4455C25ABFC81000F0CD2 /* XHLaunchAd不用pod导入的情况说明.md */; };
+		C5A4456D25ABFC82000F0CD2 /* XHLaunchAd.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4455D25ABFC81000F0CD2 /* XHLaunchAd.m */; };
+		C5A4456E25ABFC82000F0CD2 /* XHLaunchAdController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4455E25ABFC81000F0CD2 /* XHLaunchAdController.m */; };
+		C5A4456F25ABFC82000F0CD2 /* XHLaunchAdDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4455F25ABFC81000F0CD2 /* XHLaunchAdDownloader.m */; };
+		C5A4457025ABFC82000F0CD2 /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456125ABFC81000F0CD2 /* XHLaunchAdImageView+XHLaunchAdCache.m */; };
+		C5A4457125ABFC82000F0CD2 /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456225ABFC81000F0CD2 /* XHLaunchAdConfiguration.m */; };
+		C5A4457225ABFC82000F0CD2 /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456425ABFC81000F0CD2 /* XHLaunchAdCache.m */; };
+		C5A4457325ABFC82000F0CD2 /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456625ABFC82000F0CD2 /* XHLaunchAdImageManager.m */; };
 		C5AEEB1C25384241000E1C5F /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEB1825384241000E1C5F /* UIView+Extras.m */; };
 		C5AEEB1D25384241000E1C5F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEB1A25384241000E1C5F /* UIView+Animation.m */; };
 		C5C65584259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C65541259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m */; };
@@ -319,6 +341,50 @@
 		C59A3F0F258DD253005F6260 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
 		C59A3F10258DD253005F6260 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
 		C59A3F11258DD253005F6260 /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
+		C5A43B0225AAF8D9000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		C5A43B0325AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		C5A43B0425AAF8D9000F0CD2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C5A43B0525AAF8D9000F0CD2 /* UIScrollView+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		C5A43B0625AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		C5A4453025ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GKPhotoBrowser+SaveBtn.h"; sourceTree = "<group>"; };
+		C5A4453125ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GKPhotoBrowser+SaveBtn.m"; sourceTree = "<group>"; };
+		C5A4453325ABFC76000F0CD2 /* WHToast+DDToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WHToast+DDToast.m"; sourceTree = "<group>"; };
+		C5A4453425ABFC76000F0CD2 /* WHToast+DDToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WHToast+DDToast.h"; sourceTree = "<group>"; };
+		C5A4453825ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTitleBackgroundCell.h; sourceTree = "<group>"; };
+		C5A4453925ABFC76000F0CD2 /* JXCategoryTitleBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTitleBackgroundView.h; sourceTree = "<group>"; };
+		C5A4453A25ABFC76000F0CD2 /* JXCategoryTitleBackgroundCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTitleBackgroundCellModel.m; sourceTree = "<group>"; };
+		C5A4453B25ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTitleBackgroundCell.m; sourceTree = "<group>"; };
+		C5A4453C25ABFC76000F0CD2 /* JXCategoryTitleBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTitleBackgroundView.m; sourceTree = "<group>"; };
+		C5A4453D25ABFC76000F0CD2 /* JXCategoryTitleBackgroundCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTitleBackgroundCellModel.h; sourceTree = "<group>"; };
+		C5A4453F25ABFC76000F0CD2 /* JXCategoryTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTimelineView.m; sourceTree = "<group>"; };
+		C5A4454025ABFC76000F0CD2 /* JXCategoryTimelineCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTimelineCellModel.m; sourceTree = "<group>"; };
+		C5A4454125ABFC76000F0CD2 /* JXCategoryTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryTimelineCell.m; sourceTree = "<group>"; };
+		C5A4454225ABFC76000F0CD2 /* JXCategoryTimelineCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTimelineCellModel.h; sourceTree = "<group>"; };
+		C5A4454325ABFC76000F0CD2 /* JXCategoryTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTimelineView.h; sourceTree = "<group>"; };
+		C5A4454425ABFC76000F0CD2 /* JXCategoryTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryTimelineCell.h; sourceTree = "<group>"; };
+		C5A4455125ABFC81000F0CD2 /* XHLaunchAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdController.h; sourceTree = "<group>"; };
+		C5A4455225ABFC81000F0CD2 /* XHLaunchAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAd.h; sourceTree = "<group>"; };
+		C5A4455325ABFC81000F0CD2 /* XHLaunchAdDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdDownloader.h; sourceTree = "<group>"; };
+		C5A4455425ABFC81000F0CD2 /* XHLaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdView.m; sourceTree = "<group>"; };
+		C5A4455525ABFC81000F0CD2 /* XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdCache.h; sourceTree = "<group>"; };
+		C5A4455625ABFC81000F0CD2 /* XHLaunchAdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConfiguration.h; sourceTree = "<group>"; };
+		C5A4455725ABFC81000F0CD2 /* XHLaunchAdButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdButton.m; sourceTree = "<group>"; };
+		C5A4455825ABFC81000F0CD2 /* XHLaunchAdImageView+XHLaunchAdCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XHLaunchAdImageView+XHLaunchAdCache.h"; sourceTree = "<group>"; };
+		C5A4455925ABFC81000F0CD2 /* XHLaunchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchImageView.m; sourceTree = "<group>"; };
+		C5A4455A25ABFC81000F0CD2 /* XHLaunchAdConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConst.m; sourceTree = "<group>"; };
+		C5A4455B25ABFC81000F0CD2 /* XHLaunchAdImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdImageManager.h; sourceTree = "<group>"; };
+		C5A4455C25ABFC81000F0CD2 /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
+		C5A4455D25ABFC81000F0CD2 /* XHLaunchAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAd.m; sourceTree = "<group>"; };
+		C5A4455E25ABFC81000F0CD2 /* XHLaunchAdController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdController.m; sourceTree = "<group>"; };
+		C5A4455F25ABFC81000F0CD2 /* XHLaunchAdDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdDownloader.m; sourceTree = "<group>"; };
+		C5A4456025ABFC81000F0CD2 /* XHLaunchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchImageView.h; sourceTree = "<group>"; };
+		C5A4456125ABFC81000F0CD2 /* XHLaunchAdImageView+XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XHLaunchAdImageView+XHLaunchAdCache.m"; sourceTree = "<group>"; };
+		C5A4456225ABFC81000F0CD2 /* XHLaunchAdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdConfiguration.m; sourceTree = "<group>"; };
+		C5A4456325ABFC81000F0CD2 /* XHLaunchAdButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdButton.h; sourceTree = "<group>"; };
+		C5A4456425ABFC81000F0CD2 /* XHLaunchAdCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdCache.m; sourceTree = "<group>"; };
+		C5A4456525ABFC81000F0CD2 /* XHLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdView.h; sourceTree = "<group>"; };
+		C5A4456625ABFC82000F0CD2 /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
+		C5A4456725ABFC82000F0CD2 /* XHLaunchAdConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConst.h; sourceTree = "<group>"; };
 		C5AEEB1825384241000E1C5F /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extras.m"; sourceTree = "<group>"; };
 		C5AEEB1925384241000E1C5F /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
 		C5AEEB1A25384241000E1C5F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
@@ -868,6 +934,10 @@
 		C57D5B61251358F00073F90B /* PodsManual */ = {
 			isa = PBXGroup;
 			children = (
+				C5A4455025ABFC81000F0CD2 /* XHLaunchAd */,
+				C5A4452F25ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn */,
+				C5A4453525ABFC76000F0CD2 /* JXCategoryView */,
+				C5A4453225ABFC76000F0CD2 /* WHToast */,
 				C5C6553E259DF9FF00FD2F99 /* ECPrivacyCheckTools */,
 			);
 			path = PodsManual;
@@ -1088,6 +1158,7 @@
 		C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5A43B0125AAF8D9000F0CD2 /* 手势滑动返回 */,
 				C59A3F0D258DD253005F6260 /* UserDefaultManager */,
 				C57D5C45251360BE0073F90B /* 分享控件 */,
 				C50ECA442524C583000AE52F /* GifLoopPlayView */,
@@ -1199,6 +1270,101 @@
 				C59A3F11258DD253005F6260 /* UserDefaultManager.m */,
 			);
 			path = UserDefaultManager;
+			sourceTree = "<group>";
+		};
+		C5A43B0125AAF8D9000F0CD2 /* 手势滑动返回 */ = {
+			isa = PBXGroup;
+			children = (
+				C5A43B0425AAF8D9000F0CD2 /* README.md */,
+				C5A43B0325AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.h */,
+				C5A43B0625AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m */,
+				C5A43B0525AAF8D9000F0CD2 /* UIScrollView+FDFullscreenPopGesture.h */,
+				C5A43B0225AAF8D9000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m */,
+			);
+			path = "手势滑动返回";
+			sourceTree = "<group>";
+		};
+		C5A4452F25ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4453025ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.h */,
+				C5A4453125ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m */,
+			);
+			path = "GKPhotoBrowser+SaveBtn";
+			sourceTree = "<group>";
+		};
+		C5A4453225ABFC76000F0CD2 /* WHToast */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4453325ABFC76000F0CD2 /* WHToast+DDToast.m */,
+				C5A4453425ABFC76000F0CD2 /* WHToast+DDToast.h */,
+			);
+			path = WHToast;
+			sourceTree = "<group>";
+		};
+		C5A4453525ABFC76000F0CD2 /* JXCategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4453725ABFC76000F0CD2 /* JXCategoryTitleBackgroundView */,
+				C5A4453E25ABFC76000F0CD2 /* JXCategoryTimelineView */,
+			);
+			path = JXCategoryView;
+			sourceTree = "<group>";
+		};
+		C5A4453725ABFC76000F0CD2 /* JXCategoryTitleBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4453825ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.h */,
+				C5A4453B25ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.m */,
+				C5A4453D25ABFC76000F0CD2 /* JXCategoryTitleBackgroundCellModel.h */,
+				C5A4453A25ABFC76000F0CD2 /* JXCategoryTitleBackgroundCellModel.m */,
+				C5A4453925ABFC76000F0CD2 /* JXCategoryTitleBackgroundView.h */,
+				C5A4453C25ABFC76000F0CD2 /* JXCategoryTitleBackgroundView.m */,
+			);
+			path = JXCategoryTitleBackgroundView;
+			sourceTree = "<group>";
+		};
+		C5A4453E25ABFC76000F0CD2 /* JXCategoryTimelineView */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4454425ABFC76000F0CD2 /* JXCategoryTimelineCell.h */,
+				C5A4454125ABFC76000F0CD2 /* JXCategoryTimelineCell.m */,
+				C5A4454225ABFC76000F0CD2 /* JXCategoryTimelineCellModel.h */,
+				C5A4454025ABFC76000F0CD2 /* JXCategoryTimelineCellModel.m */,
+				C5A4454325ABFC76000F0CD2 /* JXCategoryTimelineView.h */,
+				C5A4453F25ABFC76000F0CD2 /* JXCategoryTimelineView.m */,
+			);
+			path = JXCategoryTimelineView;
+			sourceTree = "<group>";
+		};
+		C5A4455025ABFC81000F0CD2 /* XHLaunchAd */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4455125ABFC81000F0CD2 /* XHLaunchAdController.h */,
+				C5A4455225ABFC81000F0CD2 /* XHLaunchAd.h */,
+				C5A4455325ABFC81000F0CD2 /* XHLaunchAdDownloader.h */,
+				C5A4455425ABFC81000F0CD2 /* XHLaunchAdView.m */,
+				C5A4455525ABFC81000F0CD2 /* XHLaunchAdCache.h */,
+				C5A4455625ABFC81000F0CD2 /* XHLaunchAdConfiguration.h */,
+				C5A4455725ABFC81000F0CD2 /* XHLaunchAdButton.m */,
+				C5A4455825ABFC81000F0CD2 /* XHLaunchAdImageView+XHLaunchAdCache.h */,
+				C5A4455925ABFC81000F0CD2 /* XHLaunchImageView.m */,
+				C5A4455A25ABFC81000F0CD2 /* XHLaunchAdConst.m */,
+				C5A4455B25ABFC81000F0CD2 /* XHLaunchAdImageManager.h */,
+				C5A4455C25ABFC81000F0CD2 /* XHLaunchAd不用pod导入的情况说明.md */,
+				C5A4455D25ABFC81000F0CD2 /* XHLaunchAd.m */,
+				C5A4455E25ABFC81000F0CD2 /* XHLaunchAdController.m */,
+				C5A4455F25ABFC81000F0CD2 /* XHLaunchAdDownloader.m */,
+				C5A4456025ABFC81000F0CD2 /* XHLaunchImageView.h */,
+				C5A4456125ABFC81000F0CD2 /* XHLaunchAdImageView+XHLaunchAdCache.m */,
+				C5A4456225ABFC81000F0CD2 /* XHLaunchAdConfiguration.m */,
+				C5A4456325ABFC81000F0CD2 /* XHLaunchAdButton.h */,
+				C5A4456425ABFC81000F0CD2 /* XHLaunchAdCache.m */,
+				C5A4456525ABFC81000F0CD2 /* XHLaunchAdView.h */,
+				C5A4456625ABFC82000F0CD2 /* XHLaunchAdImageManager.m */,
+				C5A4456725ABFC82000F0CD2 /* XHLaunchAdConst.h */,
+			);
+			path = XHLaunchAd;
 			sourceTree = "<group>";
 		};
 		C5C6553E259DF9FF00FD2F99 /* ECPrivacyCheckTools */ = {
@@ -1662,6 +1828,7 @@
 				C5C655A1259DF9FF00FD2F99 /* 蓝牙@2x.png in Resources */,
 				C5C655A7259DF9FF00FD2F99 /* 文件和文件夹@2x.png in Resources */,
 				C5C655A4259DF9FF00FD2F99 /* 日历@2x.png in Resources */,
+				C5A4456C25ABFC82000F0CD2 /* XHLaunchAd不用pod导入的情况说明.md in Resources */,
 				C5C65593259DF9FF00FD2F99 /* 媒体与AppleMusic@2x.png in Resources */,
 				C54AB257255E6127000A314D /* WhiteRightArrow@3x.png in Resources */,
 				C57D5B3B2513587B0073F90B /* LaunchScreen.storyboard in Resources */,
@@ -1795,6 +1962,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A4454C25ABFC76000F0CD2 /* JXCategoryTimelineCell.m in Sources */,
 				C54AB255255E6127000A314D /* UITableViewCell+Margin.m in Sources */,
 				C5914D2B25385214007777A6 /* UIViewController+BaseVC.m in Sources */,
 				C52F9BD225A6DA2400924990 /* NSObject+SPAlertController.m in Sources */,
@@ -1805,16 +1973,20 @@
 				C57D5C4225135FF40073F90B /* BRAddressModel.m in Sources */,
 				C5C65588259DF9FF00FD2F99 /* ECPrivacyCheckLocationServices.m in Sources */,
 				C57D5BD525135B370073F90B /* UIView+SuspendView.m in Sources */,
+				C5A4457125ABFC82000F0CD2 /* XHLaunchAdConfiguration.m in Sources */,
 				C5DF460525A89A4D00E91985 /* MJRefreshConfigModel.m in Sources */,
 				C572797C25409B3D002373D7 /* BaseNavigationVC.m in Sources */,
 				C546106B258C8FF90008928C /* UIView+AOP.m in Sources */,
 				C534CE7F25875A60001369FD /* BWItemCollectionViewCell.m in Sources */,
+				C5A4457225ABFC82000F0CD2 /* XHLaunchAdCache.m in Sources */,
+				C5A4454825ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */,
 				C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */,
 				C5C65584259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m in Sources */,
 				C57D5BD225135B370073F90B /* UIView+Measure.m in Sources */,
 				C5C6558C259DF9FF00FD2F99 /* ECPrivacyCheckMotionAndFitness.m in Sources */,
 				C5D6DCF725860F7900029AFF /* TimeModel.m in Sources */,
 				C57D5B3E2513587B0073F90B /* main.m in Sources */,
+				C5A4454625ABFC76000F0CD2 /* WHToast+DDToast.m in Sources */,
 				C5C65590259DF9FF00FD2F99 /* ECPrivacyCheckHealth.m in Sources */,
 				C57D5C4025135FF40073F90B /* BRBaseView.m in Sources */,
 				C57D5C3A25135FF40073F90B /* BRStringPickerView.m in Sources */,
@@ -1825,6 +1997,7 @@
 				C5F7332225147B9C00216DEF /* DoorView.m in Sources */,
 				C57D5C4325135FF40073F90B /* BRAddressPickerView.m in Sources */,
 				C57D5BEC25135B6B0073F90B /* NSObject+Shake.m in Sources */,
+				C5A4454525ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
 				C5914D2325385214007777A6 /* UIViewController+Shake.m in Sources */,
 				C572797D25409B3D002373D7 /* NavigationBar.m in Sources */,
 				C5C65587259DF9FF00FD2F99 /* ECPrivacyCheckCamera.m in Sources */,
@@ -1832,7 +2005,13 @@
 				C5C6558E259DF9FF00FD2F99 /* ECPrivacyCheckPhotos.m in Sources */,
 				C5C6558A259DF9FF00FD2F99 /* ECPrivacyCheckCalendars.m in Sources */,
 				C57D5C4125135FF40073F90B /* NSBundle+BRPickerView.m in Sources */,
+				C5A4456925ABFC82000F0CD2 /* XHLaunchAdButton.m in Sources */,
 				C534CE7D25875A60001369FD /* BWItemModel.m in Sources */,
+				C5A43B0725AAF8D9000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
+				C5A4456825ABFC82000F0CD2 /* XHLaunchAdView.m in Sources */,
+				C5A4456E25ABFC82000F0CD2 /* XHLaunchAdController.m in Sources */,
+				C5A4456F25ABFC82000F0CD2 /* XHLaunchAdDownloader.m in Sources */,
+				C5A4456A25ABFC82000F0CD2 /* XHLaunchImageView.m in Sources */,
 				C5267FFE258A4DA00095A681 /* NSObject+Time.m in Sources */,
 				C57D5C3925135FF40073F90B /* BRResultModel.m in Sources */,
 				C5D77881257F5B600087FC92 /* JobsMagicTextField.m in Sources */,
@@ -1842,9 +2021,11 @@
 				C5D0BB3F25878F48002CA224 /* NSObject+Sound.m in Sources */,
 				C52F9BD125A6DA2400924990 /* NSObject+SYSAlertController.m in Sources */,
 				C5F732EF2513C05F00216DEF /* BaseTableViewer.m in Sources */,
+				C5A4454725ABFC76000F0CD2 /* JXCategoryTitleBackgroundCellModel.m in Sources */,
 				C5914D2025385214007777A6 /* UIViewController+JPImageresizerView.m in Sources */,
 				C57675F92546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
 				C57D5C3C25135FF40073F90B /* NSDate+BRPickerView.m in Sources */,
+				C5A4456B25ABFC82000F0CD2 /* XHLaunchAdConst.m in Sources */,
 				C5C65589259DF9FF00FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
 				C57D5C3D25135FF40073F90B /* BRDatePickerView.m in Sources */,
 				C5D7787F257F5B600087FC92 /* HQTextField.m in Sources */,
@@ -1863,6 +2044,7 @@
 				C57D5B302513587A0073F90B /* ViewController.m in Sources */,
 				C54B4016255297EF003BE195 /* NSObject+RichText.m in Sources */,
 				C52B991D259F1358003D9E23 /* CollectionViewCell.m in Sources */,
+				C5A4454A25ABFC76000F0CD2 /* JXCategoryTimelineView.m in Sources */,
 				C57D5BD125135B370073F90B /* UIView+Gradient.m in Sources */,
 				C556977F255BFDCE005C1361 /* NSString+Extras.m in Sources */,
 				C57D5B362513587A0073F90B /* TFRememberHistoryInputContentWithDropList.xcdatamodeld in Sources */,
@@ -1870,16 +2052,21 @@
 				C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */,
 				C5C65591259DF9FF00FD2F99 /* ECPrivacyCheckReminders.m in Sources */,
 				C5AEEB1C25384241000E1C5F /* UIView+Extras.m in Sources */,
+				C5A4454B25ABFC76000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */,
 				C59A3F12258DD254005F6260 /* UserDefaultModel.m in Sources */,
 				C5D602FA2586327B00029AFF /* BaseViewController.m in Sources */,
+				C5A4457325ABFC82000F0CD2 /* XHLaunchAdImageManager.m in Sources */,
 				C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */,
 				C57D5C3F25135FF40073F90B /* BRPickerStyle.m in Sources */,
 				C5914D2225385214007777A6 /* UIViewController+BWShareView.m in Sources */,
 				C5D77882257F5B600087FC92 /* UITextField+Extend.m in Sources */,
 				C5DF460125A89A4D00E91985 /* LOTAnimationMJRefreshFooter.m in Sources */,
+				C5A4454925ABFC76000F0CD2 /* JXCategoryTitleBackgroundView.m in Sources */,
+				C5A4456D25ABFC82000F0CD2 /* XHLaunchAd.m in Sources */,
 				C5D1C144258B211800784D2F /* UIView+EmptyData.m in Sources */,
 				C50ECA402524C265000AE52F /* GifLoopPlayView.m in Sources */,
 				C57F0D47253337970080EEF0 /* NSObject+OpenURL.m in Sources */,
+				C5A43B0925AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C57D5C3B25135FF40073F90B /* BRDatePickerView+BR.m in Sources */,
 				C5914D2825385214007777A6 /* UIViewController+GifImageView.m in Sources */,
 				C57675F82546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
@@ -1887,6 +2074,7 @@
 				C5914D2925385214007777A6 /* UIViewController+BackBtn.m in Sources */,
 				C5DF460425A89A4D00E91985 /* UIViewController+MJRefresh.m in Sources */,
 				C534CE7E25875A60001369FD /* BWShareView.m in Sources */,
+				C5A4457025ABFC82000F0CD2 /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
