@@ -145,6 +145,7 @@
 		C5C655AE259DF9FF00FD2F99 /* 文件和文件夹@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C65579259DF9FF00FD2F99 /* 文件和文件夹@3x.png */; };
 		C5C655AF259DF9FF00FD2F99 /* 定位服务@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C6557A259DF9FF00FD2F99 /* 定位服务@3x.png */; };
 		C5C655B0259DF9FF00FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6557D259DF9FF00FD2F99 /* ECPrivacyCheckGatherTool.m */; };
+		C5CF188C25AC803E00381935 /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CF188925AC803E00381935 /* LYLUnicode.m */; };
 		C5D0BB3F25878F48002CA224 /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0BB3E25878F48002CA224 /* NSObject+Sound.m */; };
 		C5D1C144258B211800784D2F /* UIView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1C142258B211800784D2F /* UIView+EmptyData.m */; };
 		C5D1C150258B214300784D2F /* UIViewController+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1C14F258B214300784D2F /* UIViewController+EmptyData.m */; };
@@ -454,6 +455,9 @@
 		C5C65580259DF9FF00FD2F99 /* ECPrivacyCheckTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckTools.h; sourceTree = "<group>"; };
 		C5C65582259DF9FF00FD2F99 /* ECPrivacyCheckTools不用pod管理的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ECPrivacyCheckTools不用pod管理的情况说明.md"; sourceTree = "<group>"; };
 		C5C65583259DF9FF00FD2F99 /* ECAuthorizationTools.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ECAuthorizationTools.md; sourceTree = "<group>"; };
+		C5CF188925AC803E00381935 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
+		C5CF188A25AC803E00381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "解决打印日志对于Unicode编码不能正常显示中文的问题"; sourceTree = "<group>"; };
+		C5CF188B25AC803E00381935 /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
 		C5D0BB3D25878F48002CA224 /* NSObject+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sound.h"; sourceTree = "<group>"; };
 		C5D0BB3E25878F48002CA224 /* NSObject+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sound.m"; sourceTree = "<group>"; };
 		C5D1C142258B211800784D2F /* UIView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyData.m"; sourceTree = "<group>"; };
@@ -1158,6 +1162,7 @@
 		C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5CF188825AC803E00381935 /* LYLUnicode */,
 				C5A43B0125AAF8D9000F0CD2 /* 手势滑动返回 */,
 				C59A3F0D258DD253005F6260 /* UserDefaultManager */,
 				C57D5C45251360BE0073F90B /* 分享控件 */,
@@ -1469,6 +1474,16 @@
 				C5C65583259DF9FF00FD2F99 /* ECAuthorizationTools.md */,
 			);
 			path = ReadMe;
+			sourceTree = "<group>";
+		};
+		C5CF188825AC803E00381935 /* LYLUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				C5CF188A25AC803E00381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */,
+				C5CF188B25AC803E00381935 /* LYLUnicode.h */,
+				C5CF188925AC803E00381935 /* LYLUnicode.m */,
+			);
+			path = LYLUnicode;
 			sourceTree = "<group>";
 		};
 		C5D1BCA1258B0D5600784D2F /* UIViewController+EmptyData */ = {
@@ -2069,6 +2084,7 @@
 				C5A43B0925AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C57D5C3B25135FF40073F90B /* BRDatePickerView+BR.m in Sources */,
 				C5914D2825385214007777A6 /* UIViewController+GifImageView.m in Sources */,
+				C5CF188C25AC803E00381935 /* LYLUnicode.m in Sources */,
 				C57675F82546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
 				C56BC4BC25879D380043C977 /* UIControl+XY.m in Sources */,
 				C5914D2925385214007777A6 /* UIViewController+BackBtn.m in Sources */,
