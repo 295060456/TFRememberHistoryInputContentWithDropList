@@ -29,6 +29,7 @@
 		C54B4016255297EF003BE195 /* NSObject+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B4012255297EF003BE195 /* NSObject+RichText.m */; };
 		C54B4017255297EF003BE195 /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B4015255297EF003BE195 /* UILabel+Extra.m */; };
 		C556977F255BFDCE005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C556977B255BFDCE005C1361 /* NSString+Extras.m */; };
+		C55FECCE25B4286D00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */; };
 		C56BC4BC25879D380043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BC4BA25879D380043C977 /* UIControl+XY.m */; };
 		C56E4207254717BC00B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E4206254717BC00B9F555 /* ⚽️PicResource */; };
 		C572797C25409B3D002373D7 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C572797725409B3D002373D7 /* BaseNavigationVC.m */; };
@@ -242,6 +243,8 @@
 		C558F44F258A320D0078DB8F /* DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineStructure.h; sourceTree = "<group>"; };
 		C558F450258A320D0078DB8F /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		C558F451258A320D0078DB8F /* AABlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABlock.h; sourceTree = "<group>"; };
+		C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
+		C55FECCD25B4286D00D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
 		C56209372554003400FE435F /* 高度自定义的按钮.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
 		C56BC4B925879D380043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BC4BA25879D380043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
@@ -816,6 +819,15 @@
 			path = UICollectionViewCell;
 			sourceTree = "<group>";
 		};
+		C55FECCB25B4286D00D8C30D /* UIView+MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C55FECCD25B4286D00D8C30D /* UIView+MJRefresh.h */,
+				C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */,
+			);
+			path = "UIView+MJRefresh";
+			sourceTree = "<group>";
+		};
 		C56BBC9F25879AE10043C977 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -1052,6 +1064,7 @@
 				C595BE91258642A1002A4531 /* UIView+Extras */,
 				C595BE93258642AE002A4531 /* UIView+Gradient */,
 				C595BE94258642B5002A4531 /* UIView+Measure */,
+				C55FECCB25B4286D00D8C30D /* UIView+MJRefresh */,
 				C595BE95258642BE002A4531 /* UIView+SuspendView */,
 			);
 			path = UIView;
@@ -2051,6 +2064,7 @@
 				C5D77884257F5B600087FC92 /* CJTextField.m in Sources */,
 				C5914D2725385214007777A6 /* UIViewController+BRPickerView.m in Sources */,
 				C59A3F13258DD254005F6260 /* UserDefaultManager.m in Sources */,
+				C55FECCE25B4286D00D8C30D /* UIView+MJRefresh.m in Sources */,
 				C5C65585259DF9FF00FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */,
 				C52B991E259F1358003D9E23 /* UICollectionViewCell+ShakeAnimation.m in Sources */,
 				C5C6558D259DF9FF00FD2F99 /* ECPrivacyCheckMediaAndAppleMusic.m in Sources */,
