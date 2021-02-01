@@ -27,6 +27,7 @@
 		C54B4017255297EF003BE195 /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B4015255297EF003BE195 /* UILabel+Extra.m */; };
 		C556977F255BFDCE005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C556977B255BFDCE005C1361 /* NSString+Extras.m */; };
 		C55FECCE25B4286D00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */; };
+		C562DEDB25C7C592004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DED925C7C592004D1AEA /* UIView+ViewController.m */; };
 		C56BC4BC25879D380043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BC4BA25879D380043C977 /* UIControl+XY.m */; };
 		C56E4207254717BC00B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E4206254717BC00B9F555 /* ⚽️PicResource */; };
 		C572797C25409B3D002373D7 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C572797725409B3D002373D7 /* BaseNavigationVC.m */; };
@@ -243,6 +244,8 @@
 		C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
 		C55FECCD25B4286D00D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
 		C56209372554003400FE435F /* 高度自定义的按钮.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
+		C562DED925C7C592004D1AEA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
+		C562DEDA25C7C592004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		C56BC4B925879D380043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BC4BA25879D380043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BC4BB25879D380043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
@@ -836,6 +839,15 @@
 			path = "UIView+MJRefresh";
 			sourceTree = "<group>";
 		};
+		C562DED825C7C58D004D1AEA /* UIView+ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C562DEDA25C7C592004D1AEA /* UIView+ViewController.h */,
+				C562DED925C7C592004D1AEA /* UIView+ViewController.m */,
+			);
+			path = "UIView+ViewController";
+			sourceTree = "<group>";
+		};
 		C56BBC9F25879AE10043C977 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -1075,6 +1087,7 @@
 		C57D5BC425135B2F0073F90B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				C562DED825C7C58D004D1AEA /* UIView+ViewController */,
 				C595BE9025864299002A4531 /* UIView+Animation */,
 				C5461068258C8FF90008928C /* UIView+AOP */,
 				C572982525BB0AA100726419 /* UIView+BackgroundImage */,
@@ -2051,6 +2064,7 @@
 				C5F7332225147B9C00216DEF /* DoorView.m in Sources */,
 				C57D5C4325135FF40073F90B /* BRAddressPickerView.m in Sources */,
 				C57D5BEC25135B6B0073F90B /* NSObject+Shake.m in Sources */,
+				C562DEDB25C7C592004D1AEA /* UIView+ViewController.m in Sources */,
 				C5A4454525ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
 				C5914D2325385214007777A6 /* UIViewController+Shake.m in Sources */,
 				C5A9703225BD352C000077BC /* NSObject+SYSAlertController.m in Sources */,
