@@ -28,6 +28,7 @@
 		C556977F255BFDCE005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C556977B255BFDCE005C1361 /* NSString+Extras.m */; };
 		C55FECCE25B4286D00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */; };
 		C562DEDB25C7C592004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DED925C7C592004D1AEA /* UIView+ViewController.m */; };
+		C567372325D77C02008ABAF9 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C567372225D77C02008ABAF9 /* BaseView.m */; };
 		C56BC4BC25879D380043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BC4BA25879D380043C977 /* UIControl+XY.m */; };
 		C56E4207254717BC00B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E4206254717BC00B9F555 /* ⚽️PicResource */; };
 		C572797C25409B3D002373D7 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C572797725409B3D002373D7 /* BaseNavigationVC.m */; };
@@ -246,6 +247,8 @@
 		C56209372554003400FE435F /* 高度自定义的按钮.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
 		C562DED925C7C592004D1AEA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		C562DEDA25C7C592004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		C567372125D77C02008ABAF9 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		C567372225D77C02008ABAF9 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		C56BC4B925879D380043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C56BC4BA25879D380043C977 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
 		C56BC4BB25879D380043C977 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题.md"; sourceTree = "<group>"; };
@@ -848,6 +851,33 @@
 			path = "UIView+ViewController";
 			sourceTree = "<group>";
 		};
+		C567371025D77BEF008ABAF9 /* UIView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C562DED825C7C58D004D1AEA /* UIView+ViewController */,
+				C595BE9025864299002A4531 /* UIView+Animation */,
+				C5461068258C8FF90008928C /* UIView+AOP */,
+				C572982525BB0AA100726419 /* UIView+BackgroundImage */,
+				C595BE92258642A8002A4531 /* UIView+Chain */,
+				C5D1C141258B211800784D2F /* UIView+EmptyData */,
+				C595BE91258642A1002A4531 /* UIView+Extras */,
+				C595BE93258642AE002A4531 /* UIView+Gradient */,
+				C595BE94258642B5002A4531 /* UIView+Measure */,
+				C55FECCB25B4286D00D8C30D /* UIView+MJRefresh */,
+				C595BE95258642BE002A4531 /* UIView+SuspendView */,
+			);
+			path = "UIView+Category";
+			sourceTree = "<group>";
+		};
+		C567371D25D77BFB008ABAF9 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				C567372125D77C02008ABAF9 /* BaseView.h */,
+				C567372225D77C02008ABAF9 /* BaseView.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 		C56BBC9F25879AE10043C977 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -1087,17 +1117,8 @@
 		C57D5BC425135B2F0073F90B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				C562DED825C7C58D004D1AEA /* UIView+ViewController */,
-				C595BE9025864299002A4531 /* UIView+Animation */,
-				C5461068258C8FF90008928C /* UIView+AOP */,
-				C572982525BB0AA100726419 /* UIView+BackgroundImage */,
-				C595BE92258642A8002A4531 /* UIView+Chain */,
-				C5D1C141258B211800784D2F /* UIView+EmptyData */,
-				C595BE91258642A1002A4531 /* UIView+Extras */,
-				C595BE93258642AE002A4531 /* UIView+Gradient */,
-				C595BE94258642B5002A4531 /* UIView+Measure */,
-				C55FECCB25B4286D00D8C30D /* UIView+MJRefresh */,
-				C595BE95258642BE002A4531 /* UIView+SuspendView */,
+				C567371D25D77BFB008ABAF9 /* BaseView */,
+				C567371025D77BEF008ABAF9 /* UIView+Category */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -2082,6 +2103,7 @@
 				C5A4456825ABFC82000F0CD2 /* XHLaunchAdView.m in Sources */,
 				C5A4456E25ABFC82000F0CD2 /* XHLaunchAdController.m in Sources */,
 				C5A4456F25ABFC82000F0CD2 /* XHLaunchAdDownloader.m in Sources */,
+				C567372325D77C02008ABAF9 /* BaseView.m in Sources */,
 				C58D958325B80DBB00414ACB /* BaseTableViewCell.m in Sources */,
 				C5A4456A25ABFC82000F0CD2 /* XHLaunchImageView.m in Sources */,
 				C57D5C3925135FF40073F90B /* BRResultModel.m in Sources */,
