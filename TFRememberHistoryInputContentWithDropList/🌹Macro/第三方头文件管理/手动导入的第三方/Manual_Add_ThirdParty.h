@@ -9,11 +9,11 @@
 #ifndef Manual_Add_ThirdParty_h
 #define Manual_Add_ThirdParty_h
 
-/// UIImage
+#pragma mark —— UIImage
 #import "LoadingImage.h"
-/// NSString
+#pragma mark —— NSString
 #import "NSString+Extras.h"
-/// NSObject
+#pragma mark —— NSObject
 #import "NSObject+Measure.h"
 #import "NSObject+Extras.h"
 #import "NSObject+Random.h"
@@ -23,7 +23,7 @@
 #import "NSObject+SYSAlertController.h"
 #import "NSObject+SPAlertController.h"
 #import "NSObject+OpenURL.h"
-/// UIView
+#pragma mark —— UIView
 // BaseView
 #import "BaseView.h"
 // UIView+Category
@@ -34,7 +34,7 @@
 #import "UIView+Animation.h"
 #import "UIView+Gradient.h"
 #import "UIView+ViewController.h"
-/// UIViewController
+#pragma mark —— UIViewController
 #import "UIViewController+BaseVC.h"
 #import "UIViewController+BackBtn.h"
 #import "UIViewController+BRPickerView.h"
@@ -47,24 +47,29 @@
 #import "UIViewController+Shake.h"
 #import "UIViewController+NavigationBar.h"
 #import "UIViewController+EmptyData.h"
-/// UINavigationController
+#pragma mark —— UINavigationController
 #import "BaseNavigationVC.h"
-/// UINavigationBar
+#pragma mark —— UINavigationBar
 #import "NavigationBar.h"
-/// UICollectionViewCell
+#pragma mark —— UICollectionViewCell
 #import "BaseCollectionViewCell.h"
-/// UITextField
+#pragma mark —— UITextField
 #import "HQTextField.h"
 #import "CJTextField.h"
 #import "ZYTextField.h"
 #import "UITextField+Extend.h"
-/// UITableView
+#pragma mark —— UITableView
 #import "BaseTableViewer.h"
-/// UITableViewCell
+#pragma mark —— UITableViewCell
 #import "UITableViewCell+Margin.h"
 #import "UITableViewCell+WhiteArrows.h"
-/// UIButton
+#pragma mark —— UIButton
 #import "UIButton+ImageTitleSpacing.h"
+#pragma mark —— UIImageView
+// BaseImageView
+#import "BaseImageView.h"
+// UIImageView+Category
+#import "UIImageView+GIF.h"//UIImageView支持GIF动画 https://github.com/pupboss/UIImageView-GIF
 
 #import "UserDefaultManager.h"
 
