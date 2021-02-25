@@ -34,6 +34,7 @@ def func
   pod 'WHToast' # https://github.com/remember17/WHToast 一个轻量级的提示控件，没有任何依赖
   pod 'SDWebImage'  # https://github.com/SDWebImage/SDWebImage Asynchronous image downloader with cache support as a UIImageView category
   pod 'lottie-ios', '~> 2.5.3' # 这个是OC版本
+  pod 'TABAnimated' # https://github.com/tigerAndBull/TABAnimated
   end
 
 # 基础的公共配置
