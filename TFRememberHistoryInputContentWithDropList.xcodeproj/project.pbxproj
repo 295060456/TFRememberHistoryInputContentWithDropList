@@ -78,6 +78,7 @@
 		C5914D2825385214007777A6 /* UIViewController+GifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1025385214007777A6 /* UIViewController+GifImageView.m */; };
 		C5914D2925385214007777A6 /* UIViewController+BackBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1325385214007777A6 /* UIViewController+BackBtn.m */; };
 		C5914D2B25385214007777A6 /* UIViewController+BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5914D1A25385214007777A6 /* UIViewController+BaseVC.m */; };
+		C594354D25E7AB11003BCA91 /* UITextView+IndicateWordLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = C594354A25E7AB11003BCA91 /* UITextView+IndicateWordLimit.m */; };
 		C5968AAF25B58183003E67A1 /* NSObject+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = C5968AAD25B58183003E67A1 /* NSObject+Time.m */; };
 		C5968AB825B58195003E67A1 /* TimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5968AB625B58195003E67A1 /* TimeModel.m */; };
 		C59A3F12258DD254005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3F10258DD253005F6260 /* UserDefaultModel.m */; };
@@ -354,6 +355,9 @@
 		C5914D1A25385214007777A6 /* UIViewController+BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseVC.m"; sourceTree = "<group>"; };
 		C5914D1C25385214007777A6 /* UIViewController+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BRPickerView.h"; sourceTree = "<group>"; };
 		C5914D1D25385214007777A6 /* UIViewController+GifImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GifImageView.h"; sourceTree = "<group>"; };
+		C594354A25E7AB11003BCA91 /* UITextView+IndicateWordLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+IndicateWordLimit.m"; sourceTree = "<group>"; };
+		C594354B25E7AB11003BCA91 /* UITextView+IndicateWordLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+IndicateWordLimit.h"; sourceTree = "<group>"; };
+		C594354C25E7AB11003BCA91 /* UITextView+IndicateWordLimit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UITextView+IndicateWordLimit.png"; sourceTree = "<group>"; };
 		C5968AAD25B58183003E67A1 /* NSObject+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Time.m"; sourceTree = "<group>"; };
 		C5968AAE25B58183003E67A1 /* NSObject+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Time.h"; sourceTree = "<group>"; };
 		C5968AB625B58195003E67A1 /* TimeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeModel.m; path = "../../../../../../Douyin_ZFPlayer/DouYin/3rd/BaseCustomizeUIKit/NSObject/NSObject (Time)/TimeModel.m"; sourceTree = "<group>"; };
@@ -1084,6 +1088,7 @@
 				C57D5B7E25135A760073F90B /* UITableView */,
 				C57D5B7425135A600073F90B /* UITableViewCell */,
 				C57D5B8425135A850073F90B /* UITextField */,
+				C594354925E7AB11003BCA91 /* UITextView+IndicateWordLimit */,
 				C57D5BC425135B2F0073F90B /* UIView */,
 				C5914D0425385214007777A6 /* UIViewController */,
 			);
@@ -1319,6 +1324,16 @@
 				C54FE374257672BF00937C11 /* UIViewController+Category */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		C594354925E7AB11003BCA91 /* UITextView+IndicateWordLimit */ = {
+			isa = PBXGroup;
+			children = (
+				C594354B25E7AB11003BCA91 /* UITextView+IndicateWordLimit.h */,
+				C594354A25E7AB11003BCA91 /* UITextView+IndicateWordLimit.m */,
+				C594354C25E7AB11003BCA91 /* UITextView+IndicateWordLimit.png */,
+			);
+			path = "UITextView+IndicateWordLimit";
 			sourceTree = "<group>";
 		};
 		C595BE9025864299002A4531 /* UIView+Animation */ = {
@@ -2186,6 +2201,7 @@
 				C5A4454B25ABFC76000F0CD2 /* JXCategoryTimelineCellModel.m in Sources */,
 				C59A3F12258DD254005F6260 /* UserDefaultModel.m in Sources */,
 				C5D602FA2586327B00029AFF /* BaseViewController.m in Sources */,
+				C594354D25E7AB11003BCA91 /* UITextView+IndicateWordLimit.m in Sources */,
 				C5A4457325ABFC82000F0CD2 /* XHLaunchAdImageManager.m in Sources */,
 				C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */,
 				C57D5C3F25135FF40073F90B /* BRPickerStyle.m in Sources */,
