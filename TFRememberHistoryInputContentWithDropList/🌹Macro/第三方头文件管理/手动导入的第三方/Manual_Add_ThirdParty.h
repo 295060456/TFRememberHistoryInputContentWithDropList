@@ -51,7 +51,7 @@
 #pragma mark —— UINavigationController
 #import "BaseNavigationVC.h"
 #pragma mark —— UINavigationBar
-#import "NavigationBar.h"
+#import "BaseNavigationBar.h"
 #pragma mark —— UICollectionViewCell
 #import "BaseCollectionViewCell.h"
 #pragma mark —— UITextField
