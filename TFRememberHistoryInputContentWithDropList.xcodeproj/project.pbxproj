@@ -159,7 +159,7 @@
 		C5D0BB3F25878F48002CA224 /* NSObject+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D0BB3E25878F48002CA224 /* NSObject+Sound.m */; };
 		C5D1C144258B211800784D2F /* UIView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1C142258B211800784D2F /* UIView+EmptyData.m */; };
 		C5D1C150258B214300784D2F /* UIViewController+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1C14F258B214300784D2F /* UIViewController+EmptyData.m */; };
-		C5D602F12586327100029AFF /* UIViewController+NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D602EF2586327100029AFF /* UIViewController+NavigationBar.m */; };
+		C5D602F12586327100029AFF /* UIViewController+BaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D602EF2586327100029AFF /* UIViewController+BaseNavigationBar.m */; };
 		C5D602FA2586327B00029AFF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D602F92586327B00029AFF /* BaseViewController.m */; };
 		C5D7787F257F5B600087FC92 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77871257F5B600087FC92 /* HQTextField.m */; };
 		C5D77880257F5B600087FC92 /* ZYTextField.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5D77872257F5B600087FC92 /* ZYTextField.bundle */; };
@@ -172,7 +172,7 @@
 		C5DF460325A89A4D00E91985 /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5DF45FC25A89A4D00E91985 /* JsonRes.bundle */; };
 		C5DF460425A89A4D00E91985 /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF45FD25A89A4D00E91985 /* UIViewController+MJRefresh.m */; };
 		C5DF460525A89A4D00E91985 /* MJRefreshConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF460025A89A4D00E91985 /* MJRefreshConfigModel.m */; };
-		C5F732EF2513C05F00216DEF /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732ED2513C05F00216DEF /* BaseTableViewer.m */; };
+		C5F732EF2513C05F00216DEF /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732ED2513C05F00216DEF /* BaseTableView.m */; };
 		C5F732F92513C07700216DEF /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F52513C07700216DEF /* UITableView+XSAnimationKit.m */; };
 		C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F82513C07700216DEF /* TableViewAnimationKit.m */; };
 		C5F7332225147B9C00216DEF /* DoorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7332125147B9C00216DEF /* DoorView.m */; };
@@ -495,8 +495,8 @@
 		C5D1C143258B211800784D2F /* UIView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyData.h"; sourceTree = "<group>"; };
 		C5D1C14E258B214300784D2F /* UIViewController+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EmptyData.h"; sourceTree = "<group>"; };
 		C5D1C14F258B214300784D2F /* UIViewController+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EmptyData.m"; sourceTree = "<group>"; };
-		C5D602EF2586327100029AFF /* UIViewController+NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBar.m"; sourceTree = "<group>"; };
-		C5D602F02586327100029AFF /* UIViewController+NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBar.h"; sourceTree = "<group>"; };
+		C5D602EF2586327100029AFF /* UIViewController+BaseNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseNavigationBar.m"; sourceTree = "<group>"; };
+		C5D602F02586327100029AFF /* UIViewController+BaseNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseNavigationBar.h"; sourceTree = "<group>"; };
 		C5D602F82586327B00029AFF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		C5D602F92586327B00029AFF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C5D77870257F5B600087FC92 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
@@ -519,8 +519,8 @@
 		C5DF45FD25A89A4D00E91985 /* UIViewController+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJRefresh.m"; sourceTree = "<group>"; };
 		C5DF45FF25A89A4D00E91985 /* MJRefreshConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConfigModel.h; sourceTree = "<group>"; };
 		C5DF460025A89A4D00E91985 /* MJRefreshConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConfigModel.m; sourceTree = "<group>"; };
-		C5F732EB2513C05F00216DEF /* BaseTableViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewer.h; sourceTree = "<group>"; };
-		C5F732ED2513C05F00216DEF /* BaseTableViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewer.m; sourceTree = "<group>"; };
+		C5F732EB2513C05F00216DEF /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		C5F732ED2513C05F00216DEF /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		C5F732F32513C07700216DEF /* TableViewAnimationKitHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitHeaders.h; sourceTree = "<group>"; };
 		C5F732F42513C07700216DEF /* TableViewAnimationKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitConfig.h; sourceTree = "<group>"; };
 		C5F732F52513C07700216DEF /* UITableView+XSAnimationKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+XSAnimationKit.m"; sourceTree = "<group>"; };
@@ -739,13 +739,13 @@
 			path = "UIViewController+MJRefresh";
 			sourceTree = "<group>";
 		};
-		C544BE652583749900C6CF2A /* UIViewController+NavigationBar */ = {
+		C544BE652583749900C6CF2A /* UIViewController+BaseNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				C5D602F02586327100029AFF /* UIViewController+NavigationBar.h */,
-				C5D602EF2586327100029AFF /* UIViewController+NavigationBar.m */,
+				C5D602F02586327100029AFF /* UIViewController+BaseNavigationBar.h */,
+				C5D602EF2586327100029AFF /* UIViewController+BaseNavigationBar.m */,
 			);
-			path = "UIViewController+NavigationBar";
+			path = "UIViewController+BaseNavigationBar";
 			sourceTree = "<group>";
 		};
 		C544BE66258374A100C6CF2A /* UIViewController+Shake */ = {
@@ -1837,7 +1837,7 @@
 				C544BE622583748100C6CF2A /* UIViewController+GifImageView */,
 				C544BE632583748800C6CF2A /* UIViewController+JPImageresizerView */,
 				C544BE642583749200C6CF2A /* UIViewController+MJRefresh */,
-				C544BE652583749900C6CF2A /* UIViewController+NavigationBar */,
+				C544BE652583749900C6CF2A /* UIViewController+BaseNavigationBar */,
 				C544BE66258374A100C6CF2A /* UIViewController+Shake */,
 			);
 			path = "UIViewController+Others";
@@ -1886,8 +1886,8 @@
 		C5F732EA2513C05F00216DEF /* 专治UITableView相应链断裂 */ = {
 			isa = PBXGroup;
 			children = (
-				C5F732EB2513C05F00216DEF /* BaseTableViewer.h */,
-				C5F732ED2513C05F00216DEF /* BaseTableViewer.m */,
+				C5F732EB2513C05F00216DEF /* BaseTableView.h */,
+				C5F732ED2513C05F00216DEF /* BaseTableView.m */,
 				C552A7C42589D67800A89501 /* 专治UITableView相应链断裂.md */,
 			);
 			path = "专治UITableView相应链断裂";
@@ -2232,7 +2232,7 @@
 				C5D1C150258B214300784D2F /* UIViewController+EmptyData.m in Sources */,
 				C5AEEB1D25384241000E1C5F /* UIView+Animation.m in Sources */,
 				C5D0BB3F25878F48002CA224 /* NSObject+Sound.m in Sources */,
-				C5F732EF2513C05F00216DEF /* BaseTableViewer.m in Sources */,
+				C5F732EF2513C05F00216DEF /* BaseTableView.m in Sources */,
 				C5A4454725ABFC76000F0CD2 /* JXCategoryTitleBackgroundCellModel.m in Sources */,
 				C5914D2025385214007777A6 /* UIViewController+JPImageresizerView.m in Sources */,
 				C57675F92546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
@@ -2263,7 +2263,7 @@
 				C57D5BD125135B370073F90B /* UIView+Gradient.m in Sources */,
 				C556977F255BFDCE005C1361 /* NSString+Extras.m in Sources */,
 				C57D5B362513587A0073F90B /* TFRememberHistoryInputContentWithDropList.xcdatamodeld in Sources */,
-				C5D602F12586327100029AFF /* UIViewController+NavigationBar.m in Sources */,
+				C5D602F12586327100029AFF /* UIViewController+BaseNavigationBar.m in Sources */,
 				C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */,
 				C5C65591259DF9FF00FD2F99 /* ECPrivacyCheckReminders.m in Sources */,
 				C5AEEB1C25384241000E1C5F /* UIView+Extras.m in Sources */,
