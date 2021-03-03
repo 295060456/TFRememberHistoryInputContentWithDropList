@@ -27,7 +27,7 @@ static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pu
 }
 /// 简洁版强制展现一个控制器页面【需要正向传参】
 -(void)comingToVC:(UIViewController *)viewController
-    requestParams:(id)requestParams{
+    requestParams:(id _Nullable)requestParams{
     [UIViewController comingFromVC:self
                               toVC:viewController
                        comingStyle:ComingStyle_PUSH
@@ -64,7 +64,7 @@ static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pu
                     successBlock(toVC);
                 }
                 toVC.hidesBottomBarWhenPushed = hidesBottomBarWhenPushed;//下面有黑条
-                [rootVC_weak_.navigationController pushViewController:toVC
+                [weak_rootVC.navigationController pushViewController:toVC
                                                             animated:animated];
             }else{
                 toVC.pushOrPresent = ComingStyle_PRESENT;
@@ -73,7 +73,7 @@ static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pu
                 if (successBlock) {
                     successBlock(toVC);
                 }
-                [rootVC_weak_ presentViewController:toVC
+                [weak_rootVC presentViewController:toVC
                                           animated:animated
                                         completion:^{}];
             }
@@ -85,7 +85,7 @@ static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pu
             if (successBlock) {
                 successBlock(toVC);
             }
-            [rootVC_weak_ presentViewController:toVC
+            [weak_rootVC presentViewController:toVC
                                       animated:animated
                                     completion:^{}];
         }break;
