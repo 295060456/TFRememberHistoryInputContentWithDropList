@@ -73,5 +73,6 @@
 #import "UIImageView+GIF.h"//UIImageView支持GIF动画 https://github.com/pupboss/UIImageView-GIF
 
 #import "UserDefaultManager.h"
+#import "DDCacheTool.h"
 
 #endif /* Manual_Add_ThirdParty_h */

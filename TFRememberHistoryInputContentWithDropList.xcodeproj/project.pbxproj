@@ -233,6 +233,7 @@
 		C54B4013255297EF003BE195 /* UILabel+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extra.h"; sourceTree = "<group>"; };
 		C54B4014255297EF003BE195 /* NSObject+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RichText.h"; sourceTree = "<group>"; };
 		C54B4015255297EF003BE195 /* UILabel+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extra.m"; sourceTree = "<group>"; };
+		C54C644D25EFC321007DD043 /* DDCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCacheTool.h; sourceTree = "<group>"; };
 		C54C8AAD25C554B70054F53F /* MacroDef_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_App.h; sourceTree = "<group>"; };
 		C552A7C42589D67800A89501 /* 专治UITableView相应链断裂.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "专治UITableView相应链断裂.md"; sourceTree = "<group>"; };
 		C556977A255BFDCE005C1361 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
@@ -794,6 +795,14 @@
 			path = UILabel;
 			sourceTree = "<group>";
 		};
+		C54C644C25EFC321007DD043 /* 清除缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				C54C644D25EFC321007DD043 /* DDCacheTool.h */,
+			);
+			path = "清除缓存";
+			sourceTree = "<group>";
+		};
 		C54FE373257672B600937C11 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1309,6 +1318,7 @@
 		C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C54C644C25EFC321007DD043 /* 清除缓存 */,
 				C5CF188825AC803E00381935 /* LYLUnicode */,
 				C5A43B0125AAF8D9000F0CD2 /* 手势滑动返回 */,
 				C59A3F0D258DD253005F6260 /* UserDefaultManager */,
