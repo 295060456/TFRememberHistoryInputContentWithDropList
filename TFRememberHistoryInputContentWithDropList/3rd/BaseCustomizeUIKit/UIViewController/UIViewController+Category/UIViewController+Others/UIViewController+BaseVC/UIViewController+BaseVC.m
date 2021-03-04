@@ -64,7 +64,7 @@ static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pu
                     successBlock(toVC);
                 }
                 toVC.hidesBottomBarWhenPushed = hidesBottomBarWhenPushed;//下面有黑条
-                [weak_rootVC.navigationController pushViewController:toVC
+                [rootVC_weak_.navigationController pushViewController:toVC
                                                             animated:animated];
             }else{
                 toVC.pushOrPresent = ComingStyle_PRESENT;
@@ -73,7 +73,7 @@ static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pu
                 if (successBlock) {
                     successBlock(toVC);
                 }
-                [weak_rootVC presentViewController:toVC
+                [rootVC_weak_ presentViewController:toVC
                                           animated:animated
                                         completion:^{}];
             }
@@ -85,7 +85,7 @@ static char *UIViewController_BaseVC_pushOrPresent = "UIViewController_BaseVC_pu
             if (successBlock) {
                 successBlock(toVC);
             }
-            [weak_rootVC presentViewController:toVC
+            [rootVC_weak_ presentViewController:toVC
                                       animated:animated
                                     completion:^{}];
         }break;
