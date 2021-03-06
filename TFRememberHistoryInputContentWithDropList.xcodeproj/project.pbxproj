@@ -25,6 +25,7 @@
 		C54AB258255E6127000A314D /* UITableViewCell+WhiteArrows.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AB254255E6127000A314D /* UITableViewCell+WhiteArrows.m */; };
 		C54B4016255297EF003BE195 /* NSObject+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B4012255297EF003BE195 /* NSObject+RichText.m */; };
 		C54B4017255297EF003BE195 /* UILabel+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = C54B4015255297EF003BE195 /* UILabel+Extra.m */; };
+		C5542DD525F3251C002D1CA6 /* CheckMemFreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5542DD425F3251C002D1CA6 /* CheckMemFreeVC.m */; };
 		C556977F255BFDCE005C1361 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C556977B255BFDCE005C1361 /* NSString+Extras.m */; };
 		C55FECCE25B4286D00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */; };
 		C562DEDB25C7C592004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DED925C7C592004D1AEA /* UIView+ViewController.m */; };
@@ -236,6 +237,8 @@
 		C54C644D25EFC321007DD043 /* DDCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCacheTool.h; sourceTree = "<group>"; };
 		C54C8AAD25C554B70054F53F /* MacroDef_App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_App.h; sourceTree = "<group>"; };
 		C552A7C42589D67800A89501 /* 专治UITableView相应链断裂.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "专治UITableView相应链断裂.md"; sourceTree = "<group>"; };
+		C5542DD325F3251C002D1CA6 /* CheckMemFreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMemFreeVC.h; sourceTree = "<group>"; };
+		C5542DD425F3251C002D1CA6 /* CheckMemFreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMemFreeVC.m; sourceTree = "<group>"; };
 		C556977A255BFDCE005C1361 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
 		C556977B255BFDCE005C1361 /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
 		C55801D5258A42AB0078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
@@ -821,6 +824,15 @@
 			path = "UIViewController+Category";
 			sourceTree = "<group>";
 		};
+		C5542DD225F3251C002D1CA6 /* CheckMemFreeVC */ = {
+			isa = PBXGroup;
+			children = (
+				C5542DD325F3251C002D1CA6 /* CheckMemFreeVC.h */,
+				C5542DD425F3251C002D1CA6 /* CheckMemFreeVC.m */,
+			);
+			path = CheckMemFreeVC;
+			sourceTree = "<group>";
+		};
 		C558F425258A311B0078DB8F /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
@@ -1318,6 +1330,7 @@
 		C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C5542DD225F3251C002D1CA6 /* CheckMemFreeVC */,
 				C54C644C25EFC321007DD043 /* 清除缓存 */,
 				C5CF188825AC803E00381935 /* LYLUnicode */,
 				C5A43B0125AAF8D9000F0CD2 /* 手势滑动返回 */,
@@ -2259,6 +2272,7 @@
 				C5D77884257F5B600087FC92 /* CJTextField.m in Sources */,
 				C5914D2725385214007777A6 /* UIViewController+BRPickerView.m in Sources */,
 				C59A3F13258DD254005F6260 /* UserDefaultManager.m in Sources */,
+				C5542DD525F3251C002D1CA6 /* CheckMemFreeVC.m in Sources */,
 				C55FECCE25B4286D00D8C30D /* UIView+MJRefresh.m in Sources */,
 				C5C65585259DF9FF00FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */,
 				C52B991E259F1358003D9E23 /* UICollectionViewCell+ShakeAnimation.m in Sources */,
