@@ -177,7 +177,7 @@
         }
         if (self.pickerStyle.cancelBtnTitle) {
             [_cancelBtn setTitle:self.pickerStyle.cancelBtnTitle forState:UIControlStateNormal];
-            [_cancelBtn setTitleColor:COLOR_HEX(0xF78361, 1) forState:UIControlStateNormal];
+            [_cancelBtn setTitleColor:HEXCOLOR_ALPHA(0xF78361, 1) forState:UIControlStateNormal];
         }
         [_cancelBtn addTarget:self action:@selector(clickCancelBtn) forControlEvents:UIControlEventTouchUpInside];
         // 设置按钮圆角或边框
@@ -208,7 +208,7 @@
             _doneBtn.titleLabel.font = self.pickerStyle.doneTextFont;
             [_doneBtn setTitleColor:self.pickerStyle.doneTextColor forState:UIControlStateNormal];
             [_doneBtn setTitle:self.pickerStyle.doneBtnTitle forState:UIControlStateNormal];
-            [_doneBtn setTitleColor:COLOR_HEX(0xF78361, 1) forState:UIControlStateNormal];
+            [_doneBtn setTitleColor:HEXCOLOR_ALPHA(0xF78361, 1) forState:UIControlStateNormal];
         }
         [_doneBtn addTarget:self action:@selector(clickDoneBtn) forControlEvents:UIControlEventTouchUpInside];
         // 设置按钮圆角或边框
