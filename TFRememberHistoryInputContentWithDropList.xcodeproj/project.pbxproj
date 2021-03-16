@@ -40,6 +40,7 @@
 		C55E0E5825F9CAA400716A9B /* UICollectionViewCell+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0E5425F9CAA400716A9B /* UICollectionViewCell+ShakeAnimation.m */; };
 		C55E0E5925F9CAA400716A9B /* UICollectionViewCell+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = C55E0E5725F9CAA400716A9B /* UICollectionViewCell+Default.m */; };
 		C55FECCE25B4286D00D8C30D /* UIView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */; };
+		C56190EE26008F7300D4546E /* UITextView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C56190ED26008F7300D4546E /* UITextView+Extend.m */; };
 		C562DEDB25C7C592004D1AEA /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C562DED925C7C592004D1AEA /* UIView+ViewController.m */; };
 		C567372325D77C02008ABAF9 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C567372225D77C02008ABAF9 /* BaseView.m */; };
 		C56BC4BC25879D380043C977 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C56BC4BA25879D380043C977 /* UIControl+XY.m */; };
@@ -278,6 +279,8 @@
 		C55E2B1D25FB28C600716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
 		C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJRefresh.m"; sourceTree = "<group>"; };
 		C55FECCD25B4286D00D8C30D /* UIView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJRefresh.h"; sourceTree = "<group>"; };
+		C56190EC26008F7300D4546E /* UITextView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extend.h"; sourceTree = "<group>"; };
+		C56190ED26008F7300D4546E /* UITextView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extend.m"; sourceTree = "<group>"; };
 		C56209372554003400FE435F /* 高度自定义的按钮.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
 		C562DED925C7C592004D1AEA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		C562DEDA25C7C592004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
@@ -756,7 +759,7 @@
 		C542D74E25EB7C3600D776D8 /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				C594354925E7AB11003BCA91 /* UITextView+IndicateWordLimit */,
+				C56190EA26008F6A00D4546E /* UITextView+Category */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -1086,6 +1089,24 @@
 				C55FECCC25B4286D00D8C30D /* UIView+MJRefresh.m */,
 			);
 			path = "UIView+MJRefresh";
+			sourceTree = "<group>";
+		};
+		C56190EA26008F6A00D4546E /* UITextView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C56190EB26008F7300D4546E /* UITextView+Extend */,
+				C594354925E7AB11003BCA91 /* UITextView+IndicateWordLimit */,
+			);
+			path = "UITextView+Category";
+			sourceTree = "<group>";
+		};
+		C56190EB26008F7300D4546E /* UITextView+Extend */ = {
+			isa = PBXGroup;
+			children = (
+				C56190EC26008F7300D4546E /* UITextView+Extend.h */,
+				C56190ED26008F7300D4546E /* UITextView+Extend.m */,
+			);
+			path = "UITextView+Extend";
 			sourceTree = "<group>";
 		};
 		C562DED825C7C58D004D1AEA /* UIView+ViewController */ = {
@@ -2288,6 +2309,7 @@
 				C5F7332225147B9C00216DEF /* DoorView.m in Sources */,
 				C57D5C4325135FF40073F90B /* BRAddressPickerView.m in Sources */,
 				C562DEDB25C7C592004D1AEA /* UIView+ViewController.m in Sources */,
+				C56190EE26008F7300D4546E /* UITextView+Extend.m in Sources */,
 				C5A4454525ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
 				C5914D2325385214007777A6 /* UIViewController+Shake.m in Sources */,
 				C53E443D25FB5402007D92BE /* NSObject+Shake.m in Sources */,
