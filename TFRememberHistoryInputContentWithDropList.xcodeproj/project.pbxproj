@@ -65,17 +65,6 @@
 		C57D5BD225135B370073F90B /* UIView+Measure.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5BC625135B360073F90B /* UIView+Measure.m */; };
 		C57D5BD425135B370073F90B /* UIView+Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5BCB25135B360073F90B /* UIView+Chain.m */; };
 		C57D5BD525135B370073F90B /* UIView+SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5BCF25135B360073F90B /* UIView+SuspendView.m */; };
-		C57D5C3925135FF40073F90B /* BRResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C1F25135FF40073F90B /* BRResultModel.m */; };
-		C57D5C3A25135FF40073F90B /* BRStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C2225135FF40073F90B /* BRStringPickerView.m */; };
-		C57D5C3B25135FF40073F90B /* BRDatePickerView+BR.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C2525135FF40073F90B /* BRDatePickerView+BR.m */; };
-		C57D5C3C25135FF40073F90B /* NSDate+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C2725135FF40073F90B /* NSDate+BRPickerView.m */; };
-		C57D5C3D25135FF40073F90B /* BRDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C2825135FF40073F90B /* BRDatePickerView.m */; };
-		C57D5C3E25135FF40073F90B /* BRPickerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C57D5C2E25135FF40073F90B /* BRPickerView.bundle */; };
-		C57D5C3F25135FF40073F90B /* BRPickerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C2F25135FF40073F90B /* BRPickerStyle.m */; };
-		C57D5C4025135FF40073F90B /* BRBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C3025135FF40073F90B /* BRBaseView.m */; };
-		C57D5C4125135FF40073F90B /* NSBundle+BRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C3125135FF40073F90B /* NSBundle+BRPickerView.m */; };
-		C57D5C4225135FF40073F90B /* BRAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C3525135FF40073F90B /* BRAddressModel.m */; };
-		C57D5C4325135FF40073F90B /* BRAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C3825135FF40073F90B /* BRAddressPickerView.m */; };
 		C57D5C54251363380073F90B /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5C53251363380073F90B /* UIButton+ImageTitleSpacing.m */; };
 		C583BB0725E4B3A00054FD6E /* BaseImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C583BAFF25E4B3A00054FD6E /* BaseImageView.m */; };
 		C583BB0825E4B3A00054FD6E /* UIImageView+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = C583BB0225E4B3A00054FD6E /* UIImageView+GIF.m */; };
@@ -333,29 +322,6 @@
 		C57D5BCC25135B360073F90B /* UIView+Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Chain.h"; sourceTree = "<group>"; };
 		C57D5BCE25135B360073F90B /* UIView+SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SuspendView.h"; sourceTree = "<group>"; };
 		C57D5BCF25135B360073F90B /* UIView+SuspendView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuspendView.m"; sourceTree = "<group>"; };
-		C57D5C1F25135FF40073F90B /* BRResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRResultModel.m; sourceTree = "<group>"; };
-		C57D5C2025135FF40073F90B /* BRStringPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRStringPickerView.h; sourceTree = "<group>"; };
-		C57D5C2125135FF40073F90B /* BRResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRResultModel.h; sourceTree = "<group>"; };
-		C57D5C2225135FF40073F90B /* BRStringPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRStringPickerView.m; sourceTree = "<group>"; };
-		C57D5C2325135FF40073F90B /* BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerView.h; sourceTree = "<group>"; };
-		C57D5C2525135FF40073F90B /* BRDatePickerView+BR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BRDatePickerView+BR.m"; sourceTree = "<group>"; };
-		C57D5C2625135FF40073F90B /* BRDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDatePickerView.h; sourceTree = "<group>"; };
-		C57D5C2725135FF40073F90B /* NSDate+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+BRPickerView.m"; sourceTree = "<group>"; };
-		C57D5C2825135FF40073F90B /* BRDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDatePickerView.m; sourceTree = "<group>"; };
-		C57D5C2925135FF40073F90B /* BRDatePickerView+BR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BRDatePickerView+BR.h"; sourceTree = "<group>"; };
-		C57D5C2A25135FF40073F90B /* NSDate+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+BRPickerView.h"; sourceTree = "<group>"; };
-		C57D5C2C25135FF40073F90B /* NSBundle+BRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+BRPickerView.h"; sourceTree = "<group>"; };
-		C57D5C2D25135FF40073F90B /* BRPickerViewMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerViewMacro.h; sourceTree = "<group>"; };
-		C57D5C2E25135FF40073F90B /* BRPickerView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BRPickerView.bundle; sourceTree = "<group>"; };
-		C57D5C2F25135FF40073F90B /* BRPickerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPickerStyle.m; sourceTree = "<group>"; };
-		C57D5C3025135FF40073F90B /* BRBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBaseView.m; sourceTree = "<group>"; };
-		C57D5C3125135FF40073F90B /* NSBundle+BRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+BRPickerView.m"; sourceTree = "<group>"; };
-		C57D5C3225135FF40073F90B /* BRBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBaseView.h; sourceTree = "<group>"; };
-		C57D5C3325135FF40073F90B /* BRPickerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPickerStyle.h; sourceTree = "<group>"; };
-		C57D5C3525135FF40073F90B /* BRAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressModel.m; sourceTree = "<group>"; };
-		C57D5C3625135FF40073F90B /* BRAddressPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressPickerView.h; sourceTree = "<group>"; };
-		C57D5C3725135FF40073F90B /* BRAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAddressModel.h; sourceTree = "<group>"; };
-		C57D5C3825135FF40073F90B /* BRAddressPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAddressPickerView.m; sourceTree = "<group>"; };
 		C57D5C52251363380073F90B /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
 		C57D5C53251363380073F90B /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
 		C583BAFF25E4B3A00054FD6E /* BaseImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseImageView.m; sourceTree = "<group>"; };
@@ -785,7 +751,6 @@
 		C544BE602583746D00C6CF2A /* UIViewController+BRPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				C57D5C1D25135FF40073F90B /* BRPickerView */,
 				C5914D1C25385214007777A6 /* UIViewController+BRPickerView.h */,
 				C5914D0F25385214007777A6 /* UIViewController+BRPickerView.m */,
 			);
@@ -1418,68 +1383,6 @@
 				C57D5B2F2513587A0073F90B /* ViewController.m */,
 			);
 			path = "🇨🇳ServiceLogic";
-			sourceTree = "<group>";
-		};
-		C57D5C1D25135FF40073F90B /* BRPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				C57D5C2325135FF40073F90B /* BRPickerView.h */,
-				C57D5C1E25135FF40073F90B /* StringPickerView */,
-				C57D5C2425135FF40073F90B /* DatePickerView */,
-				C57D5C2B25135FF40073F90B /* Base */,
-				C57D5C3425135FF40073F90B /* AddressPickerView */,
-			);
-			path = BRPickerView;
-			sourceTree = "<group>";
-		};
-		C57D5C1E25135FF40073F90B /* StringPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				C57D5C1F25135FF40073F90B /* BRResultModel.m */,
-				C57D5C2025135FF40073F90B /* BRStringPickerView.h */,
-				C57D5C2125135FF40073F90B /* BRResultModel.h */,
-				C57D5C2225135FF40073F90B /* BRStringPickerView.m */,
-			);
-			path = StringPickerView;
-			sourceTree = "<group>";
-		};
-		C57D5C2425135FF40073F90B /* DatePickerView */ = {
-			isa = PBXGroup;
-			children = (
-				C57D5C2525135FF40073F90B /* BRDatePickerView+BR.m */,
-				C57D5C2625135FF40073F90B /* BRDatePickerView.h */,
-				C57D5C2725135FF40073F90B /* NSDate+BRPickerView.m */,
-				C57D5C2825135FF40073F90B /* BRDatePickerView.m */,
-				C57D5C2925135FF40073F90B /* BRDatePickerView+BR.h */,
-				C57D5C2A25135FF40073F90B /* NSDate+BRPickerView.h */,
-			);
-			path = DatePickerView;
-			sourceTree = "<group>";
-		};
-		C57D5C2B25135FF40073F90B /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				C57D5C2C25135FF40073F90B /* NSBundle+BRPickerView.h */,
-				C57D5C2D25135FF40073F90B /* BRPickerViewMacro.h */,
-				C57D5C2E25135FF40073F90B /* BRPickerView.bundle */,
-				C57D5C2F25135FF40073F90B /* BRPickerStyle.m */,
-				C57D5C3025135FF40073F90B /* BRBaseView.m */,
-				C57D5C3125135FF40073F90B /* NSBundle+BRPickerView.m */,
-				C57D5C3225135FF40073F90B /* BRBaseView.h */,
-				C57D5C3325135FF40073F90B /* BRPickerStyle.h */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		C57D5C3425135FF40073F90B /* AddressPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				C57D5C3525135FF40073F90B /* BRAddressModel.m */,
-				C57D5C3625135FF40073F90B /* BRAddressPickerView.h */,
-				C57D5C3725135FF40073F90B /* BRAddressModel.h */,
-				C57D5C3825135FF40073F90B /* BRAddressPickerView.m */,
-			);
-			path = AddressPickerView;
 			sourceTree = "<group>";
 		};
 		C57D5C44251360B00073F90B /* 🔨Manual_Add_ThirdParty  */ = {
@@ -2130,7 +2033,6 @@
 				C5C655AC259DF9FF00FD2F99 /* 相机@3x.png in Resources */,
 				C5C6559D259DF9FF00FD2F99 /* 提醒事项@2x.png in Resources */,
 				C5C655A8259DF9FF00FD2F99 /* HomeKit@2x.png in Resources */,
-				C57D5C3E25135FF40073F90B /* BRPickerView.bundle in Resources */,
 				C5C655AA259DF9FF00FD2F99 /* 照片@2x.png in Resources */,
 				C5C6559A259DF9FF00FD2F99 /* 麦克风@2x.png in Resources */,
 				C5C655AF259DF9FF00FD2F99 /* 定位服务@3x.png in Resources */,
@@ -2283,7 +2185,6 @@
 				C54B4017255297EF003BE195 /* UILabel+Extra.m in Sources */,
 				C5D78062257F60010087FC92 /* ZYTextField+HistoryDataList.m in Sources */,
 				C5461064258C8FDF0008928C /* ZYTextField.m in Sources */,
-				C57D5C4225135FF40073F90B /* BRAddressModel.m in Sources */,
 				C5C65588259DF9FF00FD2F99 /* ECPrivacyCheckLocationServices.m in Sources */,
 				C57D5BD525135B370073F90B /* UIView+SuspendView.m in Sources */,
 				C5A4457125ABFC82000F0CD2 /* XHLaunchAdConfiguration.m in Sources */,
@@ -2301,13 +2202,10 @@
 				C57D5B3E2513587B0073F90B /* main.m in Sources */,
 				C5A4454625ABFC76000F0CD2 /* WHToast+DDToast.m in Sources */,
 				C5C65590259DF9FF00FD2F99 /* ECPrivacyCheckHealth.m in Sources */,
-				C57D5C4025135FF40073F90B /* BRBaseView.m in Sources */,
-				C57D5C3A25135FF40073F90B /* BRStringPickerView.m in Sources */,
 				C5DF460225A89A4D00E91985 /* LOTAnimationMJRefreshHeader.m in Sources */,
 				C57D5C54251363380073F90B /* UIButton+ImageTitleSpacing.m in Sources */,
 				C5F732F92513C07700216DEF /* UITableView+XSAnimationKit.m in Sources */,
 				C5F7332225147B9C00216DEF /* DoorView.m in Sources */,
-				C57D5C4325135FF40073F90B /* BRAddressPickerView.m in Sources */,
 				C562DEDB25C7C592004D1AEA /* UIView+ViewController.m in Sources */,
 				C56190EE26008F7300D4546E /* UITextView+Extend.m in Sources */,
 				C5A4454525ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
@@ -2322,7 +2220,6 @@
 				C53E443825FB5402007D92BE /* NSObject+SYSAlertController.m in Sources */,
 				C583BB0825E4B3A00054FD6E /* UIImageView+GIF.m in Sources */,
 				C583BB0725E4B3A00054FD6E /* BaseImageView.m in Sources */,
-				C57D5C4125135FF40073F90B /* NSBundle+BRPickerView.m in Sources */,
 				C5A4456925ABFC82000F0CD2 /* XHLaunchAdButton.m in Sources */,
 				C534CE7D25875A60001369FD /* BWItemModel.m in Sources */,
 				C5A43B0725AAF8D9000F0CD2 /* UIScrollView+FDFullscreenPopGesture.m in Sources */,
@@ -2334,7 +2231,6 @@
 				C58D958325B80DBB00414ACB /* BaseTableViewCell.m in Sources */,
 				C5A4456A25ABFC82000F0CD2 /* XHLaunchImageView.m in Sources */,
 				C53E443F25FB5402007D92BE /* NSObject+Sound.m in Sources */,
-				C57D5C3925135FF40073F90B /* BRResultModel.m in Sources */,
 				C5D77881257F5B600087FC92 /* JobsMagicTextField.m in Sources */,
 				C5C655B0259DF9FF00FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */,
 				C5D1C150258B214300784D2F /* UIViewController+EmptyData.m in Sources */,
@@ -2345,10 +2241,8 @@
 				C53E443B25FB5402007D92BE /* NSObject+OpenURL.m in Sources */,
 				C5914D2025385214007777A6 /* UIViewController+JPImageresizerView.m in Sources */,
 				C57675F92546BD0100C382C8 /* UIViewController+JXCategoryListContentViewDelegate.m in Sources */,
-				C57D5C3C25135FF40073F90B /* NSDate+BRPickerView.m in Sources */,
 				C5A4456B25ABFC82000F0CD2 /* XHLaunchAdConst.m in Sources */,
 				C5C65589259DF9FF00FD2F99 /* ECPrivacyCheckFilesAndFolders.m in Sources */,
-				C57D5C3D25135FF40073F90B /* BRDatePickerView.m in Sources */,
 				C5D7787F257F5B600087FC92 /* HQTextField.m in Sources */,
 				C57D5BD425135B370073F90B /* UIView+Chain.m in Sources */,
 				C5C65586259DF9FF00FD2F99 /* ECPrivacyCheckBluetooth.m in Sources */,
@@ -2382,7 +2276,6 @@
 				C53E443E25FB5402007D92BE /* NSObject+Random.m in Sources */,
 				C5A4457325ABFC82000F0CD2 /* XHLaunchAdImageManager.m in Sources */,
 				C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */,
-				C57D5C3F25135FF40073F90B /* BRPickerStyle.m in Sources */,
 				C5914D2225385214007777A6 /* UIViewController+BWShareView.m in Sources */,
 				C5D77882257F5B600087FC92 /* UITextField+Extend.m in Sources */,
 				C5DF460125A89A4D00E91985 /* LOTAnimationMJRefreshFooter.m in Sources */,
@@ -2391,7 +2284,6 @@
 				C5D1C144258B211800784D2F /* UIView+EmptyData.m in Sources */,
 				C50ECA402524C265000AE52F /* GifLoopPlayView.m in Sources */,
 				C5A43B0925AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				C57D5C3B25135FF40073F90B /* BRDatePickerView+BR.m in Sources */,
 				C5914D2825385214007777A6 /* UIViewController+GifImageView.m in Sources */,
 				C5CF188C25AC803E00381935 /* LYLUnicode.m in Sources */,
 				C57675F82546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
