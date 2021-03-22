@@ -200,6 +200,10 @@
 		C50ECA3E2524C265000AE52F /* GifLoopPlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifLoopPlayView.h; sourceTree = "<group>"; };
 		C50ECA3F2524C265000AE52F /* GifLoopPlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifLoopPlayView.m; sourceTree = "<group>"; };
 		C50ECA4925257E06000AE52F /* 音律跳动.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "音律跳动.bundle"; sourceTree = "<group>"; };
+		C51F891E2608628700953C10 /* 安全区域.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "安全区域.png"; sourceTree = "<group>"; };
+		C51F891F2608628700953C10 /* MacroDef_AppDeviceScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDef_AppDeviceScreenSize.h; sourceTree = "<group>"; };
+		C51F89202608628700953C10 /* iPhone尺寸.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone尺寸.png"; sourceTree = "<group>"; };
+		C51F89212608628700953C10 /* iPad尺寸.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPad尺寸.png"; sourceTree = "<group>"; };
 		C52B9917259F1358003D9E23 /* BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionViewCell.m; sourceTree = "<group>"; };
 		C52B9919259F1358003D9E23 /* BaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewCell.h; sourceTree = "<group>"; };
 		C534CE7525875A60001369FD /* BWItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWItemCollectionViewCell.h; sourceTree = "<group>"; };
@@ -273,6 +277,9 @@
 		C56209372554003400FE435F /* 高度自定义的按钮.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "高度自定义的按钮.md"; sourceTree = "<group>"; };
 		C562DED925C7C592004D1AEA /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		C562DEDA25C7C592004D1AEA /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		C56321F726084BA200822149 /* BaseViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewControllerProtocol.h; sourceTree = "<group>"; };
+		C56321F826084BA200822149 /* BaseCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCellProtocol.h; sourceTree = "<group>"; };
+		C56321F926084BA200822149 /* BaseViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewProtocol.h; sourceTree = "<group>"; };
 		C567372125D77C02008ABAF9 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		C567372225D77C02008ABAF9 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		C56BC4B925879D380043C977 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
@@ -563,6 +570,62 @@
 			path = GifLoopPlayView;
 			sourceTree = "<group>";
 		};
+		C51F72A726085B0200953C10 /* BaseTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C5F732EB2513C05F00216DEF /* BaseTableView.h */,
+				C5F732ED2513C05F00216DEF /* BaseTableView.m */,
+				C552A7C42589D67800A89501 /* 专治UITableView相应链断裂.md */,
+			);
+			path = BaseTableView;
+			sourceTree = "<group>";
+		};
+		C51F72A826085B2500953C10 /* TableView+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5F732E32513BFE100216DEF /* TableViewAnimationKit */,
+			);
+			path = "TableView+Category";
+			sourceTree = "<group>";
+		};
+		C51F7DCB26085E0300953C10 /* UITextField+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C5D77876257F5B600087FC92 /* UITextField+Extend */,
+			);
+			path = "UITextField+Category";
+			sourceTree = "<group>";
+		};
+		C51F7DCF26085E1200953C10 /* BaseTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C5D7787C257F5B600087FC92 /* CJTextField */,
+				C5D7786F257F5B600087FC92 /* HQTextField */,
+				C5D77873257F5B600087FC92 /* JobsMagicTextField */,
+				C5D77879257F5B600087FC92 /* ZYTextField */,
+			);
+			path = BaseTextField;
+			sourceTree = "<group>";
+		};
+		C51F832026085F7300953C10 /* UILabel+Category */ = {
+			isa = PBXGroup;
+			children = (
+				C542D74C25EB7C1B00D776D8 /* UILabel+Extra */,
+			);
+			path = "UILabel+Category";
+			sourceTree = "<group>";
+		};
+		C51F891D2608628700953C10 /* 苹果产品尺寸 */ = {
+			isa = PBXGroup;
+			children = (
+				C51F891E2608628700953C10 /* 安全区域.png */,
+				C51F89212608628700953C10 /* iPad尺寸.png */,
+				C51F89202608628700953C10 /* iPhone尺寸.png */,
+				C51F891F2608628700953C10 /* MacroDef_AppDeviceScreenSize.h */,
+			);
+			path = "苹果产品尺寸";
+			sourceTree = "<group>";
+		};
 		C53E441525FB5402007D92BE /* NSObject+Time */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,7 +910,7 @@
 		C54B4011255297EF003BE195 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				C542D74C25EB7C1B00D776D8 /* UILabel+Extra */,
+				C51F832026085F7300953C10 /* UILabel+Category */,
 			);
 			path = UILabel;
 			sourceTree = "<group>";
@@ -1026,6 +1089,7 @@
 		C55E2B2225FB28D000716A9B /* MacroDef_Size */ = {
 			isa = PBXGroup;
 			children = (
+				C51F891D2608628700953C10 /* 苹果产品尺寸 */,
 				C558F445258A31F10078DB8F /* MacroDef_Size.h */,
 			);
 			path = MacroDef_Size;
@@ -1081,6 +1145,16 @@
 				C562DED925C7C592004D1AEA /* UIView+ViewController.m */,
 			);
 			path = "UIView+ViewController";
+			sourceTree = "<group>";
+		};
+		C56321F626084BA100822149 /* BaseProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				C56321F726084BA200822149 /* BaseViewControllerProtocol.h */,
+				C56321F826084BA200822149 /* BaseCellProtocol.h */,
+				C56321F926084BA200822149 /* BaseViewProtocol.h */,
+			);
+			path = BaseProtocol;
 			sourceTree = "<group>";
 		};
 		C567371025D77BEF008ABAF9 /* UIView+Category */ = {
@@ -1295,6 +1369,7 @@
 		C57D5B7325135A4D0073F90B /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C56321F626084BA100822149 /* BaseProtocol */,
 				C57D5BD725135B530073F90B /* NSObject */,
 				C57D5BF125135B7A0073F90B /* NSString */,
 				C56BBC9F25879AE10043C977 /* UIButton */,
@@ -1328,8 +1403,8 @@
 		C57D5B7E25135A760073F90B /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				C5F732EA2513C05F00216DEF /* 专治UITableView相应链断裂 */,
-				C5F732E32513BFE100216DEF /* TableViewAnimationKit */,
+				C51F72A826085B2500953C10 /* TableView+Category */,
+				C51F72A726085B0200953C10 /* BaseTableView */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -1337,11 +1412,8 @@
 		C57D5B8425135A850073F90B /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
-				C5D7787C257F5B600087FC92 /* CJTextField */,
-				C5D7786F257F5B600087FC92 /* HQTextField */,
-				C5D77873257F5B600087FC92 /* JobsMagicTextField */,
-				C5D77876257F5B600087FC92 /* UITextField+Extend */,
-				C5D77879257F5B600087FC92 /* ZYTextField */,
+				C51F7DCF26085E1200953C10 /* BaseTextField */,
+				C51F7DCB26085E0300953C10 /* UITextField+Category */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
@@ -1890,16 +1962,6 @@
 				C5F732F52513C07700216DEF /* UITableView+XSAnimationKit.m */,
 			);
 			path = TableViewAnimationKit;
-			sourceTree = "<group>";
-		};
-		C5F732EA2513C05F00216DEF /* 专治UITableView相应链断裂 */ = {
-			isa = PBXGroup;
-			children = (
-				C5F732EB2513C05F00216DEF /* BaseTableView.h */,
-				C5F732ED2513C05F00216DEF /* BaseTableView.m */,
-				C552A7C42589D67800A89501 /* 专治UITableView相应链断裂.md */,
-			);
-			path = "专治UITableView相应链断裂";
 			sourceTree = "<group>";
 		};
 		C5F7331F25147B5C00216DEF /* 输入用户名和密码 */ = {
