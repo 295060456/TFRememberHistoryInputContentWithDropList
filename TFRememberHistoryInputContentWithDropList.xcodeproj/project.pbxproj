@@ -159,6 +159,8 @@
 		C5D77882257F5B600087FC92 /* UITextField+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D77878257F5B600087FC92 /* UITextField+Extend.m */; };
 		C5D77884257F5B600087FC92 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7787D257F5B600087FC92 /* CJTextField.m */; };
 		C5D78062257F60010087FC92 /* ZYTextField+HistoryDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D78060257F60010087FC92 /* ZYTextField+HistoryDataList.m */; };
+		C5D8D354260CC4CD00BDAF76 /* toastLoading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5D8D353260CC4CD00BDAF76 /* toastLoading.gif */; };
+		C5D8D948260CC96E00BDAF76 /* NSObject+DefConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D8D946260CC96E00BDAF76 /* NSObject+DefConfig.m */; };
 		C5DF460125A89A4D00E91985 /* LOTAnimationMJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF45F625A89A4D00E91985 /* LOTAnimationMJRefreshFooter.m */; };
 		C5DF460225A89A4D00E91985 /* LOTAnimationMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF45F925A89A4D00E91985 /* LOTAnimationMJRefreshHeader.m */; };
 		C5DF460325A89A4D00E91985 /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5DF45FC25A89A4D00E91985 /* JsonRes.bundle */; };
@@ -494,6 +496,9 @@
 		C5D7787E257F5B600087FC92 /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
 		C5D78060257F60010087FC92 /* ZYTextField+HistoryDataList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZYTextField+HistoryDataList.m"; sourceTree = "<group>"; };
 		C5D78061257F60010087FC92 /* ZYTextField+HistoryDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZYTextField+HistoryDataList.h"; sourceTree = "<group>"; };
+		C5D8D353260CC4CD00BDAF76 /* toastLoading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toastLoading.gif; sourceTree = "<group>"; };
+		C5D8D946260CC96E00BDAF76 /* NSObject+DefConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DefConfig.m"; sourceTree = "<group>"; };
+		C5D8D947260CC96E00BDAF76 /* NSObject+DefConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DefConfig.h"; sourceTree = "<group>"; };
 		C5DF45F625A89A4D00E91985 /* LOTAnimationMJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshFooter.m; sourceTree = "<group>"; };
 		C5DF45F725A89A4D00E91985 /* LOTAnimationMJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTAnimationMJRefreshFooter.h; sourceTree = "<group>"; };
 		C5DF45F925A89A4D00E91985 /* LOTAnimationMJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTAnimationMJRefreshHeader.m; sourceTree = "<group>"; };
@@ -1430,6 +1435,7 @@
 		C57D5BD725135B530073F90B /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C5D8D945260CC96E00BDAF76 /* NSObject+DefConfig */,
 				C53E441B25FB5402007D92BE /* NSObject (Time) */,
 				C53E441625FB5402007D92BE /* NSObject+Alert */,
 				C53E441E25FB5402007D92BE /* NSObject+CallBackInfoByBlock */,
@@ -1647,8 +1653,9 @@
 		C5A4453225ABFC76000F0CD2 /* WHToast */ = {
 			isa = PBXGroup;
 			children = (
-				C5A4453325ABFC76000F0CD2 /* WHToast+DDToast.m */,
+				C5D8D353260CC4CD00BDAF76 /* toastLoading.gif */,
 				C5A4453425ABFC76000F0CD2 /* WHToast+DDToast.h */,
+				C5A4453325ABFC76000F0CD2 /* WHToast+DDToast.m */,
 			);
 			path = WHToast;
 			sourceTree = "<group>";
@@ -1924,6 +1931,15 @@
 			path = "UIViewController+Others";
 			sourceTree = "<group>";
 		};
+		C5D8D945260CC96E00BDAF76 /* NSObject+DefConfig */ = {
+			isa = PBXGroup;
+			children = (
+				C5D8D946260CC96E00BDAF76 /* NSObject+DefConfig.m */,
+				C5D8D947260CC96E00BDAF76 /* NSObject+DefConfig.h */,
+			);
+			path = "NSObject+DefConfig";
+			sourceTree = "<group>";
+		};
 		C5DF45F525A89A4D00E91985 /* LOTAnimationMJRefreshFooter */ = {
 			isa = PBXGroup;
 			children = (
@@ -2119,6 +2135,7 @@
 				C57D5B332513587A0073F90B /* Main.storyboard in Resources */,
 				C56E4207254717BC00B9F555 /* ⚽️PicResource in Resources */,
 				C5DF460325A89A4D00E91985 /* JsonRes.bundle in Resources */,
+				C5D8D354260CC4CD00BDAF76 /* toastLoading.gif in Resources */,
 				C5C65598259DF9FF00FD2F99 /* 提醒事项@3x.png in Resources */,
 				C5C6559C259DF9FF00FD2F99 /* 麦克风@3x.png in Resources */,
 				C5C65595259DF9FF00FD2F99 /* 媒体与AppleMusic@3x.png in Resources */,
@@ -2271,6 +2288,7 @@
 				C562DEDB25C7C592004D1AEA /* UIView+ViewController.m in Sources */,
 				C56190EE26008F7300D4546E /* UITextView+Extend.m in Sources */,
 				C5A4454525ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
+				C5D8D948260CC96E00BDAF76 /* NSObject+DefConfig.m in Sources */,
 				C5914D2325385214007777A6 /* UIViewController+Shake.m in Sources */,
 				C53E443D25FB5402007D92BE /* NSObject+Shake.m in Sources */,
 				C572797D25409B3D002373D7 /* BaseNavigationBar.m in Sources */,

@@ -19,6 +19,7 @@
 #import "NSObject+Random.h"
 #import "NSObject+Shake.h"
 #import "NSObject+Sound.h"
+#import "NSObject+DefConfig.h"
 #import "NSObject+Time.h"
 #import "NSObject+SYSAlertController.h"
 #import "NSObject+SPAlertController.h"
