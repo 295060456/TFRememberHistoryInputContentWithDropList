@@ -12,9 +12,6 @@
 #import "ZYTextField+HistoryDataList.h"
 
 @interface DoorView ()
-<
-UITextFieldDelegate
->
 
 @property(nonatomic,strong)ZYTextField *userTF;
 @property(nonatomic,strong)ZYTextField *passwordTF;
@@ -90,6 +87,11 @@ replacementString:(NSString *)string{
         _userTF.returnKeyType = UIReturnKeyDone;
         _userTF.keyboardAppearance = UIKeyboardAppearanceAlert;
         _userTF.alpha = 0.7;
+        @weakify(self)
+        [_userTF.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
+            @strongify(self)
+            NSLog(@"MMM = %@",x);
+        }];
         [self addSubview:_userTF];
         _userTF.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         [_userTF mas_makeConstraints:^(MASConstraintMaker *make) {

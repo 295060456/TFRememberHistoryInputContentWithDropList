@@ -14,13 +14,9 @@
 #import "GifLoopPlayView.h"
 
 @interface ViewController ()
-<
-UITextFieldDelegate
->
 
 @property(nonatomic,strong)ZYTextField *textField;
 @property(nonatomic,strong)DoorView *doorView;
-
 @property(nonatomic,strong)GifLoopPlayView *gifLoopPlayView;
 
 @end
@@ -98,6 +94,11 @@ replacementString:(NSString *)string{
         _textField.returnKeyType = UIReturnKeyDone;
         _textField.keyboardAppearance = UIKeyboardAppearanceAlert;
         _textField.alpha = 0.7;
+        @weakify(self)
+        [_textView.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
+            @strongify(self)
+            NSLog(@"MMM = %@",x);
+        }];
         [self.view addSubview:_textField];
         _textField.isShowHistoryDataList = YES;//一句代码实现下拉历史列表：这句一定要写在addSubview之后，否则找不到父控件会崩溃
         _textField.frame = CGRectMake(100,

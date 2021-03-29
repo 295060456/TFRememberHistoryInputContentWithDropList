@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DoorView : UIView
+@interface DoorView : UIView<UITextFieldDelegate>
 
 @end
 
