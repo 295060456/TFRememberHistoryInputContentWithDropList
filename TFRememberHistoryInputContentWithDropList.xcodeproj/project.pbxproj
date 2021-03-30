@@ -148,7 +148,6 @@
 		C5C655AE259DF9FF00FD2F99 /* 文件和文件夹@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C65579259DF9FF00FD2F99 /* 文件和文件夹@3x.png */; };
 		C5C655AF259DF9FF00FD2F99 /* 定位服务@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C6557A259DF9FF00FD2F99 /* 定位服务@3x.png */; };
 		C5C655B0259DF9FF00FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6557D259DF9FF00FD2F99 /* ECPrivacyCheckGatherTool.m */; };
-		C5CF188C25AC803E00381935 /* LYLUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CF188925AC803E00381935 /* LYLUnicode.m */; };
 		C5D1C144258B211800784D2F /* UIView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1C142258B211800784D2F /* UIView+EmptyData.m */; };
 		C5D1C150258B214300784D2F /* UIViewController+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D1C14F258B214300784D2F /* UIViewController+EmptyData.m */; };
 		C5D602F12586327100029AFF /* UIViewController+BaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D602EF2586327100029AFF /* UIViewController+BaseNavigationBar.m */; };
@@ -166,6 +165,7 @@
 		C5DF460325A89A4D00E91985 /* JsonRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C5DF45FC25A89A4D00E91985 /* JsonRes.bundle */; };
 		C5DF460425A89A4D00E91985 /* UIViewController+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF45FD25A89A4D00E91985 /* UIViewController+MJRefresh.m */; };
 		C5DF460525A89A4D00E91985 /* MJRefreshConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF460025A89A4D00E91985 /* MJRefreshConfigModel.m */; };
+		C5DFE198261319B5008C7E2E /* DebugLogDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DFE197261319B5008C7E2E /* DebugLogDescription.m */; };
 		C5F732EF2513C05F00216DEF /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732ED2513C05F00216DEF /* BaseTableView.m */; };
 		C5F732F92513C07700216DEF /* UITableView+XSAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F52513C07700216DEF /* UITableView+XSAnimationKit.m */; };
 		C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F732F82513C07700216DEF /* TableViewAnimationKit.m */; };
@@ -474,9 +474,6 @@
 		C5C65580259DF9FF00FD2F99 /* ECPrivacyCheckTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckTools.h; sourceTree = "<group>"; };
 		C5C65582259DF9FF00FD2F99 /* ECPrivacyCheckTools不用pod管理的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ECPrivacyCheckTools不用pod管理的情况说明.md"; sourceTree = "<group>"; };
 		C5C65583259DF9FF00FD2F99 /* ECAuthorizationTools.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ECAuthorizationTools.md; sourceTree = "<group>"; };
-		C5CF188925AC803E00381935 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
-		C5CF188A25AC803E00381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "解决打印日志对于Unicode编码不能正常显示中文的问题"; sourceTree = "<group>"; };
-		C5CF188B25AC803E00381935 /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
 		C5D1C142258B211800784D2F /* UIView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyData.m"; sourceTree = "<group>"; };
 		C5D1C143258B211800784D2F /* UIView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyData.h"; sourceTree = "<group>"; };
 		C5D1C14E258B214300784D2F /* UIViewController+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EmptyData.h"; sourceTree = "<group>"; };
@@ -508,6 +505,8 @@
 		C5DF45FD25A89A4D00E91985 /* UIViewController+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MJRefresh.m"; sourceTree = "<group>"; };
 		C5DF45FF25A89A4D00E91985 /* MJRefreshConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConfigModel.h; sourceTree = "<group>"; };
 		C5DF460025A89A4D00E91985 /* MJRefreshConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConfigModel.m; sourceTree = "<group>"; };
+		C5DFE196261319B5008C7E2E /* DebugLogDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLogDescription.h; sourceTree = "<group>"; };
+		C5DFE197261319B5008C7E2E /* DebugLogDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLogDescription.m; sourceTree = "<group>"; };
 		C5F732EB2513C05F00216DEF /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		C5F732ED2513C05F00216DEF /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		C5F732F32513C07700216DEF /* TableViewAnimationKitHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewAnimationKitHeaders.h; sourceTree = "<group>"; };
@@ -1374,6 +1373,7 @@
 		C57D5B7325135A4D0073F90B /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C5DFE195261319B5008C7E2E /* DebugLogDescription */,
 				C56321F626084BA100822149 /* BaseProtocol */,
 				C57D5BD725135B530073F90B /* NSObject */,
 				C57D5BF125135B7A0073F90B /* NSString */,
@@ -1435,10 +1435,10 @@
 		C57D5BD725135B530073F90B /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				C5D8D945260CC96E00BDAF76 /* NSObject+DefConfig */,
 				C53E441B25FB5402007D92BE /* NSObject (Time) */,
 				C53E441625FB5402007D92BE /* NSObject+Alert */,
 				C53E441E25FB5402007D92BE /* NSObject+CallBackInfoByBlock */,
+				C5D8D945260CC96E00BDAF76 /* NSObject+DefConfig */,
 				C53E442125FB5402007D92BE /* NSObject+Others */,
 				C53E441525FB5402007D92BE /* NSObject+Time */,
 			);
@@ -1468,7 +1468,6 @@
 			children = (
 				C5542DD225F3251C002D1CA6 /* CheckMemFreeVC */,
 				C54C644C25EFC321007DD043 /* 清除缓存 */,
-				C5CF188825AC803E00381935 /* LYLUnicode */,
 				C5A43B0125AAF8D9000F0CD2 /* 手势滑动返回 */,
 				C59A3F0D258DD253005F6260 /* UserDefaultManager */,
 				C57D5C45251360BE0073F90B /* 分享控件 */,
@@ -1829,16 +1828,6 @@
 			path = ReadMe;
 			sourceTree = "<group>";
 		};
-		C5CF188825AC803E00381935 /* LYLUnicode */ = {
-			isa = PBXGroup;
-			children = (
-				C5CF188A25AC803E00381935 /* 解决打印日志对于Unicode编码不能正常显示中文的问题 */,
-				C5CF188B25AC803E00381935 /* LYLUnicode.h */,
-				C5CF188925AC803E00381935 /* LYLUnicode.m */,
-			);
-			path = LYLUnicode;
-			sourceTree = "<group>";
-		};
 		C5D1BCA1258B0D5600784D2F /* UIViewController+EmptyData */ = {
 			isa = PBXGroup;
 			children = (
@@ -1965,6 +1954,15 @@
 				C5DF460025A89A4D00E91985 /* MJRefreshConfigModel.m */,
 			);
 			path = ConfigModel;
+			sourceTree = "<group>";
+		};
+		C5DFE195261319B5008C7E2E /* DebugLogDescription */ = {
+			isa = PBXGroup;
+			children = (
+				C5DFE196261319B5008C7E2E /* DebugLogDescription.h */,
+				C5DFE197261319B5008C7E2E /* DebugLogDescription.m */,
+			);
+			path = DebugLogDescription;
 			sourceTree = "<group>";
 		};
 		C5F732E32513BFE100216DEF /* TableViewAnimationKit */ = {
@@ -2274,6 +2272,7 @@
 				C5A4457225ABFC82000F0CD2 /* XHLaunchAdCache.m in Sources */,
 				C5A4454825ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */,
 				C53E443C25FB5402007D92BE /* NSObject+Measure.m in Sources */,
+				C5DFE198261319B5008C7E2E /* DebugLogDescription.m in Sources */,
 				C5F732FA2513C07700216DEF /* TableViewAnimationKit.m in Sources */,
 				C5C65584259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m in Sources */,
 				C57D5BD225135B370073F90B /* UIView+Measure.m in Sources */,
@@ -2365,7 +2364,6 @@
 				C50ECA402524C265000AE52F /* GifLoopPlayView.m in Sources */,
 				C5A43B0925AAF8D9000F0CD2 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				C5914D2825385214007777A6 /* UIViewController+GifImageView.m in Sources */,
-				C5CF188C25AC803E00381935 /* LYLUnicode.m in Sources */,
 				C57675F82546BD0100C382C8 /* UIViewController+JXPagerViewListViewDelegate.m in Sources */,
 				C56BC4BC25879D380043C977 /* UIControl+XY.m in Sources */,
 				C5914D2925385214007777A6 /* UIViewController+BackBtn.m in Sources */,

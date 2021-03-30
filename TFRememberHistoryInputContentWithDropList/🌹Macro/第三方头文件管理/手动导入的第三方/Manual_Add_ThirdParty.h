@@ -9,6 +9,8 @@
 #ifndef Manual_Add_ThirdParty_h
 #define Manual_Add_ThirdParty_h
 
+#pragma mark —— Log
+#import "DebugLogDescription.h"
 #pragma mark —— UIImage
 #import "LoadingImage.h"
 #pragma mark —— NSString

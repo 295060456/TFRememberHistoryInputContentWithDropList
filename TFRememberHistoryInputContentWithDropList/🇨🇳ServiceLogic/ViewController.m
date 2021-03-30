@@ -95,7 +95,7 @@ replacementString:(NSString *)string{
         _textField.keyboardAppearance = UIKeyboardAppearanceAlert;
         _textField.alpha = 0.7;
         @weakify(self)
-        [_textView.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
+        [_textField.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
             @strongify(self)
             NSLog(@"MMM = %@",x);
         }];
