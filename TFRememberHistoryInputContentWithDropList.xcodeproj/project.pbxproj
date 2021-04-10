@@ -101,6 +101,7 @@
 		C5A4457125ABFC82000F0CD2 /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456225ABFC81000F0CD2 /* XHLaunchAdConfiguration.m */; };
 		C5A4457225ABFC82000F0CD2 /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456425ABFC81000F0CD2 /* XHLaunchAdCache.m */; };
 		C5A4457325ABFC82000F0CD2 /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456625ABFC82000F0CD2 /* XHLaunchAdImageManager.m */; };
+		C5A4F6C826218CC800DF959C /* UITableView+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4F6C426218CC800DF959C /* UITableView+Expand.m */; };
 		C5AEEB1C25384241000E1C5F /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEB1825384241000E1C5F /* UIView+Extras.m */; };
 		C5AEEB1D25384241000E1C5F /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AEEB1A25384241000E1C5F /* UIView+Animation.m */; };
 		C5C65584259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C65541259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m */; };
@@ -405,6 +406,8 @@
 		C5A4456525ABFC81000F0CD2 /* XHLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdView.h; sourceTree = "<group>"; };
 		C5A4456625ABFC82000F0CD2 /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
 		C5A4456725ABFC82000F0CD2 /* XHLaunchAdConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConst.h; sourceTree = "<group>"; };
+		C5A4F6C326218CC800DF959C /* UITableView+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Expand.h"; sourceTree = "<group>"; };
+		C5A4F6C426218CC800DF959C /* UITableView+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Expand.m"; sourceTree = "<group>"; };
 		C5AEEB1825384241000E1C5F /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extras.m"; sourceTree = "<group>"; };
 		C5AEEB1925384241000E1C5F /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
 		C5AEEB1A25384241000E1C5F /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
@@ -584,12 +587,13 @@
 			path = BaseTableView;
 			sourceTree = "<group>";
 		};
-		C51F72A826085B2500953C10 /* TableView+Category */ = {
+		C51F72A826085B2500953C10 /* UITableView+Category */ = {
 			isa = PBXGroup;
 			children = (
+				C5A4F6C226218CC800DF959C /* UITableView+Expand */,
 				C5F732E32513BFE100216DEF /* TableViewAnimationKit */,
 			);
-			path = "TableView+Category";
+			path = "UITableView+Category";
 			sourceTree = "<group>";
 		};
 		C51F7DCB26085E0300953C10 /* UITextField+Category */ = {
@@ -1408,7 +1412,7 @@
 		C57D5B7E25135A760073F90B /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				C51F72A826085B2500953C10 /* TableView+Category */,
+				C51F72A826085B2500953C10 /* UITableView+Category */,
 				C51F72A726085B0200953C10 /* BaseTableView */,
 			);
 			path = UITableView;
@@ -1722,6 +1726,15 @@
 				C5A4456725ABFC82000F0CD2 /* XHLaunchAdConst.h */,
 			);
 			path = XHLaunchAd;
+			sourceTree = "<group>";
+		};
+		C5A4F6C226218CC800DF959C /* UITableView+Expand */ = {
+			isa = PBXGroup;
+			children = (
+				C5A4F6C326218CC800DF959C /* UITableView+Expand.h */,
+				C5A4F6C426218CC800DF959C /* UITableView+Expand.m */,
+			);
+			path = "UITableView+Expand";
 			sourceTree = "<group>";
 		};
 		C5C6553E259DF9FF00FD2F99 /* ECPrivacyCheckTools */ = {
@@ -2296,6 +2309,7 @@
 				C572982825BB0AA100726419 /* UIView+BackgroundImage.m in Sources */,
 				C5C6558E259DF9FF00FD2F99 /* ECPrivacyCheckPhotos.m in Sources */,
 				C5C6558A259DF9FF00FD2F99 /* ECPrivacyCheckCalendars.m in Sources */,
+				C5A4F6C826218CC800DF959C /* UITableView+Expand.m in Sources */,
 				C53E443825FB5402007D92BE /* NSObject+SYSAlertController.m in Sources */,
 				C583BB0825E4B3A00054FD6E /* UIImageView+GIF.m in Sources */,
 				C583BB0725E4B3A00054FD6E /* BaseImageView.m in Sources */,
