@@ -226,6 +226,7 @@
 		C5C655AF259DF9FF00FD2F99 /* 定位服务@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5C6557A259DF9FF00FD2F99 /* 定位服务@3x.png */; };
 		C5C655B0259DF9FF00FD2F99 /* ECPrivacyCheckGatherTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C6557D259DF9FF00FD2F99 /* ECPrivacyCheckGatherTool.m */; };
 		C5D8D354260CC4CD00BDAF76 /* toastLoading.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5D8D353260CC4CD00BDAF76 /* toastLoading.gif */; };
+		C5EA1525263120A000155822 /* UILabel+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EA1523263120A000155822 /* UILabel+Gesture.m */; };
 		C5F7332225147B9C00216DEF /* DoorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F7332125147B9C00216DEF /* DoorView.m */; };
 /* End PBXBuildFile section */
 
@@ -671,6 +672,9 @@
 		C5C65582259DF9FF00FD2F99 /* ECPrivacyCheckTools不用pod管理的情况说明.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ECPrivacyCheckTools不用pod管理的情况说明.md"; sourceTree = "<group>"; };
 		C5C65583259DF9FF00FD2F99 /* ECAuthorizationTools.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ECAuthorizationTools.md; sourceTree = "<group>"; };
 		C5D8D353260CC4CD00BDAF76 /* toastLoading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = toastLoading.gif; sourceTree = "<group>"; };
+		C5EA1523263120A000155822 /* UILabel+Gesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Gesture.m"; sourceTree = "<group>"; };
+		C5EA1524263120A000155822 /* UILabel+Gesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Gesture.h"; sourceTree = "<group>"; };
+		C5EA1AB72631251F00155822 /* JobsBaseCustomizeUIKitCoreHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobsBaseCustomizeUIKitCoreHeader.h; sourceTree = "<group>"; };
 		C5F7332025147B9C00216DEF /* DoorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoorView.h; sourceTree = "<group>"; };
 		C5F7332125147B9C00216DEF /* DoorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoorView.m; sourceTree = "<group>"; };
 		DBF93F5131F2D3D18888125C /* Pods_TFRememberHistoryInputContentWithDropList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFRememberHistoryInputContentWithDropList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -788,6 +792,7 @@
 			isa = PBXGroup;
 			children = (
 				C57D5B6B251359A60073F90B /* Manual_Add_ThirdParty.h */,
+				C5EA1AB72631251F00155822 /* JobsBaseCustomizeUIKitCoreHeader.h */,
 			);
 			path = "手动导入的第三方";
 			sourceTree = "<group>";
@@ -1054,34 +1059,34 @@
 		C58D84F826305A7800966F5F /* JobsBaseCustomizeUIKitCore */ = {
 			isa = PBXGroup;
 			children = (
-				C58D84F926305A7800966F5F /* UIImage */,
-				C58D850E26305A7800966F5F /* UILabel */,
-				C58D851326305A7900966F5F /* UITableViewCell */,
-				C58D852026305A7900966F5F /* UIButton */,
-				C58D853A26305A7900966F5F /* UIColor */,
-				C58D854326305A7900966F5F /* UIView */,
-				C58D857226305A7900966F5F /* UIFont */,
+				C58D865D26305A7900966F5F /* BaseProtocol */,
+				C58D862226305A7900966F5F /* CALayer */,
+				C58D866126305A7900966F5F /* DebugLogDescription */,
+				C58D860726305A7900966F5F /* NSArray */,
+				C58D862D26305A7900966F5F /* NSObject */,
+				C58D85AA26305A7900966F5F /* NSString */,
 				C58D857826305A7900966F5F /* RedefineSys */,
-				C58D857D26305A7900966F5F /* UITextView */,
-				C58D858626305A7900966F5F /* UIDevice */,
+				C58D852026305A7900966F5F /* UIButton */,
+				C58D862926305A7900966F5F /* UICollectionReusableView 用作基类 */,
 				C58D858C26305A7900966F5F /* UICollectionView */,
 				C58D859426305A7900966F5F /* UICollectionViewCell */,
+				C58D861626305A7900966F5F /* UICollectionViewFlowLayout */,
+				C58D853A26305A7900966F5F /* UIColor */,
+				C58D860126305A7900966F5F /* UIControl */,
+				C58D858626305A7900966F5F /* UIDevice */,
+				C58D857226305A7900966F5F /* UIFont */,
+				C58D84F926305A7800966F5F /* UIImage */,
 				C58D859F26305A7900966F5F /* UIImageView */,
+				C58D850E26305A7800966F5F /* UILabel */,
 				C58D85A626305A7900966F5F /* UINavigationBar */,
-				C58D85AA26305A7900966F5F /* NSString */,
-				C58D85AE26305A7900966F5F /* UIViewController */,
 				C58D85EA26305A7900966F5F /* UINavigationController */,
 				C58D85EE26305A7900966F5F /* UITableView */,
-				C58D860126305A7900966F5F /* UIControl */,
-				C58D860726305A7900966F5F /* NSArray */,
+				C58D851326305A7900966F5F /* UITableViewCell */,
 				C58D860E26305A7900966F5F /* UITableViewHeaderFooterView */,
-				C58D861626305A7900966F5F /* UICollectionViewFlowLayout */,
-				C58D862226305A7900966F5F /* CALayer */,
-				C58D862926305A7900966F5F /* UICollectionReusableView 用作基类 */,
-				C58D862D26305A7900966F5F /* NSObject */,
-				C58D865D26305A7900966F5F /* BaseProtocol */,
-				C58D866126305A7900966F5F /* DebugLogDescription */,
 				C58D866426305A7900966F5F /* UITextField */,
+				C58D857D26305A7900966F5F /* UITextView */,
+				C58D854326305A7900966F5F /* UIView */,
+				C58D85AE26305A7900966F5F /* UIViewController */,
 			);
 			path = JobsBaseCustomizeUIKitCore;
 			sourceTree = "<group>";
@@ -1174,6 +1179,7 @@
 			isa = PBXGroup;
 			children = (
 				C58D851026305A7800966F5F /* UILabel+Extra */,
+				C5EA1522263120A000155822 /* UILabel+Gesture */,
 			);
 			path = "UILabel+Category";
 			sourceTree = "<group>";
@@ -2777,6 +2783,15 @@
 			path = ReadMe;
 			sourceTree = "<group>";
 		};
+		C5EA1522263120A000155822 /* UILabel+Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				C5EA1523263120A000155822 /* UILabel+Gesture.m */,
+				C5EA1524263120A000155822 /* UILabel+Gesture.h */,
+			);
+			path = "UILabel+Gesture";
+			sourceTree = "<group>";
+		};
 		C5F7331F25147B5C00216DEF /* 输入用户名和密码 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3107,6 +3122,7 @@
 				C5A4457125ABFC82000F0CD2 /* XHLaunchAdConfiguration.m in Sources */,
 				C534CE7F25875A60001369FD /* BWItemCollectionViewCell.m in Sources */,
 				C58D868826305A7A00966F5F /* RBCLikeButton.m in Sources */,
+				C5EA1525263120A000155822 /* UILabel+Gesture.m in Sources */,
 				C5A4457225ABFC82000F0CD2 /* XHLaunchAdCache.m in Sources */,
 				C58D86E626305A7A00966F5F /* NSObject+DataSave.m in Sources */,
 				C5A4454825ABFC76000F0CD2 /* JXCategoryTitleBackgroundCell.m in Sources */,
