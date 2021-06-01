@@ -181,6 +181,7 @@
 		C5A4457125ABFC82000F0CD2 /* XHLaunchAdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456225ABFC81000F0CD2 /* XHLaunchAdConfiguration.m */; };
 		C5A4457225ABFC82000F0CD2 /* XHLaunchAdCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456425ABFC81000F0CD2 /* XHLaunchAdCache.m */; };
 		C5A4457325ABFC82000F0CD2 /* XHLaunchAdImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A4456625ABFC82000F0CD2 /* XHLaunchAdImageManager.m */; };
+		C5B5CC1426666C6600264958 /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B5CC1326666C6600264958 /* BaseButton.m */; };
 		C5C65584259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C65541259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m */; };
 		C5C65585259DF9FF00FD2F99 /* ECPrivacyCheckHomeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C65543259DF9FF00FD2F99 /* ECPrivacyCheckHomeKit.m */; };
 		C5C65586259DF9FF00FD2F99 /* ECPrivacyCheckBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C65545259DF9FF00FD2F99 /* ECPrivacyCheckBluetooth.m */; };
@@ -609,6 +610,9 @@
 		C5A4456525ABFC81000F0CD2 /* XHLaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdView.h; sourceTree = "<group>"; };
 		C5A4456625ABFC82000F0CD2 /* XHLaunchAdImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHLaunchAdImageManager.m; sourceTree = "<group>"; };
 		C5A4456725ABFC82000F0CD2 /* XHLaunchAdConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHLaunchAdConst.h; sourceTree = "<group>"; };
+		C5B5CC1026666C5B00264958 /* BaseButtonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseButtonProtocol.h; sourceTree = "<group>"; };
+		C5B5CC1226666C6600264958 /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		C5B5CC1326666C6600264958 /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
 		C5C65540259DF9FF00FD2F99 /* ECPrivacyCheckCalendars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckCalendars.h; sourceTree = "<group>"; };
 		C5C65541259DF9FF00FD2F99 /* ECPrivacyCheckMicrophone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPrivacyCheckMicrophone.m; sourceTree = "<group>"; };
 		C5C65542259DF9FF00FD2F99 /* ECPrivacyCheckMotionAndFitness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPrivacyCheckMotionAndFitness.h; sourceTree = "<group>"; };
@@ -1249,6 +1253,7 @@
 				C58D852126305A7900966F5F /* 高度自定义的按钮 */,
 				C58D852526305A7900966F5F /* 高仿抖音点赞动画 */,
 				C58D853526305A7900966F5F /* 高仿iOS长按删除+抖动 */,
+				C5B5CC1126666C6600264958 /* BaseButton */,
 				C58D853026305A7900966F5F /* SoundBtn */,
 				C58D852926305A7900966F5F /* UIButton+Timer */,
 			);
@@ -2417,8 +2422,9 @@
 		C58D865D26305A7900966F5F /* BaseProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				C58D865E26305A7900966F5F /* BaseViewControllerProtocol.h */,
+				C5B5CC1026666C5B00264958 /* BaseButtonProtocol.h */,
 				C58D865F26305A7900966F5F /* BaseCellProtocol.h */,
+				C58D865E26305A7900966F5F /* BaseViewControllerProtocol.h */,
 				C58D866026305A7900966F5F /* BaseViewProtocol.h */,
 			);
 			path = BaseProtocol;
@@ -2690,6 +2696,15 @@
 				C5A4456725ABFC82000F0CD2 /* XHLaunchAdConst.h */,
 			);
 			path = XHLaunchAd;
+			sourceTree = "<group>";
+		};
+		C5B5CC1126666C6600264958 /* BaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				C5B5CC1226666C6600264958 /* BaseButton.h */,
+				C5B5CC1326666C6600264958 /* BaseButton.m */,
+			);
+			path = BaseButton;
 			sourceTree = "<group>";
 		};
 		C5C6553E259DF9FF00FD2F99 /* ECPrivacyCheckTools */ = {
@@ -3162,6 +3177,7 @@
 				C58D86EB26305A7A00966F5F /* DebugLogDescription.m in Sources */,
 				C58D86E126305A7A00966F5F /* NSObject+Random.m in Sources */,
 				C5A4454525ABFC76000F0CD2 /* GKPhotoBrowser+SaveBtn.m in Sources */,
+				C5B5CC1426666C6600264958 /* BaseButton.m in Sources */,
 				C5C65587259DF9FF00FD2F99 /* ECPrivacyCheckCamera.m in Sources */,
 				C58D86A226305A7A00966F5F /* UIFont+Extras.m in Sources */,
 				C57D5B72251359BC0073F90B /* NotificationManager.m in Sources */,
