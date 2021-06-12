@@ -17,6 +17,7 @@
 		C534CE7F25875A60001369FD /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534CE7B25875A60001369FD /* BWItemCollectionViewCell.m */; };
 		C5542DD525F3251C002D1CA6 /* CheckMemFreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5542DD425F3251C002D1CA6 /* CheckMemFreeVC.m */; };
 		C56E4207254717BC00B9F555 /* ⚽️PicResource in Resources */ = {isa = PBXBuildFile; fileRef = C56E4206254717BC00B9F555 /* ⚽️PicResource */; };
+		C57688D02674AD1400379F34 /* DDRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = C57688CF2674AD1400379F34 /* DDRecord.m */; };
 		C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B292513587A0073F90B /* AppDelegate.m */; };
 		C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2C2513587A0073F90B /* SceneDelegate.m */; };
 		C57D5B302513587A0073F90B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2F2513587A0073F90B /* ViewController.m */; };
@@ -288,6 +289,8 @@
 		C558F451258A320D0078DB8F /* AABlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABlock.h; sourceTree = "<group>"; };
 		C55E2B1D25FB28C600716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
 		C56E4206254717BC00B9F555 /* ⚽️PicResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "⚽️PicResource"; sourceTree = "<group>"; };
+		C57688CE2674AD1400379F34 /* DDRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRecord.h; sourceTree = "<group>"; };
+		C57688CF2674AD1400379F34 /* DDRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRecord.m; sourceTree = "<group>"; };
 		C57D5B252513587A0073F90B /* TFRememberHistoryInputContentWithDropList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFRememberHistoryInputContentWithDropList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57D5B282513587A0073F90B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C57D5B292513587A0073F90B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -911,6 +914,15 @@
 				C57D5B2C2513587A0073F90B /* SceneDelegate.m */,
 			);
 			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		C57688CD2674AD1400379F34 /* DDRecord */ = {
+			isa = PBXGroup;
+			children = (
+				C57688CE2674AD1400379F34 /* DDRecord.h */,
+				C57688CF2674AD1400379F34 /* DDRecord.m */,
+			);
+			path = DDRecord;
 			sourceTree = "<group>";
 		};
 		C57D5B1C2513587A0073F90B = {
@@ -2248,6 +2260,7 @@
 		C58D862D26305A7900966F5F /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				C57688CD2674AD1400379F34 /* DDRecord */,
 				C58D865426305A7900966F5F /* NSObject (Time) */,
 				C58D862E26305A7900966F5F /* NSObject+Alert */,
 				C58D865A26305A7900966F5F /* NSObject+CallBackInfoByBlock */,
@@ -3187,6 +3200,7 @@
 				C5C6558E259DF9FF00FD2F99 /* ECPrivacyCheckPhotos.m in Sources */,
 				C58D86BC26305A7A00966F5F /* UIViewController+EmptyData.m in Sources */,
 				C58D869026305A7A00966F5F /* LGiOSBtn.m in Sources */,
+				C57688D02674AD1400379F34 /* DDRecord.m in Sources */,
 				C58D877426305B5100966F5F /* DispatchTimerManager.m in Sources */,
 				C58D877726305B5100966F5F /* CADisplayLink_TimerManager.m in Sources */,
 				C5C6558A259DF9FF00FD2F99 /* ECPrivacyCheckCalendars.m in Sources */,
